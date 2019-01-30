@@ -1,0 +1,495 @@
+\hypertarget{classJeu__graphique}{}\section{Référence de la classe Jeu\+\_\+graphique}
+\label{classJeu__graphique}\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+
+
+La classe \hyperlink{classJeu__graphique}{Jeu\+\_\+graphique} permet l\textquotesingle{}execution du programme en M\+O\+DE G\+R\+A\+P\+H\+I\+Q\+UE. En effet, cette classe gere les tours de jeu, ajoute des joueurs au tableau des joueurs. Elle creee un plateau de 800 cases. C\textquotesingle{}est cette classe qui execute les actions du joueur humain ou \hyperlink{classIA}{IA}. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.\+Le module \hyperlink{classJeu}{Jeu} s\textquotesingle{}occupe aussi de l\textquotesingle{}achat d\textquotesingle{}unites et de cases. Le bombardement (attaque a distance) est effectue dans cette partie.  
+
+
+
+
+{\ttfamily \#include $<$Jeu\+\_\+graphique.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJeu__graphique_a9c8671b4f9b7c0884a1fc4d006b1588f}\label{classJeu__graphique_a9c8671b4f9b7c0884a1fc4d006b1588f}} 
+{\bfseries Jeu\+\_\+graphique} (int nb\+Joueur, string nom\+Civ\+\_\+\+Jeu2)
+\item 
+int \hyperlink{classJeu__graphique_a259e8ddfadc2d86563c52fde722e9de9}{Action\+\_\+\+Jeu\+Graphique} (char action, char action2, \hyperlink{classUnite}{Unite} $\ast$u, \hyperlink{classCivilization}{Civilization} \&Civ, sf\+::\+Render\+Window \&window, sf\+::\+View \&view, sf\+::\+View \&view2, sf\+::\+View \&minimap\+View, sf\+::\+View \&Barre\+Ressource)
+\begin{DoxyCompactList}\small\item\em void Action\+\_\+\+Jeu\+Graphique (char action, char action2,\hyperlink{classUnite}{Unite} $\ast$ u, \hyperlink{classCivilization}{Civilization} \& Civ, sf\+::\+View \& view ,sf\+::\+View \& view2, sf\+::\+View \& minimap\+View, sf\+::\+View \& Barre\+Ressource) Choisit l\textquotesingle{}action en fonction du choix de l\textquotesingle{}action que l\textquotesingle{}on veut faire pour l\textquotesingle{}unite selectionnee \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_aaa032d88ed8052f9a47fe83dd8e100c2}{Action\+I\+A\+\_\+\+Jeu\+Graphique} (\hyperlink{classUnite}{Unite} $\ast$u, \hyperlink{classCivilization}{Civilization} \&Civ, char action\+Param)
+\begin{DoxyCompactList}\small\item\em void Action\+I\+A\+\_\+\+Jeu\+Graphique (\hyperlink{classUnite}{Unite} $\ast$ u, \hyperlink{classCivilization}{Civilization} \& Civ, char action\+Param) Choisit l\textquotesingle{}action en fonction du choix de l\textquotesingle{}action que l\textquotesingle{}\hyperlink{classIA}{IA} choisit de faire \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a1e3d0828a10fafe5d1e667dba8f4ef38}{Acheter\+\_\+\+Unite\+\_\+\+Jeu\+Graphique} (char action2, int x, int y, int I\+D\+\_\+\+Civ)
+\begin{DoxyCompactList}\small\item\em void Acheter\+\_\+\+Unite\+\_\+\+Jeu\+Graphique (char action2, int x,int y, int I\+D\+\_\+\+Civ) S\textquotesingle{}occupe de l\textquotesingle{}achat d\textquotesingle{}\hyperlink{classUnite}{Unite} lorsque c\textquotesingle{}est au tour d\textquotesingle{}une ville. Cette fonction verifie que le joueur a assez d\textquotesingle{}argent et si c\textquotesingle{}est le cas, ajoute la nouvelle unite au tableau de la bonne Civilisation. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a0d85885796e5749b14cbcb005209042e}{Attaque\+Unite\+Bombardement\+\_\+\+Jeu\+Graphique} (int i, int j, \hyperlink{classUnite}{Unite} $\ast$u, char action, bool \&ok2, int pos\+X\+Origine, int pos\+Y\+Origine)
+\begin{DoxyCompactList}\small\item\em void Attaque\+Unite\+Bombardement\+\_\+\+Jeu\+Graphique (int i, int j,Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine) Execute l\textquotesingle{}attaque des unites de distance et verifie si cela est possible. Le soldat pointe vers un ennemi et l\textquotesingle{}attaque a distance. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_aae9e116a4e3651b22ba244957d98e076}{Attaque\+Unite\+Melee\+\_\+\+Jeu\+Graphique} (int i, int j, \hyperlink{classUnite}{Unite} $\ast$u, char action, bool \&ok)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_aae9e116a4e3651b22ba244957d98e076}{Attaque\+Unite\+Melee\+\_\+\+Jeu\+Graphique(int i, int j,\+Unite$\ast$ u, char action,bool \& ok)} Execute l\textquotesingle{}attaque d\textquotesingle{}une unite de melee (attaque au corps a corps) et verifie si cela est possible \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu__graphique_a503fedd073b20734ca16b0950f8b6f7f}\label{classJeu__graphique_a503fedd073b20734ca16b0950f8b6f7f}} 
+void \hyperlink{classJeu__graphique_a503fedd073b20734ca16b0950f8b6f7f}{Augmentation\+Age\+\_\+\+Jeu\+Graphique} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_a503fedd073b20734ca16b0950f8b6f7f}{Augmentation\+Age\+\_\+\+Jeu\+Graphique()} Augmente l\textquotesingle{}age de la Civilisation si le joueur a atteint le niveau de science requis pour passer a l\textquotesingle{}ere superieure \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a6686db5a36c47122f36d3fab0255e1b4}{Acheter\+\_\+\+Case\+\_\+\+Jeu\+Graphique} (int i, int j, \hyperlink{classUnite}{Unite} $\ast$u, char action, bool \&ok2, int pos\+X\+Origine, int pos\+Y\+Origine)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_a6686db5a36c47122f36d3fab0255e1b4}{Acheter\+\_\+\+Case\+\_\+\+Jeu\+Graphique(int i, int j,\+Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine)} Verifie que le joueur a assez de ressources pour acquerir la case selectionnee. Cette fonction passe la donnee proprio\+Case de -\/1 a 0 ou l\textquotesingle{}ID de la civilisation concernee. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a3e52d90cbfecc5574d57cf9edd2e6dbe}{Achat\+Case\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique} (int civ\+Select, int unite\+Select)
+\begin{DoxyCompactList}\small\item\em void Achat\+Case\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique (int civ\+Select, int unite\+Select) Cette fonction est executee uniquement pour le tour des I\+As. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_af4ade29c26e98e7bb22ed47577daaba2}{Atomisation\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique} (int civ\+Select, int unite\+Select)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_af4ade29c26e98e7bb22ed47577daaba2}{Atomisation\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique(int civ\+Select, int unite\+Select)} Cette fonction est executee uniquement pour le tour des I\+As. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_ada61d087659270184bc8a1ceac9c78f6}{Bombardement\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique} (int civ\+Select, int unite\+Select)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_ada61d087659270184bc8a1ceac9c78f6}{Bombardement\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique(int civ\+Select, int unite\+Select)} Cette fonction est execute seulement pour le tour des I\+As. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu__graphique_a39c9560b3ba6d2fc95961de85a4b91d2}\label{classJeu__graphique_a39c9560b3ba6d2fc95961de85a4b91d2}} 
+\hyperlink{classCivilization}{Civilization} $\ast$ {\bfseries get\+Tab\+Civ\+\_\+\+Jeu\+Graphique} ()
+\item 
+void \hyperlink{classJeu__graphique_ae57233f761d45a577584fa3dfe1603b3}{Construction\+\_\+\+Jeu\+Graphique} (int nb\+Joueur, string nom\+Civ\+\_\+\+Jeu2)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_ae57233f761d45a577584fa3dfe1603b3}{Construction\+\_\+\+Jeu\+Graphique(int nb\+Joueur, string nom\+Civ\+\_\+\+Jeu2)} Cette fonction est execute lorsque l\textquotesingle{}on choisit son mode de jeu afin de creer une partie en accord avec le choix du joueur (nb de joueurs etc...) \end{DoxyCompactList}\item 
+string \hyperlink{classJeu__graphique_ae7e0d87cea4c4d9af2d2acfb44bc2fde}{Convertisseur\+Int\+En\+String\+\_\+\+Jeu\+Graphique} (const int \&i)
+\begin{DoxyCompactList}\small\item\em string \hyperlink{classJeu__graphique_ae7e0d87cea4c4d9af2d2acfb44bc2fde}{Convertisseur\+Int\+En\+String\+\_\+\+Jeu\+Graphique(const int \& i)} Convertit l\textquotesingle{}entier passe en parametre pour renvoyer une chaine de caractere representant l\textquotesingle{}entier \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu__graphique_a2f72c853d14fc0dc781876c114868fec}\label{classJeu__graphique_a2f72c853d14fc0dc781876c114868fec}} 
+void \hyperlink{classJeu__graphique_a2f72c853d14fc0dc781876c114868fec}{Distribuer\+Ressource\+\_\+\+Jeu\+Graphique} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_a2f72c853d14fc0dc781876c114868fec}{Distribuer\+Ressource\+\_\+\+Jeu\+Graphique()} Distribue les ressources(\+Or,\+Science, Production, Nourriture) en debut de tour \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu__graphique_acd20c063f44edc31f4b1fcd9a2b67241}\label{classJeu__graphique_acd20c063f44edc31f4b1fcd9a2b67241}} 
+void \hyperlink{classJeu__graphique_acd20c063f44edc31f4b1fcd9a2b67241}{Definir\+Proprio\+Unite\+\_\+\+Jeu\+Graphique} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_acd20c063f44edc31f4b1fcd9a2b67241}{Definir\+Proprio\+Unite\+\_\+\+Jeu\+Graphique()} Affecte un proprietaire a chaque unite du jeu en debut de tour \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_ab803aa612b0c9fd3b8364eff8835f0c1}{Definir\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique} (int x, int y)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_ab803aa612b0c9fd3b8364eff8835f0c1}{Definir\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique(int x, int y)} Change l\textquotesingle{}etat d\textquotesingle{}occupation de la case en debut de tour \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu__graphique_a5faaece89347dc9c0a6ba9ec8377b53a}\label{classJeu__graphique_a5faaece89347dc9c0a6ba9ec8377b53a}} 
+void \hyperlink{classJeu__graphique_a5faaece89347dc9c0a6ba9ec8377b53a}{Definir\+Toute\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_a5faaece89347dc9c0a6ba9ec8377b53a}{Definir\+Toute\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique()} Aplique la fonction Definir\+Case\+Deja\+Occupe a toutes les cases du plateau. Si il n\textquotesingle{}y a personne sur la case alors elle reste innocupee \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_acde0d8de2f0990f3ab3f2defe2c09c27}{Deplacement\+Unite\+\_\+\+Jeu\+Graphique} (int i, int j, \hyperlink{classUnite}{Unite} $\ast$u, char action)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_acde0d8de2f0990f3ab3f2defe2c09c27}{Deplacement\+Unite\+\_\+\+Jeu\+Graphique(int i, int j,\+Unite$\ast$ u,char action)} Execute le deplacement d\textquotesingle{}unite de tout type et verifie si cela est possible \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a70e411f6d6875e871939e99f35638486}{Gestion\+Tour\+Graph\+\_\+\+Jeu\+Graphique} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_a70e411f6d6875e871939e99f35638486}{Gestion\+Tour\+Graph\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window)} Execute les actions du joueur en fonction de ses choix(\+Choix humain ou choix automatique I\+A) \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_aec9f4feaa383627bafe2ac2d66aae2e9}{Retablir\+Case\+Nulle\+\_\+\+Jeu\+Graphique} (int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_aec9f4feaa383627bafe2ac2d66aae2e9}{Retablir\+Case\+Nulle\+\_\+\+Jeu\+Graphique(int x)} Retablit les cases possedees par le joueur x a leur etat d\textquotesingle{}origine s\textquotesingle{}il a perdu. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a780cecdb8248b4e5612895b026a61a5a}{Retablir\+P\+M\+\_\+\+Jeu\+Graphique} (\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&tab\+Unite)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_a780cecdb8248b4e5612895b026a61a5a}{Retablir\+P\+M\+\_\+\+Jeu\+Graphique(\+Tableau\+Dynamique \& tab\+Unite)} Retablit les Points de Mouvement des Unites en debut de tour \end{DoxyCompactList}\item 
+\hyperlink{classUnite}{Unite} $\ast$ \hyperlink{classJeu__graphique_ae511b5ba17776963d2e40008e46c1ebc}{Get\+Unite\+Par\+Coord\+\_\+\+Jeu\+Graphique} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Unite$\ast$ \hyperlink{classJeu__graphique_ae511b5ba17776963d2e40008e46c1ebc}{Get\+Unite\+Par\+Coord\+\_\+\+Jeu\+Graphique(int x, int y)} Cherche une unite en fonction de ses coordonnees passes en parametre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu__graphique_a9ac2d26d1b68a94c04a8231e893ed47f}\label{classJeu__graphique_a9ac2d26d1b68a94c04a8231e893ed47f}} 
+void \hyperlink{classJeu__graphique_a9ac2d26d1b68a94c04a8231e893ed47f}{Verification\+Unites\+Mortes\+\_\+\+Jeu\+Graphique} ()
+\begin{DoxyCompactList}\small\item\em void Verification\+Unites\+Mortes\+\_\+\+Jeu\+\_\+\+Jeu\+Graphique() Verifie en debut de tour les unites mortes lors d\textquotesingle{}un combat et les supprime du tableau. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_ac5ea38ecd12b46fee29ba7967a1b1a55}{Verification\+Action\+I\+A\+\_\+\+Jeu\+Graphique} (char \&reponse, int civ\+Selectionnee, int unite\+Selectionnee)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_ac5ea38ecd12b46fee29ba7967a1b1a55}{Verification\+Action\+I\+A\+\_\+\+Jeu\+Graphique(char \& reponse, int civ\+Selectionnee, int unite\+Selectionnee)} Verifie les actions de l\textquotesingle{}\hyperlink{classIA}{IA} pour attribuer a chaque action de l\textquotesingle{}\hyperlink{classIA}{IA} la bonne touche \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu__graphique_a42894aac7cd7b37efe13ded6f47586de}\label{classJeu__graphique_a42894aac7cd7b37efe13ded6f47586de}} 
+void \hyperlink{classJeu__graphique_a42894aac7cd7b37efe13ded6f47586de}{Accueil\+\_\+\+Jeu\+Graphique} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_a42894aac7cd7b37efe13ded6f47586de}{Accueil\+\_\+\+Jeu\+Graphique()} Creee et lance une fenetre windows. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a988f0ef9417b30872257d7b1396b6fc0}{Affich\+Graph\+\_\+\+Jeu\+Graphique} (sf\+::\+Render\+Window \&window, \hyperlink{classUnite}{Unite} $\ast$u, sf\+::\+View view, sf\+::\+View view2, sf\+::\+View \&Barre\+Ressource, sf\+::\+View \&minimap\+View, int Bouge\+Camera, int mode)
+\begin{DoxyCompactList}\small\item\em void Affich\+Graph\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window,\hyperlink{classUnite}{Unite} $\ast$ u, sf\+::\+View view, sf\+::\+View view2 ,sf\+::\+View \& Barre\+Ressource, sf\+::\+View \& minimap\+View ,int Bouge\+Camera, int mode) Permet l\textquotesingle{}affichage graphique des textures, sprites et polices charges depuis la fonction Charger\+Police\+Texture() \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu__graphique_a0957a1d27b8ded1fb4ac3fddca49d71c}\label{classJeu__graphique_a0957a1d27b8ded1fb4ac3fddca49d71c}} 
+void \hyperlink{classJeu__graphique_a0957a1d27b8ded1fb4ac3fddca49d71c}{Charger\+Police\+Texture\+\_\+\+Jeu\+Graphique} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_a0957a1d27b8ded1fb4ac3fddca49d71c}{Charger\+Police\+Texture\+\_\+\+Jeu\+Graphique()} Permet le chargement des textures, sprites et polices de caractere \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_abbcc5e26b8ac9f79716367883bfdb556}{Deplacer\+Camera\+\_\+\+Jeu\+Graphique} (sf\+::\+View \&view, sf\+::\+View \&view2, sf\+::\+View \&minimap\+View, sf\+::\+View \&Barre\+Ressource, sf\+::\+Render\+Window \&window, \hyperlink{classUnite}{Unite} $\ast$u)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_abbcc5e26b8ac9f79716367883bfdb556}{Deplacer\+Camera\+\_\+\+Jeu\+Graphique(sf\+::\+View \& view, sf\+::\+View \& view2, sf\+::\+View \& minimap\+View,sf\+::\+View \& Barre\+Ressource, sf\+::\+Render\+Window \& window, Unite $\ast$ u)} Gere les actions du joueur humain en associant chaque touche a une action \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a7c0810ad56f4394dc8ddb77779d0b625}{Fin\+\_\+\+Jeu\+Graphique} (sf\+::\+Render\+Window \&window, sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_a7c0810ad56f4394dc8ddb77779d0b625}{Fin\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window, sf\+::\+View \& view)} Affiche l\textquotesingle{}cran de Defaite \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a8e27e53ca84c502138ee4603c1a97a2b}{Fin\+V\+\_\+\+Jeu\+Graphique} (sf\+::\+Render\+Window \&window, sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu__graphique_a8e27e53ca84c502138ee4603c1a97a2b}{Fin\+V\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window, sf\+::\+View \& view)} Affiche l\textquotesingle{}ecran de Victoire \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a83b8c542916e2912daec8c8ab8c413ae}{Menu\+Principal\+\_\+\+Jeu\+Graphique} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJeu__graphique_a83b8c542916e2912daec8c8ab8c413ae}{Menu\+Principal\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window)} Affiche le Menu principal. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_a2bc7be0611ffbc0589459ba6203e6efe}{Partie\+Perso\+\_\+\+Jeu\+Graphique} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJeu__graphique_a2bc7be0611ffbc0589459ba6203e6efe}{Partie\+Perso\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window)} Affiche le Menu de choix lors d\textquotesingle{}une partie personnalisee. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_aa26ebcc73b3dbe4c73de32266116e8ff}{Gagnant\+\_\+\+Jeu\+Graphique} (sf\+::\+Render\+Window \&window, sf\+::\+View \&view)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJeu__graphique_aa26ebcc73b3dbe4c73de32266116e8ff}{Gagnant\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window, sf\+::\+View \& view)} Fonction qui determine l\textquotesingle{}ecran de fin (victoire ou defaite) \end{DoxyCompactList}\item 
+void \hyperlink{classJeu__graphique_abc9707aea80c14dee891b4249c602c9c}{Test\+Regression\+\_\+\+Jeu\+Graphique} ()
+\begin{DoxyCompactList}\small\item\em Test de regression du module \hyperlink{classJeu__graphique}{Jeu\+\_\+graphique}, teste toutes les fonctions membres et affiche les resultats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+La classe \hyperlink{classJeu__graphique}{Jeu\+\_\+graphique} permet l\textquotesingle{}execution du programme en M\+O\+DE G\+R\+A\+P\+H\+I\+Q\+UE. En effet, cette classe gere les tours de jeu, ajoute des joueurs au tableau des joueurs. Elle creee un plateau de 800 cases. C\textquotesingle{}est cette classe qui execute les actions du joueur humain ou \hyperlink{classIA}{IA}. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.\+Le module \hyperlink{classJeu}{Jeu} s\textquotesingle{}occupe aussi de l\textquotesingle{}achat d\textquotesingle{}unites et de cases. Le bombardement (attaque a distance) est effectue dans cette partie. 
+
+\begin{DoxyAuthor}{Auteur}
+B\+I\+L\+L\+A\+UD Pierre / L\+E\+V\+E\+Q\+UE Vincent / C\+H\+E\+R\+R\+I\+ER Matthieu 
+\end{DoxyAuthor}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classJeu__graphique_a3e52d90cbfecc5574d57cf9edd2e6dbe}\label{classJeu__graphique_a3e52d90cbfecc5574d57cf9edd2e6dbe}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Achat\+Case\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique@{Achat\+Case\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique}}
+\index{Achat\+Case\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique@{Achat\+Case\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Achat\+Case\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique()}{AchatCaseAutomatiqueIA\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Achat\+Case\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{civ\+Select,  }\item[{int}]{unite\+Select }\end{DoxyParamCaption})}
+
+
+
+void Achat\+Case\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique (int civ\+Select, int unite\+Select) Cette fonction est executee uniquement pour le tour des I\+As. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & civ\+Select, int unite\+Select) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a6686db5a36c47122f36d3fab0255e1b4}\label{classJeu__graphique_a6686db5a36c47122f36d3fab0255e1b4}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Acheter\+\_\+\+Case\+\_\+\+Jeu\+Graphique@{Acheter\+\_\+\+Case\+\_\+\+Jeu\+Graphique}}
+\index{Acheter\+\_\+\+Case\+\_\+\+Jeu\+Graphique@{Acheter\+\_\+\+Case\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Acheter\+\_\+\+Case\+\_\+\+Jeu\+Graphique()}{Acheter\_Case\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Acheter\+\_\+\+Case\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{char}]{action,  }\item[{bool \&}]{ok2,  }\item[{int}]{pos\+X\+Origine,  }\item[{int}]{pos\+Y\+Origine }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_a6686db5a36c47122f36d3fab0255e1b4}{Acheter\+\_\+\+Case\+\_\+\+Jeu\+Graphique(int i, int j,\+Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine)} Verifie que le joueur a assez de ressources pour acquerir la case selectionnee. Cette fonction passe la donnee proprio\+Case de -\/1 a 0 ou l\textquotesingle{}ID de la civilisation concernee. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & i, int j,Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a1e3d0828a10fafe5d1e667dba8f4ef38}\label{classJeu__graphique_a1e3d0828a10fafe5d1e667dba8f4ef38}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Acheter\+\_\+\+Unite\+\_\+\+Jeu\+Graphique@{Acheter\+\_\+\+Unite\+\_\+\+Jeu\+Graphique}}
+\index{Acheter\+\_\+\+Unite\+\_\+\+Jeu\+Graphique@{Acheter\+\_\+\+Unite\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Acheter\+\_\+\+Unite\+\_\+\+Jeu\+Graphique()}{Acheter\_Unite\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Acheter\+\_\+\+Unite\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{char}]{action2,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{I\+D\+\_\+\+Civ }\end{DoxyParamCaption})}
+
+
+
+void Acheter\+\_\+\+Unite\+\_\+\+Jeu\+Graphique (char action2, int x,int y, int I\+D\+\_\+\+Civ) S\textquotesingle{}occupe de l\textquotesingle{}achat d\textquotesingle{}\hyperlink{classUnite}{Unite} lorsque c\textquotesingle{}est au tour d\textquotesingle{}une ville. Cette fonction verifie que le joueur a assez d\textquotesingle{}argent et si c\textquotesingle{}est le cas, ajoute la nouvelle unite au tableau de la bonne Civilisation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (char} & action2, int x,int y, int I\+D\+\_\+\+Civ) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a259e8ddfadc2d86563c52fde722e9de9}\label{classJeu__graphique_a259e8ddfadc2d86563c52fde722e9de9}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Action\+\_\+\+Jeu\+Graphique@{Action\+\_\+\+Jeu\+Graphique}}
+\index{Action\+\_\+\+Jeu\+Graphique@{Action\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Action\+\_\+\+Jeu\+Graphique()}{Action\_JeuGraphique()}}
+{\footnotesize\ttfamily int Jeu\+\_\+graphique\+::\+Action\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{char}]{action,  }\item[{char}]{action2,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{\hyperlink{classCivilization}{Civilization} \&}]{Civ,  }\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{sf\+::\+View \&}]{view,  }\item[{sf\+::\+View \&}]{view2,  }\item[{sf\+::\+View \&}]{minimap\+View,  }\item[{sf\+::\+View \&}]{Barre\+Ressource }\end{DoxyParamCaption})}
+
+
+
+void Action\+\_\+\+Jeu\+Graphique (char action, char action2,\hyperlink{classUnite}{Unite} $\ast$ u, \hyperlink{classCivilization}{Civilization} \& Civ, sf\+::\+View \& view ,sf\+::\+View \& view2, sf\+::\+View \& minimap\+View, sf\+::\+View \& Barre\+Ressource) Choisit l\textquotesingle{}action en fonction du choix de l\textquotesingle{}action que l\textquotesingle{}on veut faire pour l\textquotesingle{}unite selectionnee 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (char} & action, char action2,\hyperlink{classUnite}{Unite} $\ast$ u, \hyperlink{classCivilization}{Civilization} \& Civ, sf\+::\+View \& view ,sf\+::\+View \& view2, sf\+::\+View \& minimap\+View, sf\+::\+View \& Barre\+Ressource) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_aaa032d88ed8052f9a47fe83dd8e100c2}\label{classJeu__graphique_aaa032d88ed8052f9a47fe83dd8e100c2}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Action\+I\+A\+\_\+\+Jeu\+Graphique@{Action\+I\+A\+\_\+\+Jeu\+Graphique}}
+\index{Action\+I\+A\+\_\+\+Jeu\+Graphique@{Action\+I\+A\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Action\+I\+A\+\_\+\+Jeu\+Graphique()}{ActionIA\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Action\+I\+A\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{\hyperlink{classCivilization}{Civilization} \&}]{Civ,  }\item[{char}]{action\+Param }\end{DoxyParamCaption})}
+
+
+
+void Action\+I\+A\+\_\+\+Jeu\+Graphique (\hyperlink{classUnite}{Unite} $\ast$ u, \hyperlink{classCivilization}{Civilization} \& Civ, char action\+Param) Choisit l\textquotesingle{}action en fonction du choix de l\textquotesingle{}action que l\textquotesingle{}\hyperlink{classIA}{IA} choisit de faire 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (\+Unite} & $\ast$ u, \hyperlink{classCivilization}{Civilization} \& Civ, char action\+Param) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a988f0ef9417b30872257d7b1396b6fc0}\label{classJeu__graphique_a988f0ef9417b30872257d7b1396b6fc0}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Affich\+Graph\+\_\+\+Jeu\+Graphique@{Affich\+Graph\+\_\+\+Jeu\+Graphique}}
+\index{Affich\+Graph\+\_\+\+Jeu\+Graphique@{Affich\+Graph\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Affich\+Graph\+\_\+\+Jeu\+Graphique()}{AffichGraph\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Affich\+Graph\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{sf\+::\+View}]{view,  }\item[{sf\+::\+View}]{view2,  }\item[{sf\+::\+View \&}]{Barre\+Ressource,  }\item[{sf\+::\+View \&}]{minimap\+View,  }\item[{int}]{Bouge\+Camera,  }\item[{int}]{mode }\end{DoxyParamCaption})}
+
+
+
+void Affich\+Graph\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window,\hyperlink{classUnite}{Unite} $\ast$ u, sf\+::\+View view, sf\+::\+View view2 ,sf\+::\+View \& Barre\+Ressource, sf\+::\+View \& minimap\+View ,int Bouge\+Camera, int mode) Permet l\textquotesingle{}affichage graphique des textures, sprites et polices charges depuis la fonction Charger\+Police\+Texture() 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (sf\+::\+Render\+Window} & \& window,\hyperlink{classUnite}{Unite} $\ast$ u, sf\+::\+View view, sf\+::\+View view2 ,sf\+::\+View \& Barre\+Ressource, sf\+::\+View \& minimap\+View ,int Bouge\+Camera, int mode) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_af4ade29c26e98e7bb22ed47577daaba2}\label{classJeu__graphique_af4ade29c26e98e7bb22ed47577daaba2}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Atomisation\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique@{Atomisation\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique}}
+\index{Atomisation\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique@{Atomisation\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Atomisation\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique()}{AtomisationAutomatiqueIA\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Atomisation\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{civ\+Select,  }\item[{int}]{unite\+Select }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_af4ade29c26e98e7bb22ed47577daaba2}{Atomisation\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique(int civ\+Select, int unite\+Select)} Cette fonction est executee uniquement pour le tour des I\+As. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & civ\+Select, int unite\+Select) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a0d85885796e5749b14cbcb005209042e}\label{classJeu__graphique_a0d85885796e5749b14cbcb005209042e}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Attaque\+Unite\+Bombardement\+\_\+\+Jeu\+Graphique@{Attaque\+Unite\+Bombardement\+\_\+\+Jeu\+Graphique}}
+\index{Attaque\+Unite\+Bombardement\+\_\+\+Jeu\+Graphique@{Attaque\+Unite\+Bombardement\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Attaque\+Unite\+Bombardement\+\_\+\+Jeu\+Graphique()}{AttaqueUniteBombardement\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Attaque\+Unite\+Bombardement\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{char}]{action,  }\item[{bool \&}]{ok2,  }\item[{int}]{pos\+X\+Origine,  }\item[{int}]{pos\+Y\+Origine }\end{DoxyParamCaption})}
+
+
+
+void Attaque\+Unite\+Bombardement\+\_\+\+Jeu\+Graphique (int i, int j,Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine) Execute l\textquotesingle{}attaque des unites de distance et verifie si cela est possible. Le soldat pointe vers un ennemi et l\textquotesingle{}attaque a distance. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & i, int j,Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_aae9e116a4e3651b22ba244957d98e076}\label{classJeu__graphique_aae9e116a4e3651b22ba244957d98e076}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Attaque\+Unite\+Melee\+\_\+\+Jeu\+Graphique@{Attaque\+Unite\+Melee\+\_\+\+Jeu\+Graphique}}
+\index{Attaque\+Unite\+Melee\+\_\+\+Jeu\+Graphique@{Attaque\+Unite\+Melee\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Attaque\+Unite\+Melee\+\_\+\+Jeu\+Graphique()}{AttaqueUniteMelee\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Attaque\+Unite\+Melee\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{char}]{action,  }\item[{bool \&}]{ok }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_aae9e116a4e3651b22ba244957d98e076}{Attaque\+Unite\+Melee\+\_\+\+Jeu\+Graphique(int i, int j,\+Unite$\ast$ u, char action,bool \& ok)} Execute l\textquotesingle{}attaque d\textquotesingle{}une unite de melee (attaque au corps a corps) et verifie si cela est possible 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & i, int j,Unite$\ast$ u, char action,bool \& ok) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_ada61d087659270184bc8a1ceac9c78f6}\label{classJeu__graphique_ada61d087659270184bc8a1ceac9c78f6}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Bombardement\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique@{Bombardement\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique}}
+\index{Bombardement\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique@{Bombardement\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Bombardement\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique()}{BombardementAutomatiqueIA\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Bombardement\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{civ\+Select,  }\item[{int}]{unite\+Select }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_ada61d087659270184bc8a1ceac9c78f6}{Bombardement\+Automatique\+I\+A\+\_\+\+Jeu\+Graphique(int civ\+Select, int unite\+Select)} Cette fonction est execute seulement pour le tour des I\+As. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & civ\+Select, int unite\+Select) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_ae57233f761d45a577584fa3dfe1603b3}\label{classJeu__graphique_ae57233f761d45a577584fa3dfe1603b3}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Construction\+\_\+\+Jeu\+Graphique@{Construction\+\_\+\+Jeu\+Graphique}}
+\index{Construction\+\_\+\+Jeu\+Graphique@{Construction\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Construction\+\_\+\+Jeu\+Graphique()}{Construction\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Construction\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{nb\+Joueur,  }\item[{string}]{nom\+Civ\+\_\+\+Jeu2 }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_ae57233f761d45a577584fa3dfe1603b3}{Construction\+\_\+\+Jeu\+Graphique(int nb\+Joueur, string nom\+Civ\+\_\+\+Jeu2)} Cette fonction est execute lorsque l\textquotesingle{}on choisit son mode de jeu afin de creer une partie en accord avec le choix du joueur (nb de joueurs etc...) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & nb\+Joueur, string nom\+Civ\+\_\+\+Jeu2) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_ae7e0d87cea4c4d9af2d2acfb44bc2fde}\label{classJeu__graphique_ae7e0d87cea4c4d9af2d2acfb44bc2fde}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Convertisseur\+Int\+En\+String\+\_\+\+Jeu\+Graphique@{Convertisseur\+Int\+En\+String\+\_\+\+Jeu\+Graphique}}
+\index{Convertisseur\+Int\+En\+String\+\_\+\+Jeu\+Graphique@{Convertisseur\+Int\+En\+String\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Convertisseur\+Int\+En\+String\+\_\+\+Jeu\+Graphique()}{ConvertisseurIntEnString\_JeuGraphique()}}
+{\footnotesize\ttfamily string Jeu\+\_\+graphique\+::\+Convertisseur\+Int\+En\+String\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{const int \&}]{i }\end{DoxyParamCaption})}
+
+
+
+string \hyperlink{classJeu__graphique_ae7e0d87cea4c4d9af2d2acfb44bc2fde}{Convertisseur\+Int\+En\+String\+\_\+\+Jeu\+Graphique(const int \& i)} Convertit l\textquotesingle{}entier passe en parametre pour renvoyer une chaine de caractere representant l\textquotesingle{}entier 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int \& i) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_ab803aa612b0c9fd3b8364eff8835f0c1}\label{classJeu__graphique_ab803aa612b0c9fd3b8364eff8835f0c1}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Definir\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique@{Definir\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique}}
+\index{Definir\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique@{Definir\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Definir\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique()}{DefinirCaseDejaOccupe\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Definir\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_ab803aa612b0c9fd3b8364eff8835f0c1}{Definir\+Case\+Deja\+Occupe\+\_\+\+Jeu\+Graphique(int x, int y)} Change l\textquotesingle{}etat d\textquotesingle{}occupation de la case en debut de tour 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & x, int y) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_acde0d8de2f0990f3ab3f2defe2c09c27}\label{classJeu__graphique_acde0d8de2f0990f3ab3f2defe2c09c27}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Deplacement\+Unite\+\_\+\+Jeu\+Graphique@{Deplacement\+Unite\+\_\+\+Jeu\+Graphique}}
+\index{Deplacement\+Unite\+\_\+\+Jeu\+Graphique@{Deplacement\+Unite\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Deplacement\+Unite\+\_\+\+Jeu\+Graphique()}{DeplacementUnite\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Deplacement\+Unite\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{char}]{action }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_acde0d8de2f0990f3ab3f2defe2c09c27}{Deplacement\+Unite\+\_\+\+Jeu\+Graphique(int i, int j,\+Unite$\ast$ u,char action)} Execute le deplacement d\textquotesingle{}unite de tout type et verifie si cela est possible 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & i, int j,Unite$\ast$ u,char action) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_abbcc5e26b8ac9f79716367883bfdb556}\label{classJeu__graphique_abbcc5e26b8ac9f79716367883bfdb556}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Deplacer\+Camera\+\_\+\+Jeu\+Graphique@{Deplacer\+Camera\+\_\+\+Jeu\+Graphique}}
+\index{Deplacer\+Camera\+\_\+\+Jeu\+Graphique@{Deplacer\+Camera\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Deplacer\+Camera\+\_\+\+Jeu\+Graphique()}{DeplacerCamera\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Deplacer\+Camera\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{sf\+::\+View \&}]{view,  }\item[{sf\+::\+View \&}]{view2,  }\item[{sf\+::\+View \&}]{minimap\+View,  }\item[{sf\+::\+View \&}]{Barre\+Ressource,  }\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_abbcc5e26b8ac9f79716367883bfdb556}{Deplacer\+Camera\+\_\+\+Jeu\+Graphique(sf\+::\+View \& view, sf\+::\+View \& view2, sf\+::\+View \& minimap\+View,sf\+::\+View \& Barre\+Ressource, sf\+::\+Render\+Window \& window, Unite $\ast$ u)} Gere les actions du joueur humain en associant chaque touche a une action 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (sf\+::\+View} & \& view, sf\+::\+View \& view2, sf\+::\+View \& minimap\+View,sf\+::\+View \& Barre\+Ressource, sf\+::\+Render\+Window \& window, \hyperlink{classUnite}{Unite} $\ast$ u) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a7c0810ad56f4394dc8ddb77779d0b625}\label{classJeu__graphique_a7c0810ad56f4394dc8ddb77779d0b625}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Fin\+\_\+\+Jeu\+Graphique@{Fin\+\_\+\+Jeu\+Graphique}}
+\index{Fin\+\_\+\+Jeu\+Graphique@{Fin\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Fin\+\_\+\+Jeu\+Graphique()}{Fin\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Fin\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_a7c0810ad56f4394dc8ddb77779d0b625}{Fin\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window, sf\+::\+View \& view)} Affiche l\textquotesingle{}cran de Defaite 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (sf\+::\+Render\+Window} & \& window, sf\+::\+View \& view) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a8e27e53ca84c502138ee4603c1a97a2b}\label{classJeu__graphique_a8e27e53ca84c502138ee4603c1a97a2b}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Fin\+V\+\_\+\+Jeu\+Graphique@{Fin\+V\+\_\+\+Jeu\+Graphique}}
+\index{Fin\+V\+\_\+\+Jeu\+Graphique@{Fin\+V\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Fin\+V\+\_\+\+Jeu\+Graphique()}{FinV\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Fin\+V\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_a8e27e53ca84c502138ee4603c1a97a2b}{Fin\+V\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window, sf\+::\+View \& view)} Affiche l\textquotesingle{}ecran de Victoire 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (sf\+::\+Render\+Window} & \& window, sf\+::\+View \& view) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_aa26ebcc73b3dbe4c73de32266116e8ff}\label{classJeu__graphique_aa26ebcc73b3dbe4c73de32266116e8ff}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Gagnant\+\_\+\+Jeu\+Graphique@{Gagnant\+\_\+\+Jeu\+Graphique}}
+\index{Gagnant\+\_\+\+Jeu\+Graphique@{Gagnant\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Gagnant\+\_\+\+Jeu\+Graphique()}{Gagnant\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Gagnant\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{sf\+::\+View \&}]{view }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classJeu__graphique_aa26ebcc73b3dbe4c73de32266116e8ff}{Gagnant\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window, sf\+::\+View \& view)} Fonction qui determine l\textquotesingle{}ecran de fin (victoire ou defaite) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (sf\+::\+Render\+Window} & \& window, sf\+::\+View \& view) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a70e411f6d6875e871939e99f35638486}\label{classJeu__graphique_a70e411f6d6875e871939e99f35638486}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Gestion\+Tour\+Graph\+\_\+\+Jeu\+Graphique@{Gestion\+Tour\+Graph\+\_\+\+Jeu\+Graphique}}
+\index{Gestion\+Tour\+Graph\+\_\+\+Jeu\+Graphique@{Gestion\+Tour\+Graph\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Gestion\+Tour\+Graph\+\_\+\+Jeu\+Graphique()}{GestionTourGraph\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Gestion\+Tour\+Graph\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_a70e411f6d6875e871939e99f35638486}{Gestion\+Tour\+Graph\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window)} Execute les actions du joueur en fonction de ses choix(\+Choix humain ou choix automatique I\+A) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (sf\+::\+Render\+Window} & \& window) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_ae511b5ba17776963d2e40008e46c1ebc}\label{classJeu__graphique_ae511b5ba17776963d2e40008e46c1ebc}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Get\+Unite\+Par\+Coord\+\_\+\+Jeu\+Graphique@{Get\+Unite\+Par\+Coord\+\_\+\+Jeu\+Graphique}}
+\index{Get\+Unite\+Par\+Coord\+\_\+\+Jeu\+Graphique@{Get\+Unite\+Par\+Coord\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Get\+Unite\+Par\+Coord\+\_\+\+Jeu\+Graphique()}{GetUniteParCoord\_JeuGraphique()}}
+{\footnotesize\ttfamily \hyperlink{classUnite}{Unite} $\ast$ Jeu\+\_\+graphique\+::\+Get\+Unite\+Par\+Coord\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Unite$\ast$ \hyperlink{classJeu__graphique_ae511b5ba17776963d2e40008e46c1ebc}{Get\+Unite\+Par\+Coord\+\_\+\+Jeu\+Graphique(int x, int y)} Cherche une unite en fonction de ses coordonnees passes en parametre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & x, int y) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a83b8c542916e2912daec8c8ab8c413ae}\label{classJeu__graphique_a83b8c542916e2912daec8c8ab8c413ae}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Menu\+Principal\+\_\+\+Jeu\+Graphique@{Menu\+Principal\+\_\+\+Jeu\+Graphique}}
+\index{Menu\+Principal\+\_\+\+Jeu\+Graphique@{Menu\+Principal\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Menu\+Principal\+\_\+\+Jeu\+Graphique()}{MenuPrincipal\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Menu\+Principal\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classJeu__graphique_a83b8c542916e2912daec8c8ab8c413ae}{Menu\+Principal\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window)} Affiche le Menu principal. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (sf\+::\+Render\+Window} & \& window) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a2bc7be0611ffbc0589459ba6203e6efe}\label{classJeu__graphique_a2bc7be0611ffbc0589459ba6203e6efe}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Partie\+Perso\+\_\+\+Jeu\+Graphique@{Partie\+Perso\+\_\+\+Jeu\+Graphique}}
+\index{Partie\+Perso\+\_\+\+Jeu\+Graphique@{Partie\+Perso\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Partie\+Perso\+\_\+\+Jeu\+Graphique()}{PartiePerso\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Partie\+Perso\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classJeu__graphique_a2bc7be0611ffbc0589459ba6203e6efe}{Partie\+Perso\+\_\+\+Jeu\+Graphique(sf\+::\+Render\+Window \& window)} Affiche le Menu de choix lors d\textquotesingle{}une partie personnalisee. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (sf\+::\+Render\+Window} & \& window) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_aec9f4feaa383627bafe2ac2d66aae2e9}\label{classJeu__graphique_aec9f4feaa383627bafe2ac2d66aae2e9}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Retablir\+Case\+Nulle\+\_\+\+Jeu\+Graphique@{Retablir\+Case\+Nulle\+\_\+\+Jeu\+Graphique}}
+\index{Retablir\+Case\+Nulle\+\_\+\+Jeu\+Graphique@{Retablir\+Case\+Nulle\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Retablir\+Case\+Nulle\+\_\+\+Jeu\+Graphique()}{RetablirCaseNulle\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Retablir\+Case\+Nulle\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_aec9f4feaa383627bafe2ac2d66aae2e9}{Retablir\+Case\+Nulle\+\_\+\+Jeu\+Graphique(int x)} Retablit les cases possedees par le joueur x a leur etat d\textquotesingle{}origine s\textquotesingle{}il a perdu. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_a780cecdb8248b4e5612895b026a61a5a}\label{classJeu__graphique_a780cecdb8248b4e5612895b026a61a5a}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Retablir\+P\+M\+\_\+\+Jeu\+Graphique@{Retablir\+P\+M\+\_\+\+Jeu\+Graphique}}
+\index{Retablir\+P\+M\+\_\+\+Jeu\+Graphique@{Retablir\+P\+M\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Retablir\+P\+M\+\_\+\+Jeu\+Graphique()}{RetablirPM\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Retablir\+P\+M\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&}]{tab\+Unite }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_a780cecdb8248b4e5612895b026a61a5a}{Retablir\+P\+M\+\_\+\+Jeu\+Graphique(\+Tableau\+Dynamique \& tab\+Unite)} Retablit les Points de Mouvement des Unites en debut de tour 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (\+Tableau\+Dynamique} & \& tab\+Unite) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu__graphique_abc9707aea80c14dee891b4249c602c9c}\label{classJeu__graphique_abc9707aea80c14dee891b4249c602c9c}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Test\+Regression\+\_\+\+Jeu\+Graphique@{Test\+Regression\+\_\+\+Jeu\+Graphique}}
+\index{Test\+Regression\+\_\+\+Jeu\+Graphique@{Test\+Regression\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Test\+Regression\+\_\+\+Jeu\+Graphique()}{TestRegression\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Test\+Regression\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test de regression du module \hyperlink{classJeu__graphique}{Jeu\+\_\+graphique}, teste toutes les fonctions membres et affiche les resultats. 
+
+void \hyperlink{classJeu__graphique_abc9707aea80c14dee891b4249c602c9c}{Test\+Regression\+\_\+\+Jeu\+Graphique()} \mbox{\Hypertarget{classJeu__graphique_ac5ea38ecd12b46fee29ba7967a1b1a55}\label{classJeu__graphique_ac5ea38ecd12b46fee29ba7967a1b1a55}} 
+\index{Jeu\+\_\+graphique@{Jeu\+\_\+graphique}!Verification\+Action\+I\+A\+\_\+\+Jeu\+Graphique@{Verification\+Action\+I\+A\+\_\+\+Jeu\+Graphique}}
+\index{Verification\+Action\+I\+A\+\_\+\+Jeu\+Graphique@{Verification\+Action\+I\+A\+\_\+\+Jeu\+Graphique}!Jeu\+\_\+graphique@{Jeu\+\_\+graphique}}
+\subsubsection{\texorpdfstring{Verification\+Action\+I\+A\+\_\+\+Jeu\+Graphique()}{VerificationActionIA\_JeuGraphique()}}
+{\footnotesize\ttfamily void Jeu\+\_\+graphique\+::\+Verification\+Action\+I\+A\+\_\+\+Jeu\+Graphique (\begin{DoxyParamCaption}\item[{char \&}]{reponse,  }\item[{int}]{civ\+Selectionnee,  }\item[{int}]{unite\+Selectionnee }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu__graphique_ac5ea38ecd12b46fee29ba7967a1b1a55}{Verification\+Action\+I\+A\+\_\+\+Jeu\+Graphique(char \& reponse, int civ\+Selectionnee, int unite\+Selectionnee)} Verifie les actions de l\textquotesingle{}\hyperlink{classIA}{IA} pour attribuer a chaque action de l\textquotesingle{}\hyperlink{classIA}{IA} la bonne touche 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (char} & \& reponse, int civ\+Selectionnee, int unite\+Selectionnee) \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/graphique/Jeu\+\_\+graphique.\+h\item 
+src/graphique/Jeu\+\_\+graphique.\+cpp\end{DoxyCompactItemize}

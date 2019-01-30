@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Time of Civilizations:  Fichier source de src/txt/Plateau.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Time of Civilizations
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_74d70b51b5aa2eb3cb5baf13d2756485.html">txt</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Plateau.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _PLAT_H_INCLUDED</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _PLAT_H_INCLUDED</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Case.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classPlateau.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlateau.html">Plateau</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> tailleHorizontale_Plateau;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> tailleVerticale_Plateau;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> nbCase_Plateau;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classCase.html">Case</a> * tabCase_Plateau;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classPlateau.html#a07026170529dd928238ee45de0a797d7">Plateau</a>();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classPlateau.html#a07026170529dd928238ee45de0a797d7">Plateau</a>(<span class="keywordtype">int</span> tailleHorizontale_Plateau2,<span class="keywordtype">int</span> tailleVerticale_Plateau2);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classCase.html">Case</a>&amp; <a class="code" href="classPlateau.html#a85da7a234b6e619794b72980250e59dc">GetCaseDeTabCase_Plateau</a>(<span class="keywordtype">int</span> k);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPlateau.html#a3566ca7f6d1e41ef1762c4171959fa49">gettailleHorizontale</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPlateau.html#a74daa0460aa966a5bdb2150d223e3421">gettailleVerticale</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPlateau.html#aaa97e7e38b3233a2a66d787a57893ea1">getNbCase</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlateau.html#a6be3818334c871d9adc18dd716e2b21e">settailleHorizontale</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> x);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlateau.html#a1a3e541307dfe02361517a26a442b74b">settailleVerticale</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> x);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlateau.html#a6182b4ee7784b182d00e86fb0de9dfe9">setNbCase</a> (<span class="keyword">const</span> <span class="keywordtype">int</span> x);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//Autres fonctions/proc�dures utiles</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> <a class="code" href="classPlateau.html#ac96fb6f6cd0e74e43d2342ed2344b09e">TypeIemeCase_Plateau</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> indice) ;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPlateau.html#a104d21bb84fcf7d170052118946bf78c">XiemeCase_Plateau</a> (<span class="keyword">const</span> <span class="keywordtype">int</span> indice);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPlateau.html#ac99c2bfea8d60469bac93f7b10863475">YiemeCase_Plateau</a> (<span class="keyword">const</span> <span class="keywordtype">int</span> indice);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classCase.html">Case</a>&amp; <a class="code" href="classPlateau.html#af775a4c61923f8e0aa1f6431eca2be70">GetCaseIDParCoordonnees_Plateau</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlateau.html#a80e520c24aeee0863fb9838cfc9364e7">TestRegression_Plateau</a>();</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classPlateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b">~Plateau</a>();</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif //PLAT_H_INCLUDED</span></div><div class="ttc" id="classPlateau_html_a80e520c24aeee0863fb9838cfc9364e7"><div class="ttname"><a href="classPlateau.html#a80e520c24aeee0863fb9838cfc9364e7">Plateau::TestRegression_Plateau</a></div><div class="ttdeci">void TestRegression_Plateau()</div><div class="ttdoc">Test de regression du module Plateau, teste toutes les fonctions membres et affiche les resultats...</div><div class="ttdef"><b>Definition:</b> Plateau.cpp:65</div></div>
+<div class="ttc" id="classPlateau_html_a07026170529dd928238ee45de0a797d7"><div class="ttname"><a href="classPlateau.html#a07026170529dd928238ee45de0a797d7">Plateau::Plateau</a></div><div class="ttdeci">Plateau()</div><div class="ttdef"><b>Definition:</b> Plateau.cpp:7</div></div>
+<div class="ttc" id="classCase_html"><div class="ttname"><a href="classCase.html">Case</a></div><div class="ttdoc">La classe Case contient toutes les ressources associees a chaque case du plateau comme la nourriture ...</div><div class="ttdef"><b>Definition:</b> Case.h:32</div></div>
+<div class="ttc" id="classPlateau_html_a6182b4ee7784b182d00e86fb0de9dfe9"><div class="ttname"><a href="classPlateau.html#a6182b4ee7784b182d00e86fb0de9dfe9">Plateau::setNbCase</a></div><div class="ttdeci">void setNbCase(const int x)</div><div class="ttdoc">void setNbCase (const int x) Mutateur : modifie le parametre NbCase </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:53</div></div>
+<div class="ttc" id="classPlateau_html_aaa97e7e38b3233a2a66d787a57893ea1"><div class="ttname"><a href="classPlateau.html#aaa97e7e38b3233a2a66d787a57893ea1">Plateau::getNbCase</a></div><div class="ttdeci">int getNbCase() const</div><div class="ttdoc">int getNbCase() Accesseur :recupere le parametre NbCase </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:50</div></div>
+<div class="ttc" id="classPlateau_html_a3566ca7f6d1e41ef1762c4171959fa49"><div class="ttname"><a href="classPlateau.html#a3566ca7f6d1e41ef1762c4171959fa49">Plateau::gettailleHorizontale</a></div><div class="ttdeci">int gettailleHorizontale() const</div><div class="ttdoc">int gettailleHorizontale() Accesseur :recupere le parametre tailleHorizontale </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:48</div></div>
+<div class="ttc" id="classPlateau_html_a104d21bb84fcf7d170052118946bf78c"><div class="ttname"><a href="classPlateau.html#a104d21bb84fcf7d170052118946bf78c">Plateau::XiemeCase_Plateau</a></div><div class="ttdeci">int XiemeCase_Plateau(const int indice)</div><div class="ttdoc">int XiemeCase_Plateau (const int indice) </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:36</div></div>
+<div class="ttc" id="classPlateau_html_a0e6ae72e4d7e9923f996c1247e6a6c8b"><div class="ttname"><a href="classPlateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b">Plateau::~Plateau</a></div><div class="ttdeci">~Plateau()</div><div class="ttdoc">~Plateau() Destructeur de la classe: desallocation de la memoire du tableau de cases ...</div><div class="ttdef"><b>Definition:</b> Plateau.cpp:58</div></div>
+<div class="ttc" id="classPlateau_html_af775a4c61923f8e0aa1f6431eca2be70"><div class="ttname"><a href="classPlateau.html#af775a4c61923f8e0aa1f6431eca2be70">Plateau::GetCaseIDParCoordonnees_Plateau</a></div><div class="ttdeci">Case &amp; GetCaseIDParCoordonnees_Plateau(const int x, const int y)</div><div class="ttdoc">Case&amp; GetCaseIDParCoordonnees_Plateau(int x, int y) Accesseur :recupere une case du plateau en foncti...</div><div class="ttdef"><b>Definition:</b> Plateau.cpp:46</div></div>
+<div class="ttc" id="classPlateau_html_a85da7a234b6e619794b72980250e59dc"><div class="ttname"><a href="classPlateau.html#a85da7a234b6e619794b72980250e59dc">Plateau::GetCaseDeTabCase_Plateau</a></div><div class="ttdeci">Case &amp; GetCaseDeTabCase_Plateau(int k)</div><div class="ttdoc">Case&amp; GetCaseDeTabCase_Plateau(int k) Accesseur :recupere une case du plateau en fonction de son indi...</div><div class="ttdef"><b>Definition:</b> Plateau.cpp:56</div></div>
+<div class="ttc" id="classPlateau_html_a74daa0460aa966a5bdb2150d223e3421"><div class="ttname"><a href="classPlateau.html#a74daa0460aa966a5bdb2150d223e3421">Plateau::gettailleVerticale</a></div><div class="ttdeci">int gettailleVerticale() const</div><div class="ttdoc">int gettailleVerticale() Accesseur :recupere le parametre tailleVerticale </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:49</div></div>
+<div class="ttc" id="classPlateau_html_a1a3e541307dfe02361517a26a442b74b"><div class="ttname"><a href="classPlateau.html#a1a3e541307dfe02361517a26a442b74b">Plateau::settailleVerticale</a></div><div class="ttdeci">void settailleVerticale(const int x)</div><div class="ttdoc">void settailleVerticale(const int x) Mutateur : modifie le parametre tailleVerticale ...</div><div class="ttdef"><b>Definition:</b> Plateau.cpp:52</div></div>
+<div class="ttc" id="classPlateau_html_ac99c2bfea8d60469bac93f7b10863475"><div class="ttname"><a href="classPlateau.html#ac99c2bfea8d60469bac93f7b10863475">Plateau::YiemeCase_Plateau</a></div><div class="ttdeci">int YiemeCase_Plateau(const int indice)</div><div class="ttdoc">int YiemeCase_Plateau (const int indice); </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:41</div></div>
+<div class="ttc" id="classPlateau_html"><div class="ttname"><a href="classPlateau.html">Plateau</a></div><div class="ttdoc">La classe Plateau s&amp;#39;occupe de la carte, c&amp;#39;est a dire de l&amp;#39;ensemble des cases du plateau. La taille horizontale et verticale du plateau est fixe respectivement a 40 et a 20 pour un nombre total de cases de 800. Cette classe s&amp;#39;occupe de determiner le type de chaque case. </div><div class="ttdef"><b>Definition:</b> Plateau.h:9</div></div>
+<div class="ttc" id="classPlateau_html_ac96fb6f6cd0e74e43d2342ed2344b09e"><div class="ttname"><a href="classPlateau.html#ac96fb6f6cd0e74e43d2342ed2344b09e">Plateau::TypeIemeCase_Plateau</a></div><div class="ttdeci">int TypeIemeCase_Plateau(const int indice)</div><div class="ttdoc">renvoie le type de la case d&amp;#39;indice &quot;indice&quot; </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:31</div></div>
+<div class="ttc" id="classPlateau_html_a6be3818334c871d9adc18dd716e2b21e"><div class="ttname"><a href="classPlateau.html#a6be3818334c871d9adc18dd716e2b21e">Plateau::settailleHorizontale</a></div><div class="ttdeci">void settailleHorizontale(const int x)</div><div class="ttdoc">void settailleHorizontale(const int x) Mutateur : modifie le parametre tailleHorizontale ...</div><div class="ttdef"><b>Definition:</b> Plateau.cpp:51</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,322 @@
+\hypertarget{classIA}{}\section{Référence de la classe IA}
+\label{classIA}\index{IA@{IA}}
+
+
+La classe \hyperlink{classIA}{IA} simule la reaction d\textquotesingle{}un joueur humain, en incarnant une civilisation a part entiere. Le joueur humain incarnant la civilisation 0, toutes les autres civilisations verront leurs actions dictees par une implacable Intelligence Artificielle, dont le cerveau se situe dans cette classe. Cette classe fonctionne en trois temps \+: Analyse, Decision et Action. Le programme analyse la situation dans laquelle il est confronte, puis agit en fonction en renvoyant une simple lettre au reste du programme.  
+
+
+
+
+{\ttfamily \#include $<$I\+A.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIA_a1105717ffef00df8cb87b2c3a5cb2332}{IA} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut \+: Initialise les donnees membres a une valeur exagerement elevee, de facon a ce que le programme soit oblige de changer ces valeurs au cours de ses differents calculs. \end{DoxyCompactList}\item 
+\hyperlink{classIA_a67d4dd285ae5169239348432bab9ad0e}{$\sim$\+IA} ()
+\begin{DoxyCompactList}\small\item\em Destructeur par defaut. \end{DoxyCompactList}\item 
+void \hyperlink{classIA_ab5b3e7808c172f2004f3f15c720afed5}{Test\+Regression\+\_\+\+IA} ()
+\begin{DoxyCompactList}\small\item\em Test de regression du module \hyperlink{classIA}{IA}, teste toutes les fonctions membres et affiche les resultats. \end{DoxyCompactList}\item 
+char \hyperlink{classIA_a65aa469e9145b022750da7f859a336d0}{Get\+Decision\+Finale\+\_\+\+IA} () const
+\begin{DoxyCompactList}\small\item\em Accesseur \+: Recupere la donnee membre \char`\"{}decision\+Finale\+\_\+\+I\+A\char`\"{}, qui dictera l\textquotesingle{}action de l\textquotesingle{}unite dirigee par l\textquotesingle{}\hyperlink{classIA}{IA}. \end{DoxyCompactList}\item 
+int \hyperlink{classIA_a7e9db872f7a4ff8bf955fa46be231bad}{Random\+\_\+\+IA} (int a, int b) const
+\begin{DoxyCompactList}\small\item\em Renvoie un nombre aleatoire compris entre les nombres a et b. \end{DoxyCompactList}\item 
+void \hyperlink{classIA_a7a6d457ddad0c9a14cc18dbe72c5eed8}{Ajouter\+Unites\+Ennemies\+\_\+\+IA} (int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau)
+\begin{DoxyCompactList}\small\item\em Ajoute dans la donnee membre tab\+Unites\+Ennemi\+\_\+\+IA toutes les unites ennemies trouvees en parcourant le plateau. \end{DoxyCompactList}\item 
+void \hyperlink{classIA_a7a37a63cb0ba3083e57e6f4e9fb30280}{Ajouter\+Unites\+Alliees\+\_\+\+IA} (int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau)
+\begin{DoxyCompactList}\small\item\em Ajoute dans la donnee membre tab\+Unites\+Alliees\+\_\+\+IA toutes les unites alliees trouvees en parcourant le plateau. \end{DoxyCompactList}\item 
+int \hyperlink{classIA_a4085c538669bc85766eaff6bb0597539}{Detection\+Ennemi\+Le\+Plus\+Proche\+\_\+\+IA} (\hyperlink{classPlateau}{Plateau} $\ast$plateau\+\_\+\+Jeu) const
+\begin{DoxyCompactList}\small\item\em Analyse \+: Renvoie la position litterale de l\textquotesingle{}ennemi le plus proche (qu\textquotesingle{}on calcule a partir des dimensions du plateau) \end{DoxyCompactList}\item 
+bool \hyperlink{classIA_adad21c86052cc274d27fa91b379d32c4}{Detection\+Des\+Allies\+Proches\+\_\+\+IA} (int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau) const
+\begin{DoxyCompactList}\small\item\em Analyse \+: Sert a faire des \char`\"{}armees\char`\"{} en fonction des unites alliees environnantes. L\textquotesingle{}\hyperlink{classIA}{IA} choisit entre lancer l\textquotesingle{}assault si l\textquotesingle{}armee est assez grande, ou attendre l\textquotesingle{}arrivee d\textquotesingle{}autres unites. \end{DoxyCompactList}\item 
+int \hyperlink{classIA_a520de200c4a27aaeb8a225291f7f3c78}{Detection\+Ville\+La\+Plus\+Proche\+\_\+\+IA} (int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau, const \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&tab\+Unite, int unite\+Selectionnee) const
+\begin{DoxyCompactList}\small\item\em Analyse \+: Renvoie la position litterale de la ville alliee la plus proche (le colon s\textquotesingle{}en sert pour s\textquotesingle{}eloigner un minimum de la ville d\textquotesingle{}ou il vient) \end{DoxyCompactList}\item 
+char \hyperlink{classIA_a552359a980947191eb5be6a6723aef06}{Decision\+Ville\+\_\+\+IA} (int nourriture\+Civilization, int production\+Civilization, int or\+Civilization, int science\+Civilization, int age\+\_\+\+Civilization, int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&tab\+Unite, int unite\+Selectionnee)
+\begin{DoxyCompactList}\small\item\em Decision \+: Si l\textquotesingle{}unite choisie est une ville (le type de l\textquotesingle{}unite vaut 0), alors cette fonction aura le choix entre \+: acheter des cases, produire des soldats, ou nourrir des colons. \end{DoxyCompactList}\item 
+char \hyperlink{classIA_a0e9087a9086cbbcd1242380855c2db5e}{Decision\+Melee\+\_\+\+IA} (int I\+D\+\_\+\+Civilization, int age\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&tab\+Unite\+\_\+\+Civilization, int unite\+Selectionnee)
+\begin{DoxyCompactList}\small\item\em Decision \+: Si l\textquotesingle{}unite choisie est une unite de melee (de type 2,4 ou 6), alors cette fonction indiquera a l\textquotesingle{}unite si elle doit se deplacer/attaquer ou attendre des allies. \end{DoxyCompactList}\item 
+char \hyperlink{classIA_a188b58fc1159684a952e21e45e4622c4}{Decision\+Distance\+\_\+\+IA} (int I\+D\+\_\+\+Civilization, int age\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&tab\+Unite\+\_\+\+Civilization, int unite\+Selectionnee)
+\begin{DoxyCompactList}\small\item\em Decision \+: Si l\textquotesingle{}unite choisie est une unite de distance (de type 3,5 ou 7), alors cette fonction indiquera a l\textquotesingle{}unite si elle doit se deplacer/attaquer ou attendre des allies. \end{DoxyCompactList}\item 
+char \hyperlink{classIA_ae12dec33731a54b1f48ad39413e23524}{Decision\+Bombe\+\_\+\+IA} (int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&tab\+Unite, int unite\+Selectionnee)
+\begin{DoxyCompactList}\small\item\em Decision \+: Si l\textquotesingle{}unite choisie est la bombe atomique (type 8), alors cette fonction indiquera a la bombe si elle est a portee de tir d\textquotesingle{}une unite ennemie. \end{DoxyCompactList}\item 
+void \hyperlink{classIA_a5b7bd62f9883f6959a636ca4bdd9b86a}{Decision\+\_\+\+IA} (int nourriture\+Civilization, int production\+Civilization, int or\+Civilization, int science\+Civilization, int age\+\_\+\+Civilization, int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&tab\+Unite, int unite\+Selectionnee)
+\begin{DoxyCompactList}\small\item\em Decision \+: C\textquotesingle{}est la super-\/fonction de la classe, celle qui gere tout en appelant toutes les autres en fonction du type d\textquotesingle{}unite selectionnee, des ressources de la civilisation, etc... \end{DoxyCompactList}\item 
+char \hyperlink{classIA_ac5712b300b84feed9fe00e04cd31cfbb}{Bombardement\+\_\+\+IA} () const
+\begin{DoxyCompactList}\small\item\em Action \+: Enclenche le bombardement (renvoie la lettre B au reste du programme)) \end{DoxyCompactList}\item 
+char \hyperlink{classIA_a2af0d4f87cb7d94d31d401516ad9761d}{Atomisation\+\_\+\+IA} () const
+\begin{DoxyCompactList}\small\item\em Action \+: Enclenche l\textquotesingle{}atomisation (renvoie la lettre N au reste du programme) \end{DoxyCompactList}\item 
+char \hyperlink{classIA_ae7743e41d836107d2e1cd1df6416ccd3}{Deplacement\+\_\+\+IA} (int I\+D\+\_\+\+Civilization, int age\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&tab\+Unite, int unite\+Selectionnee)
+\begin{DoxyCompactList}\small\item\em Action \+: Indique a l\textquotesingle{}unite selectionnee dans quelle direction aller, c\textquotesingle{}est-\/a-\/dire vers l\textquotesingle{}ennemi le plus proche. Pour les unites a distance, en fonction de leur portee, indique si l\textquotesingle{}unite doit se deplacer ou attaquer a distance. \end{DoxyCompactList}\item 
+char \hyperlink{classIA_a8b6cc7f5e530f40def7f0490d5a29db7}{Deplacement\+Sans\+Encombre} (int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$plateau\+\_\+\+Jeu, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&tab\+Unite\+\_\+\+Civilization, int unite\+Selectionnee, char decision\+Sans\+Verif)
+\begin{DoxyCompactList}\small\item\em Verifie qu\textquotesingle{}une unite ne sera pas genee par une autre unite lors d\textquotesingle{}un deplacement, si tel est le cas la fonction le detectera et indiquera une nouvelle direction (elle aussi sans obstacle) pour l\textquotesingle{}unite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+La classe \hyperlink{classIA}{IA} simule la reaction d\textquotesingle{}un joueur humain, en incarnant une civilisation a part entiere. Le joueur humain incarnant la civilisation 0, toutes les autres civilisations verront leurs actions dictees par une implacable Intelligence Artificielle, dont le cerveau se situe dans cette classe. Cette classe fonctionne en trois temps \+: Analyse, Decision et Action. Le programme analyse la situation dans laquelle il est confronte, puis agit en fonction en renvoyant une simple lettre au reste du programme. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classIA_a1105717ffef00df8cb87b2c3a5cb2332}\label{classIA_a1105717ffef00df8cb87b2c3a5cb2332}} 
+\index{IA@{IA}!IA@{IA}}
+\index{IA@{IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{I\+A()}{IA()}}
+{\footnotesize\ttfamily I\+A\+::\+IA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par defaut \+: Initialise les donnees membres a une valeur exagerement elevee, de facon a ce que le programme soit oblige de changer ces valeurs au cours de ses differents calculs. 
+
+\hyperlink{classIA_a1105717ffef00df8cb87b2c3a5cb2332}{I\+A()} \mbox{\Hypertarget{classIA_a67d4dd285ae5169239348432bab9ad0e}\label{classIA_a67d4dd285ae5169239348432bab9ad0e}} 
+\index{IA@{IA}!````~IA@{$\sim$\+IA}}
+\index{````~IA@{$\sim$\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+A()}{~IA()}}
+{\footnotesize\ttfamily I\+A\+::$\sim$\+IA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur par defaut. 
+
+\hyperlink{classIA_a67d4dd285ae5169239348432bab9ad0e}{$\sim$\+I\+A()} 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classIA_a7a37a63cb0ba3083e57e6f4e9fb30280}\label{classIA_a7a37a63cb0ba3083e57e6f4e9fb30280}} 
+\index{IA@{IA}!Ajouter\+Unites\+Alliees\+\_\+\+IA@{Ajouter\+Unites\+Alliees\+\_\+\+IA}}
+\index{Ajouter\+Unites\+Alliees\+\_\+\+IA@{Ajouter\+Unites\+Alliees\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Ajouter\+Unites\+Alliees\+\_\+\+I\+A()}{AjouterUnitesAlliees\_IA()}}
+{\footnotesize\ttfamily void I\+A\+::\+Ajouter\+Unites\+Alliees\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau }\end{DoxyParamCaption})}
+
+
+
+Ajoute dans la donnee membre tab\+Unites\+Alliees\+\_\+\+IA toutes les unites alliees trouvees en parcourant le plateau. 
+
+void \hyperlink{classIA_a7a37a63cb0ba3083e57e6f4e9fb30280}{Ajouter\+Unites\+Alliees\+\_\+\+I\+A(int I\+D\+\_\+\+Civilization, Plateau $\ast$ plateau)} 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_a7a6d457ddad0c9a14cc18dbe72c5eed8}\label{classIA_a7a6d457ddad0c9a14cc18dbe72c5eed8}} 
+\index{IA@{IA}!Ajouter\+Unites\+Ennemies\+\_\+\+IA@{Ajouter\+Unites\+Ennemies\+\_\+\+IA}}
+\index{Ajouter\+Unites\+Ennemies\+\_\+\+IA@{Ajouter\+Unites\+Ennemies\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Ajouter\+Unites\+Ennemies\+\_\+\+I\+A()}{AjouterUnitesEnnemies\_IA()}}
+{\footnotesize\ttfamily void I\+A\+::\+Ajouter\+Unites\+Ennemies\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau }\end{DoxyParamCaption})}
+
+
+
+Ajoute dans la donnee membre tab\+Unites\+Ennemi\+\_\+\+IA toutes les unites ennemies trouvees en parcourant le plateau. 
+
+void \hyperlink{classIA_a7a6d457ddad0c9a14cc18dbe72c5eed8}{Ajouter\+Unites\+Ennemies\+\_\+\+I\+A(int I\+D\+\_\+\+Civilization, Plateau $\ast$ plateau)} 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_a2af0d4f87cb7d94d31d401516ad9761d}\label{classIA_a2af0d4f87cb7d94d31d401516ad9761d}} 
+\index{IA@{IA}!Atomisation\+\_\+\+IA@{Atomisation\+\_\+\+IA}}
+\index{Atomisation\+\_\+\+IA@{Atomisation\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Atomisation\+\_\+\+I\+A()}{Atomisation\_IA()}}
+{\footnotesize\ttfamily char I\+A\+::\+Atomisation\+\_\+\+IA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Action \+: Enclenche l\textquotesingle{}atomisation (renvoie la lettre N au reste du programme) 
+
+char \hyperlink{classIA_a2af0d4f87cb7d94d31d401516ad9761d}{Atomisation\+\_\+\+I\+A()const} \mbox{\Hypertarget{classIA_ac5712b300b84feed9fe00e04cd31cfbb}\label{classIA_ac5712b300b84feed9fe00e04cd31cfbb}} 
+\index{IA@{IA}!Bombardement\+\_\+\+IA@{Bombardement\+\_\+\+IA}}
+\index{Bombardement\+\_\+\+IA@{Bombardement\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Bombardement\+\_\+\+I\+A()}{Bombardement\_IA()}}
+{\footnotesize\ttfamily char I\+A\+::\+Bombardement\+\_\+\+IA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Action \+: Enclenche le bombardement (renvoie la lettre B au reste du programme)) 
+
+char \hyperlink{classIA_ac5712b300b84feed9fe00e04cd31cfbb}{Bombardement\+\_\+\+I\+A()const} \mbox{\Hypertarget{classIA_a5b7bd62f9883f6959a636ca4bdd9b86a}\label{classIA_a5b7bd62f9883f6959a636ca4bdd9b86a}} 
+\index{IA@{IA}!Decision\+\_\+\+IA@{Decision\+\_\+\+IA}}
+\index{Decision\+\_\+\+IA@{Decision\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Decision\+\_\+\+I\+A()}{Decision\_IA()}}
+{\footnotesize\ttfamily void I\+A\+::\+Decision\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{nourriture\+Civilization,  }\item[{int}]{production\+Civilization,  }\item[{int}]{or\+Civilization,  }\item[{int}]{science\+Civilization,  }\item[{int}]{age\+\_\+\+Civilization,  }\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau,  }\item[{\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&}]{tab\+Unite,  }\item[{int}]{unite\+Selectionnee }\end{DoxyParamCaption})}
+
+
+
+Decision \+: C\textquotesingle{}est la super-\/fonction de la classe, celle qui gere tout en appelant toutes les autres en fonction du type d\textquotesingle{}unite selectionnee, des ressources de la civilisation, etc... 
+
+void Decision\+\_\+\+IA(int nourriture\+Civilization, int production\+Civilization, int or\+Civilization, int science\+Civilization, int age\+\_\+\+Civilization,int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite,int unite\+Selectionnee ) 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & nourriture\+Civilization, int production\+Civilization, int or\+Civilization, int science\+Civilization, int age\+\_\+\+Civilization, int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite,int unite\+Selectionnee) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_ae12dec33731a54b1f48ad39413e23524}\label{classIA_ae12dec33731a54b1f48ad39413e23524}} 
+\index{IA@{IA}!Decision\+Bombe\+\_\+\+IA@{Decision\+Bombe\+\_\+\+IA}}
+\index{Decision\+Bombe\+\_\+\+IA@{Decision\+Bombe\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Decision\+Bombe\+\_\+\+I\+A()}{DecisionBombe\_IA()}}
+{\footnotesize\ttfamily char I\+A\+::\+Decision\+Bombe\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau,  }\item[{\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&}]{tab\+Unite,  }\item[{int}]{unite\+Selectionnee }\end{DoxyParamCaption})}
+
+
+
+Decision \+: Si l\textquotesingle{}unite choisie est la bombe atomique (type 8), alors cette fonction indiquera a la bombe si elle est a portee de tir d\textquotesingle{}une unite ennemie. 
+
+char \hyperlink{classIA_ae12dec33731a54b1f48ad39413e23524}{Decision\+Bombe\+\_\+\+I\+A(int I\+D\+\_\+\+Civilization, Plateau $\ast$ plateau,\+Tableau\+Dynamique \& tab\+Unite, int unite\+Selectionnee)} 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite,int unite\+Selectionnee ) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_a188b58fc1159684a952e21e45e4622c4}\label{classIA_a188b58fc1159684a952e21e45e4622c4}} 
+\index{IA@{IA}!Decision\+Distance\+\_\+\+IA@{Decision\+Distance\+\_\+\+IA}}
+\index{Decision\+Distance\+\_\+\+IA@{Decision\+Distance\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Decision\+Distance\+\_\+\+I\+A()}{DecisionDistance\_IA()}}
+{\footnotesize\ttfamily char I\+A\+::\+Decision\+Distance\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{int}]{age\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau,  }\item[{\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&}]{tab\+Unite\+\_\+\+Civilization,  }\item[{int}]{unite\+Selectionnee }\end{DoxyParamCaption})}
+
+
+
+Decision \+: Si l\textquotesingle{}unite choisie est une unite de distance (de type 3,5 ou 7), alors cette fonction indiquera a l\textquotesingle{}unite si elle doit se deplacer/attaquer ou attendre des allies. 
+
+char Decision\+Distance\+\_\+\+IA(int I\+D\+\_\+\+Civilization, int age\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau,\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite\+\_\+\+Civilization,int unite\+Selectionnee ) 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & I\+D\+\_\+\+Civilization,int age\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau,\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite\+\_\+\+Civilization,int unite\+Selectionnee) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_a0e9087a9086cbbcd1242380855c2db5e}\label{classIA_a0e9087a9086cbbcd1242380855c2db5e}} 
+\index{IA@{IA}!Decision\+Melee\+\_\+\+IA@{Decision\+Melee\+\_\+\+IA}}
+\index{Decision\+Melee\+\_\+\+IA@{Decision\+Melee\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Decision\+Melee\+\_\+\+I\+A()}{DecisionMelee\_IA()}}
+{\footnotesize\ttfamily char I\+A\+::\+Decision\+Melee\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{int}]{age\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau,  }\item[{\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&}]{tab\+Unite\+\_\+\+Civilization,  }\item[{int}]{unite\+Selectionnee }\end{DoxyParamCaption})}
+
+
+
+Decision \+: Si l\textquotesingle{}unite choisie est une unite de melee (de type 2,4 ou 6), alors cette fonction indiquera a l\textquotesingle{}unite si elle doit se deplacer/attaquer ou attendre des allies. 
+
+char Decision\+Melee\+\_\+\+IA(int I\+D\+\_\+\+Civilization,int age\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite\+\_\+\+Civilization,int unite\+Selectionnee ) 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & I\+D\+\_\+\+Civilization, int age\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite\+\_\+\+Civilization,int unite\+Selectionnee) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_a552359a980947191eb5be6a6723aef06}\label{classIA_a552359a980947191eb5be6a6723aef06}} 
+\index{IA@{IA}!Decision\+Ville\+\_\+\+IA@{Decision\+Ville\+\_\+\+IA}}
+\index{Decision\+Ville\+\_\+\+IA@{Decision\+Ville\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Decision\+Ville\+\_\+\+I\+A()}{DecisionVille\_IA()}}
+{\footnotesize\ttfamily char I\+A\+::\+Decision\+Ville\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{nourriture\+Civilization,  }\item[{int}]{production\+Civilization,  }\item[{int}]{or\+Civilization,  }\item[{int}]{science\+Civilization,  }\item[{int}]{age\+\_\+\+Civilization,  }\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau,  }\item[{\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&}]{tab\+Unite,  }\item[{int}]{unite\+Selectionnee }\end{DoxyParamCaption})}
+
+
+
+Decision \+: Si l\textquotesingle{}unite choisie est une ville (le type de l\textquotesingle{}unite vaut 0), alors cette fonction aura le choix entre \+: acheter des cases, produire des soldats, ou nourrir des colons. 
+
+char Decision\+Ville\+\_\+\+IA(int nourriture\+Civilization, int production\+Civilization, int or\+Civilization, int science\+Civilization,int age\+\_\+\+Civilization, int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite, int unite\+Selectionnee) 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & nourriture\+Civilization, int production\+Civilization, int or\+Civilization, int science\+Civilization,int age\+\_\+\+Civilization, int I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite,int unite\+Selectionnee ) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_ae7743e41d836107d2e1cd1df6416ccd3}\label{classIA_ae7743e41d836107d2e1cd1df6416ccd3}} 
+\index{IA@{IA}!Deplacement\+\_\+\+IA@{Deplacement\+\_\+\+IA}}
+\index{Deplacement\+\_\+\+IA@{Deplacement\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Deplacement\+\_\+\+I\+A()}{Deplacement\_IA()}}
+{\footnotesize\ttfamily char I\+A\+::\+Deplacement\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{int}]{age\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau,  }\item[{\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&}]{tab\+Unite,  }\item[{int}]{unite\+Selectionnee }\end{DoxyParamCaption})}
+
+
+
+Action \+: Indique a l\textquotesingle{}unite selectionnee dans quelle direction aller, c\textquotesingle{}est-\/a-\/dire vers l\textquotesingle{}ennemi le plus proche. Pour les unites a distance, en fonction de leur portee, indique si l\textquotesingle{}unite doit se deplacer ou attaquer a distance. 
+
+char Deplacement\+\_\+\+IA(int I\+D\+\_\+\+Civilization,int age\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau,\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite, int unite\+Selectionnee) 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & I\+D\+\_\+\+Civilization, int age\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau,\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite,int unite\+Selectionnee) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_a8b6cc7f5e530f40def7f0490d5a29db7}\label{classIA_a8b6cc7f5e530f40def7f0490d5a29db7}} 
+\index{IA@{IA}!Deplacement\+Sans\+Encombre@{Deplacement\+Sans\+Encombre}}
+\index{Deplacement\+Sans\+Encombre@{Deplacement\+Sans\+Encombre}!IA@{IA}}
+\subsubsection{\texorpdfstring{Deplacement\+Sans\+Encombre()}{DeplacementSansEncombre()}}
+{\footnotesize\ttfamily char I\+A\+::\+Deplacement\+Sans\+Encombre (\begin{DoxyParamCaption}\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau\+\_\+\+Jeu,  }\item[{\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&}]{tab\+Unite\+\_\+\+Civilization,  }\item[{int}]{unite\+Selectionnee,  }\item[{char}]{decision\+Sans\+Verif }\end{DoxyParamCaption})}
+
+
+
+Verifie qu\textquotesingle{}une unite ne sera pas genee par une autre unite lors d\textquotesingle{}un deplacement, si tel est le cas la fonction le detectera et indiquera une nouvelle direction (elle aussi sans obstacle) pour l\textquotesingle{}unite. 
+
+char \hyperlink{classIA_a8b6cc7f5e530f40def7f0490d5a29db7}{Deplacement\+Sans\+Encombre(int I\+D\+\_\+\+Civilization, Plateau $\ast$ plateau\+\_\+\+Jeu,  Tableau\+Dynamique \& tab\+Unite\+\_\+\+Civilization, int unite\+Selectionnee,char decision\+Sans\+Verif)} 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & I\+D\+\_\+\+Civilization,\hyperlink{classPlateau}{Plateau} $\ast$ plateau\+\_\+\+Jeu, \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite\+\_\+\+Civilization, int unite\+Selectionnee, char decision\+Sans\+Verif) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_adad21c86052cc274d27fa91b379d32c4}\label{classIA_adad21c86052cc274d27fa91b379d32c4}} 
+\index{IA@{IA}!Detection\+Des\+Allies\+Proches\+\_\+\+IA@{Detection\+Des\+Allies\+Proches\+\_\+\+IA}}
+\index{Detection\+Des\+Allies\+Proches\+\_\+\+IA@{Detection\+Des\+Allies\+Proches\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Detection\+Des\+Allies\+Proches\+\_\+\+I\+A()}{DetectionDesAlliesProches\_IA()}}
+{\footnotesize\ttfamily bool I\+A\+::\+Detection\+Des\+Allies\+Proches\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau }\end{DoxyParamCaption}) const}
+
+
+
+Analyse \+: Sert a faire des \char`\"{}armees\char`\"{} en fonction des unites alliees environnantes. L\textquotesingle{}\hyperlink{classIA}{IA} choisit entre lancer l\textquotesingle{}assault si l\textquotesingle{}armee est assez grande, ou attendre l\textquotesingle{}arrivee d\textquotesingle{}autres unites. 
+
+bool Detection\+Des\+Allies\+Proches\+\_\+\+I\+A(int I\+D\+\_\+\+Civilization, Plateau $\ast$ plateau, const Tableau\+Dynamique \& tab\+Unite,int unite\+Selectionnee)const 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau, const \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite, int unite\+Selectionnee) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_a4085c538669bc85766eaff6bb0597539}\label{classIA_a4085c538669bc85766eaff6bb0597539}} 
+\index{IA@{IA}!Detection\+Ennemi\+Le\+Plus\+Proche\+\_\+\+IA@{Detection\+Ennemi\+Le\+Plus\+Proche\+\_\+\+IA}}
+\index{Detection\+Ennemi\+Le\+Plus\+Proche\+\_\+\+IA@{Detection\+Ennemi\+Le\+Plus\+Proche\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Detection\+Ennemi\+Le\+Plus\+Proche\+\_\+\+I\+A()}{DetectionEnnemiLePlusProche\_IA()}}
+{\footnotesize\ttfamily int I\+A\+::\+Detection\+Ennemi\+Le\+Plus\+Proche\+\_\+\+IA (\begin{DoxyParamCaption}\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau\+\_\+\+Jeu }\end{DoxyParamCaption}) const}
+
+
+
+Analyse \+: Renvoie la position litterale de l\textquotesingle{}ennemi le plus proche (qu\textquotesingle{}on calcule a partir des dimensions du plateau) 
+
+int \hyperlink{classIA_a4085c538669bc85766eaff6bb0597539}{Detection\+Ennemi\+Le\+Plus\+Proche\+\_\+\+I\+A( Plateau $\ast$ plateau\+\_\+\+Jeu)const} 
+\begin{DoxyParams}{Paramètres}
+{\em (\+Plateau} & $\ast$ plateau\+\_\+\+Jeu) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_a520de200c4a27aaeb8a225291f7f3c78}\label{classIA_a520de200c4a27aaeb8a225291f7f3c78}} 
+\index{IA@{IA}!Detection\+Ville\+La\+Plus\+Proche\+\_\+\+IA@{Detection\+Ville\+La\+Plus\+Proche\+\_\+\+IA}}
+\index{Detection\+Ville\+La\+Plus\+Proche\+\_\+\+IA@{Detection\+Ville\+La\+Plus\+Proche\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Detection\+Ville\+La\+Plus\+Proche\+\_\+\+I\+A()}{DetectionVilleLaPlusProche\_IA()}}
+{\footnotesize\ttfamily int I\+A\+::\+Detection\+Ville\+La\+Plus\+Proche\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{I\+D\+\_\+\+Civilization,  }\item[{\hyperlink{classPlateau}{Plateau} $\ast$}]{plateau,  }\item[{const \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&}]{tab\+Unite,  }\item[{int}]{unite\+Selectionnee }\end{DoxyParamCaption}) const}
+
+
+
+Analyse \+: Renvoie la position litterale de la ville alliee la plus proche (le colon s\textquotesingle{}en sert pour s\textquotesingle{}eloigner un minimum de la ville d\textquotesingle{}ou il vient) 
+
+int \hyperlink{classIA_a520de200c4a27aaeb8a225291f7f3c78}{Detection\+Ville\+La\+Plus\+Proche\+\_\+\+I\+A(int I\+D\+\_\+\+Civilization,  Plateau $\ast$ plateau,const Tableau\+Dynamique \& tab\+Unite, int unite\+Selectionnee)const} 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & I\+D\+\_\+\+Civilization, \hyperlink{classPlateau}{Plateau} $\ast$ plateau, const \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& tab\+Unite, int unite\+Selectionnee) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_a65aa469e9145b022750da7f859a336d0}\label{classIA_a65aa469e9145b022750da7f859a336d0}} 
+\index{IA@{IA}!Get\+Decision\+Finale\+\_\+\+IA@{Get\+Decision\+Finale\+\_\+\+IA}}
+\index{Get\+Decision\+Finale\+\_\+\+IA@{Get\+Decision\+Finale\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Get\+Decision\+Finale\+\_\+\+I\+A()}{GetDecisionFinale\_IA()}}
+{\footnotesize\ttfamily char I\+A\+::\+Get\+Decision\+Finale\+\_\+\+IA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur \+: Recupere la donnee membre \char`\"{}decision\+Finale\+\_\+\+I\+A\char`\"{}, qui dictera l\textquotesingle{}action de l\textquotesingle{}unite dirigee par l\textquotesingle{}\hyperlink{classIA}{IA}. 
+
+char \hyperlink{classIA_a65aa469e9145b022750da7f859a336d0}{Get\+Decision\+Finale\+\_\+\+I\+A() const} \mbox{\Hypertarget{classIA_a7e9db872f7a4ff8bf955fa46be231bad}\label{classIA_a7e9db872f7a4ff8bf955fa46be231bad}} 
+\index{IA@{IA}!Random\+\_\+\+IA@{Random\+\_\+\+IA}}
+\index{Random\+\_\+\+IA@{Random\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Random\+\_\+\+I\+A()}{Random\_IA()}}
+{\footnotesize\ttfamily int I\+A\+::\+Random\+\_\+\+IA (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie un nombre aleatoire compris entre les nombres a et b. 
+
+int \hyperlink{classIA_a7e9db872f7a4ff8bf955fa46be231bad}{Random\+\_\+\+I\+A(int a, int b)const} 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & a, int b) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIA_ab5b3e7808c172f2004f3f15c720afed5}\label{classIA_ab5b3e7808c172f2004f3f15c720afed5}} 
+\index{IA@{IA}!Test\+Regression\+\_\+\+IA@{Test\+Regression\+\_\+\+IA}}
+\index{Test\+Regression\+\_\+\+IA@{Test\+Regression\+\_\+\+IA}!IA@{IA}}
+\subsubsection{\texorpdfstring{Test\+Regression\+\_\+\+I\+A()}{TestRegression\_IA()}}
+{\footnotesize\ttfamily void I\+A\+::\+Test\+Regression\+\_\+\+IA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test de regression du module \hyperlink{classIA}{IA}, teste toutes les fonctions membres et affiche les resultats. 
+
+\hyperlink{classIA_ab5b3e7808c172f2004f3f15c720afed5}{Test\+Regression\+\_\+\+I\+A()} 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/txt/I\+A.\+h\item 
+src/txt/I\+A.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Time of Civilizations: Liste des classes</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Time of Civilizations
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Liste des classes</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock">Liste des classes, structures, unions et interfaces avec une brève description :</div><div class="directory">
+<table class="directory">
+<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classCase.html" target="_self">Case</a></td><td class="desc">La classe <a class="el" href="classCase.html" title="La classe Case contient toutes les ressources associees a chaque case du plateau comme la nourriture ...">Case</a> contient toutes les ressources associees a chaque case du plateau comme la nourriture ou la science. On definit aussi le type (Ocean/Terre). Elle est reference par ses coordonnees dans le plateau. Chaque case a un proprietaire(-1 pour personne, 0 pour le joueur humain, 1 et plus pour les IAs. A chaque tour, les cases produisent des ressources associees a leur type: Ocean -&gt; science et nourriture, Terre -&gt; production et or. On fixe un prix d'achat de 10 ors pour chaque case </td></tr>
+<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classCivilization.html" target="_self">Civilization</a></td><td class="desc">La classe Civilisation gere les donnees des joueurs comme par exemple leurs ressources totales, c'est a dire la somme des ressources de toutes leurs cases possedees. Chaque civilisation evolue dans un age, c'est a dire une epoque(Antiquite, Renaissance, epoque moderne). La liste des unites(soldats ou ville) est stocke dans un tableau dynamique pour pouvoir supprimer ou ajouter autant d'unites que necessaire </td></tr>
+<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classIA.html" target="_self">IA</a></td><td class="desc">La classe <a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a> simule la reaction d'un joueur humain, en incarnant une civilisation a part entiere. Le joueur humain incarnant la civilisation 0, toutes les autres civilisations verront leurs actions dictees par une implacable Intelligence Artificielle, dont le cerveau se situe dans cette classe. Cette classe fonctionne en trois temps : Analyse, Decision et Action. Le programme analyse la situation dans laquelle il est confronte, puis agit en fonction en renvoyant une simple lettre au reste du programme </td></tr>
+<tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classJeu.html" target="_self">Jeu</a></td><td class="desc">La classe <a class="el" href="classJeu.html" title="La classe Jeu permet l&#39;execution du programme en MODE TEXTE. En effet, cette classe gere les toures d...">Jeu</a> permet l'execution du programme en MODE TEXTE. En effet, cette classe gere les toures de jeu, ajoute des joueurs au tableau des joueurs. Elle cree un plateau de 800 cases. C'est cette classe qui execute les actions du joueur humain ou <a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a>. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.Le module <a class="el" href="classJeu.html" title="La classe Jeu permet l&#39;execution du programme en MODE TEXTE. En effet, cette classe gere les toures d...">Jeu</a> s'occupe aussi de l'achat d'unites et de cases. Le bombardement (ataque a distance) est effectue dans cette partie </td></tr>
+<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classJeu__graphique.html" target="_self">Jeu_graphique</a></td><td class="desc">La classe <a class="el" href="classJeu__graphique.html" title="La classe Jeu_graphique permet l&#39;execution du programme en MODE GRAPHIQUE. En effet, cette classe gere les tours de jeu, ajoute des joueurs au tableau des joueurs. Elle creee un plateau de 800 cases. C&#39;est cette classe qui execute les actions du joueur humain ou IA. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.Le module Jeu s&#39;occupe aussi de l&#39;achat d&#39;unites et de cases. Le bombardement (attaque a distance) est effectue dans cette partie. ">Jeu_graphique</a> permet l'execution du programme en MODE GRAPHIQUE. En effet, cette classe gere les tours de jeu, ajoute des joueurs au tableau des joueurs. Elle creee un plateau de 800 cases. C'est cette classe qui execute les actions du joueur humain ou <a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a>. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.Le module <a class="el" href="classJeu.html" title="La classe Jeu permet l&#39;execution du programme en MODE TEXTE. En effet, cette classe gere les toures d...">Jeu</a> s'occupe aussi de l'achat d'unites et de cases. Le bombardement (attaque a distance) est effectue dans cette partie </td></tr>
+<tr id="row_5_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classPlateau.html" target="_self">Plateau</a></td><td class="desc">La classe <a class="el" href="classPlateau.html" title="La classe Plateau s&#39;occupe de la carte, c&#39;est a dire de l&#39;ensemble des cases du plateau. La taille horizontale et verticale du plateau est fixe respectivement a 40 et a 20 pour un nombre total de cases de 800. Cette classe s&#39;occupe de determiner le type de chaque case. ">Plateau</a> s'occupe de la carte, c'est a dire de l'ensemble des cases du plateau. La taille horizontale et verticale du plateau est fixe respectivement a 40 et a 20 pour un nombre total de cases de 800. Cette classe s'occupe de determiner le type de chaque case </td></tr>
+<tr id="row_6_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classTableauDynamique.html" target="_self">TableauDynamique</a></td><td class="desc"></td></tr>
+<tr id="row_7_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classUnite.html" target="_self">Unite</a></td><td class="desc">La classe <a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> gere toutes les caracteristiques d'une unite, comme par exemple les Points de Vie, les Points d'Attaque,... Chaque unite possede un nom (exemple:"Hoplite"). Chaque <a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> a une position reperee par des coordonees x,y et a un proprietaire unique. Les fonctions d'attaque au corps a corps, d'attaque a distance, de creation de ville, et de deplacement, situes dans la classe <a class="el" href="classJeu.html" title="La classe Jeu permet l&#39;execution du programme en MODE TEXTE. En effet, cette classe gere les toures d...">Jeu</a> appellent les fonctions du meme nom de la classe <a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> </td></tr>
+<tr id="row_8_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classWinTXT.html" target="_self">WinTXT</a></td><td class="desc">Une fen�tre texte est un tableau 2D de caract�res </td></tr>
+</table>
+</div><!-- directory -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,360 @@
+\hypertarget{classUnite}{}\section{Référence de la classe Unite}
+\label{classUnite}\index{Unite@{Unite}}
+
+
+La classe \hyperlink{classUnite}{Unite} gere toutes les caracteristiques d\textquotesingle{}une unite, comme par exemple les Points de Vie, les Points d\textquotesingle{}Attaque,... Chaque unite possede un nom (exemple\+:\char`\"{}\+Hoplite\char`\"{}). Chaque \hyperlink{classUnite}{Unite} a une position reperee par des coordonees x,y et a un proprietaire unique. Les fonctions d\textquotesingle{}attaque au corps a corps, d\textquotesingle{}attaque a distance, de creation de ville, et de deplacement, situes dans la classe \hyperlink{classJeu}{Jeu} appellent les fonctions du meme nom de la classe \hyperlink{classUnite}{Unite}.  
+
+
+
+
+{\ttfamily \#include $<$Unite.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUnite_a4fed2aa808630902de024d0a2f29887c}{Unite} ()
+\item 
+\mbox{\Hypertarget{classUnite_ac9aa222e500f22324ed8ce92623fa29d}\label{classUnite_ac9aa222e500f22324ed8ce92623fa29d}} 
+\hyperlink{classUnite_ac9aa222e500f22324ed8ce92623fa29d}{Unite} (int type\+\_\+\+Unite2, int I\+D\+\_\+\+Unite2, int pos\+X\+\_\+\+Unite2, int pos\+Y\+\_\+\+Unite2)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classUnite_ac9aa222e500f22324ed8ce92623fa29d}{Unite(int type\+\_\+\+Unite2, int I\+D\+\_\+\+Unite2, int pos\+X\+\_\+\+Unite2, int pos\+Y\+\_\+\+Unite2)} Constructeur par defaut de la classe\+: initialise les PV, les A\+TK,... aux valeurs definies en fonction du type d\textquotesingle{}unite. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_ad8465e00f082a58d3be3a039eba46a53}\label{classUnite_ad8465e00f082a58d3be3a039eba46a53}} 
+\hyperlink{classUnite_ad8465e00f082a58d3be3a039eba46a53}{$\sim$\+Unite} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classUnite_ad8465e00f082a58d3be3a039eba46a53}{$\sim$\+Unite()} Destructeur de la classe \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_a12a0e6067af1c5600564652260258ba4}\label{classUnite_a12a0e6067af1c5600564652260258ba4}} 
+int \hyperlink{classUnite_a12a0e6067af1c5600564652260258ba4}{get\+PV} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classUnite_a12a0e6067af1c5600564652260258ba4}{get\+P\+V()} Accesseur \+: recupere le parametre PV \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_a237652ec20e66a62b0507290e4d63a68}\label{classUnite_a237652ec20e66a62b0507290e4d63a68}} 
+int \hyperlink{classUnite_a237652ec20e66a62b0507290e4d63a68}{get\+A\+TK} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classUnite_a237652ec20e66a62b0507290e4d63a68}{get\+A\+T\+K()} Accesseur \+: recupere le parametre A\+TK \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_a6cea4cbc4f96d37904fc4c681d6e37f9}\label{classUnite_a6cea4cbc4f96d37904fc4c681d6e37f9}} 
+int \hyperlink{classUnite_a6cea4cbc4f96d37904fc4c681d6e37f9}{get\+PM} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classUnite_a6cea4cbc4f96d37904fc4c681d6e37f9}{get\+P\+M()} Accesseur \+: recupere le parametre PM \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_a035c0014e71c8da7675ab925e0473377}\label{classUnite_a035c0014e71c8da7675ab925e0473377}} 
+int \hyperlink{classUnite_a035c0014e71c8da7675ab925e0473377}{get\+D\+ST} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classUnite_a035c0014e71c8da7675ab925e0473377}{get\+D\+S\+T()} Accesseur \+: recupere le parametre D\+ST \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_a724be61ce1596594065e3994be597f97}\label{classUnite_a724be61ce1596594065e3994be597f97}} 
+int \hyperlink{classUnite_a724be61ce1596594065e3994be597f97}{gettype\+Unite} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classUnite_a724be61ce1596594065e3994be597f97}{gettype\+Unite()} Accesseur \+: recupere le parametre type\+Unite \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_a0f6e88099a2d2d418ab26d0486e1a292}\label{classUnite_a0f6e88099a2d2d418ab26d0486e1a292}} 
+int \hyperlink{classUnite_a0f6e88099a2d2d418ab26d0486e1a292}{getprix} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classUnite_a0f6e88099a2d2d418ab26d0486e1a292}{getprix()} Accesseur \+: recupere le parametre prix \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_a8653c444bdbb24628c9b5c8d9689d8db}\label{classUnite_a8653c444bdbb24628c9b5c8d9689d8db}} 
+int \hyperlink{classUnite_a8653c444bdbb24628c9b5c8d9689d8db}{getunite\+ID} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classUnite_a8653c444bdbb24628c9b5c8d9689d8db}{getunite\+I\+D()} Accesseur \+: recupere le parametre ID \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_ac47d35a8e9090fb687cca793f9ed9cb4}\label{classUnite_ac47d35a8e9090fb687cca793f9ed9cb4}} 
+int \hyperlink{classUnite_ac47d35a8e9090fb687cca793f9ed9cb4}{getposX} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classUnite_ac47d35a8e9090fb687cca793f9ed9cb4}{getpos\+X()} Accesseur \+: recupere le parametre posX \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_a8bfc553042438d4cedd483ba536ee853}\label{classUnite_a8bfc553042438d4cedd483ba536ee853}} 
+int \hyperlink{classUnite_a8bfc553042438d4cedd483ba536ee853}{getposY} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classUnite_a8bfc553042438d4cedd483ba536ee853}{getpos\+Y()} Accesseur \+: recupere le parametre posY \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_add7c6ac61de68d8b2cc9bafdaab62daf}\label{classUnite_add7c6ac61de68d8b2cc9bafdaab62daf}} 
+int \hyperlink{classUnite_add7c6ac61de68d8b2cc9bafdaab62daf}{getproprio\+Unite} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classUnite_add7c6ac61de68d8b2cc9bafdaab62daf}{getproprio\+Unite()} Accesseur \+: recupere le parametre proprio\+Unite \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnite_acafd8081c6d38b6443da012fb14334bf}\label{classUnite_acafd8081c6d38b6443da012fb14334bf}} 
+string \hyperlink{classUnite_acafd8081c6d38b6443da012fb14334bf}{getnom\+Unite} () const
+\begin{DoxyCompactList}\small\item\em string \hyperlink{classUnite_acafd8081c6d38b6443da012fb14334bf}{getnom\+Unite()} Accesseur \+: recupere le parametre nom\+Unite \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_af01fbd734f8dae8ae537335a0eb662c3}{set\+PV} (const int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_af01fbd734f8dae8ae537335a0eb662c3}{set\+P\+V(const int x)} Mutateur \+: modifie le parametre PV \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_a7db327364ab9f7461b180eb1fc868201}{set\+A\+TK} (const int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_a7db327364ab9f7461b180eb1fc868201}{set\+A\+T\+K(const int x)} Mutateur \+: modifie le parametre A\+TK \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_a5dca4c2dbdd1c04cfea83432bfc5cb0c}{set\+PM} (const int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_a5dca4c2dbdd1c04cfea83432bfc5cb0c}{set\+P\+M(const int x)} Mutateur \+: modifie le parametre PM \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_a1ce6139f2b1f39c45db45f47967d3657}{set\+D\+ST} (const int x)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classUnite_a1ce6139f2b1f39c45db45f47967d3657}{set\+D\+S\+T(const int x)} Mutateur \+: modifie le parametre D\+ST \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_ab7eeb92b4a50730a7b17cb83c878b3ce}{settype\+Unite} (const int x)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classUnite_ab7eeb92b4a50730a7b17cb83c878b3ce}{settype\+Unite(const int x)} Mutateur \+: modifie le parametre type\+Unite \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_a220586f6fbb6f382ae060f09e0388228}{setprix} (const int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_a220586f6fbb6f382ae060f09e0388228}{setprix(const int x)} Mutateur \+: modifie le parametre prix \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_aa948cfc472bb1063089b5663ddf3cd05}{setunite\+ID} (const int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_aa948cfc472bb1063089b5663ddf3cd05}{setunite\+I\+D(const int x)} Mutateur \+: modifie le parametre ID \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_a4a3063dd3b9e9f262fc7360d4fe5e328}{setposX} (const int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_a4a3063dd3b9e9f262fc7360d4fe5e328}{setpos\+X(const int x)} Mutateur \+: modifie le parametre posX \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_ab3d666a198a855801e28dd914b91a81b}{setposY} (const int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_ab3d666a198a855801e28dd914b91a81b}{setpos\+Y(const int x)} Mutateur \+: modifie le parametre posY \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_a3f65635785e6c543dc98de498c830eab}{setnom\+Unite} (const string x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_a3f65635785e6c543dc98de498c830eab}{setnom\+Unite(const string x)} Mutateur \+: modifie le parametre nom\+Unite \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_acbf9154f4d45330b02525376ef286970}{setproprio\+Unite} (const int x)
+\begin{DoxyCompactList}\small\item\em void setproprio\+Unite (const int x) Mutateur \+: modifie le parametre proprio\+Unite \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_a6bdba152d60733e7805d841409af932d}{Affronter\+\_\+\+Unite} (\hyperlink{classUnite}{Unite} $\ast$u\+\_\+\+Adverse, \hyperlink{classCase}{Case} c)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_a6bdba152d60733e7805d841409af932d}{Affronter\+\_\+\+Unite(\+Unite$\ast$ u\+\_\+\+Adverse, Case c)} \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_ab7deefcee36cfaf50860b5292b6d4d30}{Bombarder\+\_\+\+Unite} (\hyperlink{classUnite}{Unite} $\ast$u\+\_\+\+Adverse, \hyperlink{classCase}{Case} c)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_ab7deefcee36cfaf50860b5292b6d4d30}{Bombarder\+\_\+\+Unite(\+Unite$\ast$ u\+\_\+\+Adverse, Case c)} \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_a52c4b262930ba270327ba3d9741d2c08}{Fonder\+\_\+\+Ville} (char action)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classUnite_a52c4b262930ba270327ba3d9741d2c08}{Fonder\+\_\+\+Ville(char action)} \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_ab4a981ed28ae5c8fcdbbf265fa01634a}{Atomiser\+\_\+\+Unite} (\hyperlink{classUnite}{Unite} $\ast$u\+\_\+\+Adverse, \hyperlink{classCase}{Case} c)
+\begin{DoxyCompactList}\small\item\em Atomise la zone auteur de la case c. \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_aebf5256ee817c332f1ff9d1874b4b35b}{Deplacer\+\_\+\+Unite} (char action, int taille\+\_\+\+Horizontale, int taille\+\_\+\+Verticale)
+\begin{DoxyCompactList}\small\item\em Permet de deplacer une unite en fonction de la direction voulue, apres verification. \end{DoxyCompactList}\item 
+void \hyperlink{classUnite_aae3d57c6776d835481c875ba22c73961}{Test\+Regression\+\_\+\+Unite} ()
+\begin{DoxyCompactList}\small\item\em Test de regression du module \hyperlink{classUnite}{Unite}, teste toutes les fonctions membres et affiche les resultats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+La classe \hyperlink{classUnite}{Unite} gere toutes les caracteristiques d\textquotesingle{}une unite, comme par exemple les Points de Vie, les Points d\textquotesingle{}Attaque,... Chaque unite possede un nom (exemple\+:\char`\"{}\+Hoplite\char`\"{}). Chaque \hyperlink{classUnite}{Unite} a une position reperee par des coordonees x,y et a un proprietaire unique. Les fonctions d\textquotesingle{}attaque au corps a corps, d\textquotesingle{}attaque a distance, de creation de ville, et de deplacement, situes dans la classe \hyperlink{classJeu}{Jeu} appellent les fonctions du meme nom de la classe \hyperlink{classUnite}{Unite}. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classUnite_a4fed2aa808630902de024d0a2f29887c}\label{classUnite_a4fed2aa808630902de024d0a2f29887c}} 
+\index{Unite@{Unite}!Unite@{Unite}}
+\index{Unite@{Unite}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{Unite()}{Unite()}}
+{\footnotesize\ttfamily Unite\+::\+Unite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classUnite_a4fed2aa808630902de024d0a2f29887c}{Unite()} Constructeur par defaut de la classe \hyperlink{classUnite}{Unite} 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classUnite_a6bdba152d60733e7805d841409af932d}\label{classUnite_a6bdba152d60733e7805d841409af932d}} 
+\index{Unite@{Unite}!Affronter\+\_\+\+Unite@{Affronter\+\_\+\+Unite}}
+\index{Affronter\+\_\+\+Unite@{Affronter\+\_\+\+Unite}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{Affronter\+\_\+\+Unite()}{Affronter\_Unite()}}
+{\footnotesize\ttfamily void Unite\+::\+Affronter\+\_\+\+Unite (\begin{DoxyParamCaption}\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u\+\_\+\+Adverse,  }\item[{\hyperlink{classCase}{Case}}]{c }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_a6bdba152d60733e7805d841409af932d}{Affronter\+\_\+\+Unite(\+Unite$\ast$ u\+\_\+\+Adverse, Case c)} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (\+Unite$\ast$} & u\+\_\+\+Adverse, \hyperlink{classCase}{Case} c) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_ab4a981ed28ae5c8fcdbbf265fa01634a}\label{classUnite_ab4a981ed28ae5c8fcdbbf265fa01634a}} 
+\index{Unite@{Unite}!Atomiser\+\_\+\+Unite@{Atomiser\+\_\+\+Unite}}
+\index{Atomiser\+\_\+\+Unite@{Atomiser\+\_\+\+Unite}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{Atomiser\+\_\+\+Unite()}{Atomiser\_Unite()}}
+{\footnotesize\ttfamily void Unite\+::\+Atomiser\+\_\+\+Unite (\begin{DoxyParamCaption}\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u\+\_\+\+Adverse,  }\item[{\hyperlink{classCase}{Case}}]{c }\end{DoxyParamCaption})}
+
+
+
+Atomise la zone auteur de la case c. 
+
+void \hyperlink{classUnite_ab4a981ed28ae5c8fcdbbf265fa01634a}{Atomiser\+\_\+\+Unite(\+Unite $\ast$ u\+\_\+\+Adverse, Case c)} 
+\begin{DoxyParams}{Paramètres}
+{\em (\+Unite} & $\ast$ u\+\_\+\+Adverse, \hyperlink{classCase}{Case} c) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_ab7deefcee36cfaf50860b5292b6d4d30}\label{classUnite_ab7deefcee36cfaf50860b5292b6d4d30}} 
+\index{Unite@{Unite}!Bombarder\+\_\+\+Unite@{Bombarder\+\_\+\+Unite}}
+\index{Bombarder\+\_\+\+Unite@{Bombarder\+\_\+\+Unite}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{Bombarder\+\_\+\+Unite()}{Bombarder\_Unite()}}
+{\footnotesize\ttfamily void Unite\+::\+Bombarder\+\_\+\+Unite (\begin{DoxyParamCaption}\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u\+\_\+\+Adverse,  }\item[{\hyperlink{classCase}{Case}}]{c }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_ab7deefcee36cfaf50860b5292b6d4d30}{Bombarder\+\_\+\+Unite(\+Unite$\ast$ u\+\_\+\+Adverse, Case c)} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (\+Unite$\ast$} & u\+\_\+\+Adverse, \hyperlink{classCase}{Case} c) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_aebf5256ee817c332f1ff9d1874b4b35b}\label{classUnite_aebf5256ee817c332f1ff9d1874b4b35b}} 
+\index{Unite@{Unite}!Deplacer\+\_\+\+Unite@{Deplacer\+\_\+\+Unite}}
+\index{Deplacer\+\_\+\+Unite@{Deplacer\+\_\+\+Unite}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{Deplacer\+\_\+\+Unite()}{Deplacer\_Unite()}}
+{\footnotesize\ttfamily void Unite\+::\+Deplacer\+\_\+\+Unite (\begin{DoxyParamCaption}\item[{char}]{action,  }\item[{int}]{taille\+\_\+\+Horizontale,  }\item[{int}]{taille\+\_\+\+Verticale }\end{DoxyParamCaption})}
+
+
+
+Permet de deplacer une unite en fonction de la direction voulue, apres verification. 
+
+void \hyperlink{classUnite_aebf5256ee817c332f1ff9d1874b4b35b}{Deplacer\+\_\+\+Unite(char action,int taille\+\_\+\+Horizontale,int taille\+\_\+\+Verticale)}; 
+\begin{DoxyParams}{Paramètres}
+{\em (char} & action,int taille\+\_\+\+Horizontale,int taille\+\_\+\+Verticale) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_a52c4b262930ba270327ba3d9741d2c08}\label{classUnite_a52c4b262930ba270327ba3d9741d2c08}} 
+\index{Unite@{Unite}!Fonder\+\_\+\+Ville@{Fonder\+\_\+\+Ville}}
+\index{Fonder\+\_\+\+Ville@{Fonder\+\_\+\+Ville}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{Fonder\+\_\+\+Ville()}{Fonder\_Ville()}}
+{\footnotesize\ttfamily void Unite\+::\+Fonder\+\_\+\+Ville (\begin{DoxyParamCaption}\item[{char}]{action }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_a52c4b262930ba270327ba3d9741d2c08}{Fonder\+\_\+\+Ville(char action)} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (char} & action) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_a7db327364ab9f7461b180eb1fc868201}\label{classUnite_a7db327364ab9f7461b180eb1fc868201}} 
+\index{Unite@{Unite}!set\+A\+TK@{set\+A\+TK}}
+\index{set\+A\+TK@{set\+A\+TK}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{set\+A\+T\+K()}{setATK()}}
+{\footnotesize\ttfamily void Unite\+::set\+A\+TK (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_a7db327364ab9f7461b180eb1fc868201}{set\+A\+T\+K(const int x)} Mutateur \+: modifie le parametre A\+TK 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_a1ce6139f2b1f39c45db45f47967d3657}\label{classUnite_a1ce6139f2b1f39c45db45f47967d3657}} 
+\index{Unite@{Unite}!set\+D\+ST@{set\+D\+ST}}
+\index{set\+D\+ST@{set\+D\+ST}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{set\+D\+S\+T()}{setDST()}}
+{\footnotesize\ttfamily void Unite\+::set\+D\+ST (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classUnite_a1ce6139f2b1f39c45db45f47967d3657}{set\+D\+S\+T(const int x)} Mutateur \+: modifie le parametre D\+ST 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_a3f65635785e6c543dc98de498c830eab}\label{classUnite_a3f65635785e6c543dc98de498c830eab}} 
+\index{Unite@{Unite}!setnom\+Unite@{setnom\+Unite}}
+\index{setnom\+Unite@{setnom\+Unite}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{setnom\+Unite()}{setnomUnite()}}
+{\footnotesize\ttfamily void Unite\+::setnom\+Unite (\begin{DoxyParamCaption}\item[{const string}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_a3f65635785e6c543dc98de498c830eab}{setnom\+Unite(const string x)} Mutateur \+: modifie le parametre nom\+Unite 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_a5dca4c2dbdd1c04cfea83432bfc5cb0c}\label{classUnite_a5dca4c2dbdd1c04cfea83432bfc5cb0c}} 
+\index{Unite@{Unite}!set\+PM@{set\+PM}}
+\index{set\+PM@{set\+PM}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{set\+P\+M()}{setPM()}}
+{\footnotesize\ttfamily void Unite\+::set\+PM (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_a5dca4c2dbdd1c04cfea83432bfc5cb0c}{set\+P\+M(const int x)} Mutateur \+: modifie le parametre PM 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_a4a3063dd3b9e9f262fc7360d4fe5e328}\label{classUnite_a4a3063dd3b9e9f262fc7360d4fe5e328}} 
+\index{Unite@{Unite}!setposX@{setposX}}
+\index{setposX@{setposX}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{setpos\+X()}{setposX()}}
+{\footnotesize\ttfamily void Unite\+::setposX (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_a4a3063dd3b9e9f262fc7360d4fe5e328}{setpos\+X(const int x)} Mutateur \+: modifie le parametre posX 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_ab3d666a198a855801e28dd914b91a81b}\label{classUnite_ab3d666a198a855801e28dd914b91a81b}} 
+\index{Unite@{Unite}!setposY@{setposY}}
+\index{setposY@{setposY}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{setpos\+Y()}{setposY()}}
+{\footnotesize\ttfamily void Unite\+::setposY (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_ab3d666a198a855801e28dd914b91a81b}{setpos\+Y(const int x)} Mutateur \+: modifie le parametre posY 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_a220586f6fbb6f382ae060f09e0388228}\label{classUnite_a220586f6fbb6f382ae060f09e0388228}} 
+\index{Unite@{Unite}!setprix@{setprix}}
+\index{setprix@{setprix}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{setprix()}{setprix()}}
+{\footnotesize\ttfamily void Unite\+::setprix (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_a220586f6fbb6f382ae060f09e0388228}{setprix(const int x)} Mutateur \+: modifie le parametre prix 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_acbf9154f4d45330b02525376ef286970}\label{classUnite_acbf9154f4d45330b02525376ef286970}} 
+\index{Unite@{Unite}!setproprio\+Unite@{setproprio\+Unite}}
+\index{setproprio\+Unite@{setproprio\+Unite}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{setproprio\+Unite()}{setproprioUnite()}}
+{\footnotesize\ttfamily void Unite\+::setproprio\+Unite (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void setproprio\+Unite (const int x) Mutateur \+: modifie le parametre proprio\+Unite 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_af01fbd734f8dae8ae537335a0eb662c3}\label{classUnite_af01fbd734f8dae8ae537335a0eb662c3}} 
+\index{Unite@{Unite}!set\+PV@{set\+PV}}
+\index{set\+PV@{set\+PV}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{set\+P\+V()}{setPV()}}
+{\footnotesize\ttfamily void Unite\+::set\+PV (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_af01fbd734f8dae8ae537335a0eb662c3}{set\+P\+V(const int x)} Mutateur \+: modifie le parametre PV 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_ab7eeb92b4a50730a7b17cb83c878b3ce}\label{classUnite_ab7eeb92b4a50730a7b17cb83c878b3ce}} 
+\index{Unite@{Unite}!settype\+Unite@{settype\+Unite}}
+\index{settype\+Unite@{settype\+Unite}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{settype\+Unite()}{settypeUnite()}}
+{\footnotesize\ttfamily void Unite\+::settype\+Unite (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classUnite_ab7eeb92b4a50730a7b17cb83c878b3ce}{settype\+Unite(const int x)} Mutateur \+: modifie le parametre type\+Unite 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_aa948cfc472bb1063089b5663ddf3cd05}\label{classUnite_aa948cfc472bb1063089b5663ddf3cd05}} 
+\index{Unite@{Unite}!setunite\+ID@{setunite\+ID}}
+\index{setunite\+ID@{setunite\+ID}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{setunite\+I\+D()}{setuniteID()}}
+{\footnotesize\ttfamily void Unite\+::setunite\+ID (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classUnite_aa948cfc472bb1063089b5663ddf3cd05}{setunite\+I\+D(const int x)} Mutateur \+: modifie le parametre ID 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnite_aae3d57c6776d835481c875ba22c73961}\label{classUnite_aae3d57c6776d835481c875ba22c73961}} 
+\index{Unite@{Unite}!Test\+Regression\+\_\+\+Unite@{Test\+Regression\+\_\+\+Unite}}
+\index{Test\+Regression\+\_\+\+Unite@{Test\+Regression\+\_\+\+Unite}!Unite@{Unite}}
+\subsubsection{\texorpdfstring{Test\+Regression\+\_\+\+Unite()}{TestRegression\_Unite()}}
+{\footnotesize\ttfamily void Unite\+::\+Test\+Regression\+\_\+\+Unite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test de regression du module \hyperlink{classUnite}{Unite}, teste toutes les fonctions membres et affiche les resultats. 
+
+void \hyperlink{classUnite_aae3d57c6776d835481c875ba22c73961}{Test\+Regression\+\_\+\+Unite()}; 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/txt/Unite.\+h\item 
+src/txt/Unite.\+cpp\end{DoxyCompactItemize}

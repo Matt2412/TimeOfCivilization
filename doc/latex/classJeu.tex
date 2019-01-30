@@ -1,0 +1,350 @@
+\hypertarget{classJeu}{}\section{Référence de la classe Jeu}
+\label{classJeu}\index{Jeu@{Jeu}}
+
+
+La classe \hyperlink{classJeu}{Jeu} permet l\textquotesingle{}execution du programme en M\+O\+DE T\+E\+X\+TE. En effet, cette classe gere les toures de jeu, ajoute des joueurs au tableau des joueurs. Elle cree un plateau de 800 cases. C\textquotesingle{}est cette classe qui execute les actions du joueur humain ou \hyperlink{classIA}{IA}. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.\+Le module \hyperlink{classJeu}{Jeu} s\textquotesingle{}occupe aussi de l\textquotesingle{}achat d\textquotesingle{}unites et de cases. Le bombardement (ataque a distance) est effectue dans cette partie.  
+
+
+
+
+{\ttfamily \#include $<$Jeu.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classJeu_a4081a3ad426a10a1c489aabf16a6c006}{Jeu} (int nb\+Joueur, string nom\+Civ\+\_\+\+Jeu2)
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut de la classe\+: initialise la fin de partie a false, le tour de jeu a 0, le plateau a un tableau de 800 cases. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a9cd19e73df169d7f09397be61ba8548c}\label{classJeu_a9cd19e73df169d7f09397be61ba8548c}} 
+\hyperlink{classJeu_a9cd19e73df169d7f09397be61ba8548c}{$\sim$\+Jeu} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classJeu_a9cd19e73df169d7f09397be61ba8548c}{$\sim$\+Jeu()} Destructeur de la classe\+: desallocation de la memoire du plateau et du tableau de Civilisations \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_a4bac25b272e8eb6990077aa581b51831}{Retablir\+Case\+Nulle} (int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a4bac25b272e8eb6990077aa581b51831}{Retablir\+Case\+Nulle(int x)} Retablit les cases possedees par le joueur x a leur etat d\textquotesingle{}origine s\textquotesingle{}il a perdu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a846b36ec7d4af7bdeedfda956113e2a4}\label{classJeu_a846b36ec7d4af7bdeedfda956113e2a4}} 
+void \hyperlink{classJeu_a846b36ec7d4af7bdeedfda956113e2a4}{Gestion\+Tour\+Txt\+\_\+\+Jeu} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a846b36ec7d4af7bdeedfda956113e2a4}{Gestion\+Tour\+Txt\+\_\+\+Jeu()} Execute les actions du joueur en fonction de ses choix(\+Choix humain ou choix automatique I\+A) \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_a1dec1c2a3a50edee4190bd89993af281}{Retablir\+P\+M\+\_\+\+Jeu} (\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&tab\+Unite)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a1dec1c2a3a50edee4190bd89993af281}{Retablir\+P\+M\+\_\+\+Jeu(\+Tableau\+Dynamique \& tab\+Unite)} Retablit les Points de Mouvement des Unites en debut de tour \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a268dcfbc32d6e85ffcd171d6284ecebc}\label{classJeu_a268dcfbc32d6e85ffcd171d6284ecebc}} 
+void \hyperlink{classJeu_a268dcfbc32d6e85ffcd171d6284ecebc}{Distribuer\+Ressource\+\_\+\+Jeu} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a268dcfbc32d6e85ffcd171d6284ecebc}{Distribuer\+Ressource\+\_\+\+Jeu()} Distribue les ressources(\+Or,\+Science, Production, Nourriture) en debut de tour \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_a518ba5895ae19614d6bfe582dee95887}{Action\+\_\+\+Jeu} (\hyperlink{classUnite}{Unite} $\ast$u, \hyperlink{classWinTXT}{Win\+T\+XT} \&win, \hyperlink{classCivilization}{Civilization} \&Civ)
+\begin{DoxyCompactList}\small\item\em void Action\+\_\+\+Jeu (\hyperlink{classUnite}{Unite} $\ast$ u, \hyperlink{classWinTXT}{Win\+T\+XT} \& win, \hyperlink{classCivilization}{Civilization} \& Civ) Choisit l\textquotesingle{}action en fonction d\textquotesingle{}un caractere \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a7de0ac9f08e8e71a1378dd5eb70077d0}\label{classJeu_a7de0ac9f08e8e71a1378dd5eb70077d0}} 
+\hyperlink{classCivilization}{Civilization} $\ast$ {\bfseries get\+Tab\+Civ\+\_\+\+Jeu} ()
+\item 
+\hyperlink{classUnite}{Unite} $\ast$ \hyperlink{classJeu_af8a0e70b542f1100de2b3996a1927cfd}{Get\+Unite\+Par\+Coord\+\_\+\+Jeu} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Unite$\ast$ Get\+Unite\+Par\+Coord\+\_\+\+Jeu (int x, int y) Cherche une unit� en fonction de ses coordonn�es pass�es en param�tre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a3d2947fa0f7c50327e3d40582a7f7762}\label{classJeu_a3d2947fa0f7c50327e3d40582a7f7762}} 
+void \hyperlink{classJeu_a3d2947fa0f7c50327e3d40582a7f7762}{Verification\+Unites\+Mortes\+\_\+\+Jeu} ()
+\begin{DoxyCompactList}\small\item\em void Verification\+Unites\+Mortes\+\_\+\+Jeu () Verifie en debut de tour les unites mortes lors d\textquotesingle{}un combat et les supprime du tableau. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a0be4974d79c8e2b1da18e00e30170dfd}\label{classJeu_a0be4974d79c8e2b1da18e00e30170dfd}} 
+void \hyperlink{classJeu_a0be4974d79c8e2b1da18e00e30170dfd}{Definir\+Proprio\+Unite} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a0be4974d79c8e2b1da18e00e30170dfd}{Definir\+Proprio\+Unite()} Affecte un proprietaire a chaque unite du jeu en debut de tour \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_a7a92a89b4091f1208a8082fb3bb99b02}{Definir\+Case\+Deja\+Occupe} (int x, int y)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a7a92a89b4091f1208a8082fb3bb99b02}{Definir\+Case\+Deja\+Occupe(int x, int y)} Change l\textquotesingle{}etat d\textquotesingle{}occupation de la case en debut de tour \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_af181200afa784170b1ae8f3e0a76a146}\label{classJeu_af181200afa784170b1ae8f3e0a76a146}} 
+void \hyperlink{classJeu_af181200afa784170b1ae8f3e0a76a146}{Definir\+Toute\+Case\+Deja\+Occupe} ()
+\begin{DoxyCompactList}\small\item\em void Definir\+Toute\+Case\+Deja\+Occupe () Aplique la fonction Definir\+Case\+Deja\+Occupe a toutes les cases du plateau. Si il n\textquotesingle{}y a personne sur la case alors elle reste innocupee \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_acbaaffd7d69a178fad6a1e7eadf89157}{Attaque\+Unite\+Melee\+\_\+\+Jeu} (int i, int j, \hyperlink{classUnite}{Unite} $\ast$u, char action, bool \&ok)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_acbaaffd7d69a178fad6a1e7eadf89157}{Attaque\+Unite\+Melee\+\_\+\+Jeu(int i, int j,\+Unite$\ast$ u, char action,bool \& ok)} Execute l\textquotesingle{}attaque d\textquotesingle{}une unite de melee (attaque au corps a corps) et verifie si cela est possible \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_ab1116436e14840934d69306d68ea6ac7}{Deplacement\+Unite\+\_\+\+Jeu} (int i, int j, \hyperlink{classUnite}{Unite} $\ast$u, char action)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_ab1116436e14840934d69306d68ea6ac7}{Deplacement\+Unite\+\_\+\+Jeu(int i, int j,\+Unite$\ast$ u,char action)} Execute le deplacement d\textquotesingle{}unite de tout type et verifie si cela est possible \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_a56fed379f1914ed529f270fcb95fb524}{Attaque\+Unite\+Bombardement\+\_\+\+Jeu} (int i, int j, \hyperlink{classUnite}{Unite} $\ast$u, char action, bool \&ok2, int pos\+X\+Origine, int pos\+Y\+Origine)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a56fed379f1914ed529f270fcb95fb524}{Attaque\+Unite\+Bombardement\+\_\+\+Jeu(int i, int j,\+Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine)} Execute l\textquotesingle{}attaque des unites de distance et verifie si cela est possible. Le soldat pointe vers un ennemi et l\textquotesingle{}attaque a distance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a40fff5de60599e35ad6ae856901a212c}\label{classJeu_a40fff5de60599e35ad6ae856901a212c}} 
+void {\bfseries Attaque\+Unite\+Atomisation\+\_\+\+Jeu} (int i, int j, \hyperlink{classUnite}{Unite} $\ast$u, char action, bool \&ok2, int pos\+X\+Origine, int pos\+Y\+Origine)
+\item 
+void \hyperlink{classJeu_a834283b127dbda687f66590b3e966e75}{Affich\+Txt\+\_\+\+Jeu} (\hyperlink{classWinTXT}{Win\+T\+XT} \&win, \hyperlink{classUnite}{Unite} $\ast$u, int mode, int position\+OrigineX, int position\+OrigineY)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a834283b127dbda687f66590b3e966e75}{Affich\+Txt\+\_\+\+Jeu(\+Win\+T\+X\+T \& win, Unite $\ast$ u, int mode, int position\+Origine\+X,int position\+Origine\+Y)} \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_a6bcd726edb1a51d4ef925c0ae61f8308}{Acheter\+\_\+\+Unite\+\_\+\+Jeu} (char action2, int x, int y, int I\+D\+\_\+\+Civ)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a6bcd726edb1a51d4ef925c0ae61f8308}{Acheter\+\_\+\+Unite\+\_\+\+Jeu(char action2, int x,int y,  int I\+D\+\_\+\+Civ)} S\textquotesingle{}occupe de l\textquotesingle{}achat d\textquotesingle{}\hyperlink{classUnite}{Unite} lorsque c\textquotesingle{}est au tour d\textquotesingle{}une ville. Cette fonction verifie que le joueur a assez d\textquotesingle{}argent et si c\textquotesingle{}est le cas, ajoute la nouvelle unite au tableau de la bonne Civilisation. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_a4313108d7e060f6f65aad158bad63d49}{Action\+I\+A\+\_\+\+Jeu} (\hyperlink{classUnite}{Unite} $\ast$u, \hyperlink{classWinTXT}{Win\+T\+XT} \&win, \hyperlink{classCivilization}{Civilization} \&Civ, char action\+Param)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a4313108d7e060f6f65aad158bad63d49}{Action\+I\+A\+\_\+\+Jeu(\+Unite $\ast$ u, Win\+T\+X\+T \& win, Civilization \& Civ, char action\+Param)} Effectue l\textquotesingle{}action automatique decidee par l\textquotesingle{}\hyperlink{classIA}{IA} en fonction des positions ennemies du plateau \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_af76053e482635f0a0f68980d73e32645}{Verification\+Action\+I\+A\+\_\+\+Jeu} (char \&reponse, int civ\+Selectionnee, int unite\+Selectionnee)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_af76053e482635f0a0f68980d73e32645}{Verification\+Action\+I\+A\+\_\+\+Jeu(char \& reponse, int civ\+Selectionnee, int unite\+Selectionnee)} V�rifie les actions de l\textquotesingle{}\hyperlink{classIA}{IA} pour attribuer � chaque action de l\textquotesingle{}\hyperlink{classIA}{IA} la bonne touche \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_a8be223ce151eff5d9ecb07445c24adcf}{Bombardement\+Automatique\+IA} (int civ\+Select, int unite\+Select)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a8be223ce151eff5d9ecb07445c24adcf}{Bombardement\+Automatique\+I\+A(int civ\+Select, int unite\+Select)} Cette fonction est execute seulement pour le tour des I\+As. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_ad993fcbd00eb61e649816d68503e9034}{Acheter\+\_\+\+Case\+\_\+\+Jeu} (int i, int j, \hyperlink{classUnite}{Unite} $\ast$u, char action, bool \&ok2, int pos\+X\+Origine, int pos\+Y\+Origine)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_ad993fcbd00eb61e649816d68503e9034}{Acheter\+\_\+\+Case\+\_\+\+Jeu(int i, int j,\+Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine)} Verifie que le joueur a assez de ressources pour acquerir la case selectionnee. Cette fonction passe la donnee proprio\+Case de -\/1 a 0 ou l\textquotesingle{}ID de la civilisation concernee. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_aa9701d08eb9422ff02f966f7665814f4}{Achat\+Case\+Automatique\+IA} (int civ\+Select, int unite\+Select)
+\begin{DoxyCompactList}\small\item\em void Achat\+Case\+Automatique\+IA (int civ\+Select, int unite\+Select) Cette fonction est executee uniquement pour le tour des I\+As. \end{DoxyCompactList}\item 
+void \hyperlink{classJeu_a626d31ba80f09bc1246795f71104bfd8}{Atomisation\+Automatique\+IA} (int civ\+Select, int unite\+Select)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a626d31ba80f09bc1246795f71104bfd8}{Atomisation\+Automatique\+I\+A(int civ\+Select, int unite\+Select)} Cette fonction est executee uniquement pour le tour des I\+As. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a3ad3fd1458b1c8d8015e30f343ebafb9}\label{classJeu_a3ad3fd1458b1c8d8015e30f343ebafb9}} 
+void \hyperlink{classJeu_a3ad3fd1458b1c8d8015e30f343ebafb9}{Augmentation\+Age\+\_\+\+Jeu} ()
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classJeu_a3ad3fd1458b1c8d8015e30f343ebafb9}{Augmentation\+Age\+\_\+\+Jeu()} Augmente l\textquotesingle{}age de la Civilisation si le joueur a atteint le niveau de science requis pour passer a l\textquotesingle{}ere superieure \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+La classe \hyperlink{classJeu}{Jeu} permet l\textquotesingle{}execution du programme en M\+O\+DE T\+E\+X\+TE. En effet, cette classe gere les toures de jeu, ajoute des joueurs au tableau des joueurs. Elle cree un plateau de 800 cases. C\textquotesingle{}est cette classe qui execute les actions du joueur humain ou \hyperlink{classIA}{IA}. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.\+Le module \hyperlink{classJeu}{Jeu} s\textquotesingle{}occupe aussi de l\textquotesingle{}achat d\textquotesingle{}unites et de cases. Le bombardement (ataque a distance) est effectue dans cette partie. 
+
+\begin{DoxyAuthor}{Auteur}
+B\+I\+L\+L\+A\+UD Pierre / L\+E\+V\+E\+Q\+UE Vincent / C\+H\+E\+R\+R\+I\+ER Matthieu 
+\end{DoxyAuthor}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classJeu_a4081a3ad426a10a1c489aabf16a6c006}\label{classJeu_a4081a3ad426a10a1c489aabf16a6c006}} 
+\index{Jeu@{Jeu}!Jeu@{Jeu}}
+\index{Jeu@{Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Jeu()}{Jeu()}}
+{\footnotesize\ttfamily Jeu\+::\+Jeu (\begin{DoxyParamCaption}\item[{int}]{nb\+Joueur,  }\item[{string}]{nom\+Civ\+\_\+\+Jeu2 }\end{DoxyParamCaption})}
+
+
+
+Constructeur par defaut de la classe\+: initialise la fin de partie a false, le tour de jeu a 0, le plateau a un tableau de 800 cases. 
+
+\hyperlink{classJeu_a4081a3ad426a10a1c489aabf16a6c006}{Jeu(int nb\+Joueur, string nom\+Civ\+\_\+\+Jeu2)} 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & nb\+Joueur, string nom\+Civ\+\_\+\+Jeu2) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classJeu_aa9701d08eb9422ff02f966f7665814f4}\label{classJeu_aa9701d08eb9422ff02f966f7665814f4}} 
+\index{Jeu@{Jeu}!Achat\+Case\+Automatique\+IA@{Achat\+Case\+Automatique\+IA}}
+\index{Achat\+Case\+Automatique\+IA@{Achat\+Case\+Automatique\+IA}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Achat\+Case\+Automatique\+I\+A()}{AchatCaseAutomatiqueIA()}}
+{\footnotesize\ttfamily void Jeu\+::\+Achat\+Case\+Automatique\+IA (\begin{DoxyParamCaption}\item[{int}]{civ\+Select,  }\item[{int}]{unite\+Select }\end{DoxyParamCaption})}
+
+
+
+void Achat\+Case\+Automatique\+IA (int civ\+Select, int unite\+Select) Cette fonction est executee uniquement pour le tour des I\+As. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & civ\+Select, int unite\+Select) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_ad993fcbd00eb61e649816d68503e9034}\label{classJeu_ad993fcbd00eb61e649816d68503e9034}} 
+\index{Jeu@{Jeu}!Acheter\+\_\+\+Case\+\_\+\+Jeu@{Acheter\+\_\+\+Case\+\_\+\+Jeu}}
+\index{Acheter\+\_\+\+Case\+\_\+\+Jeu@{Acheter\+\_\+\+Case\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Acheter\+\_\+\+Case\+\_\+\+Jeu()}{Acheter\_Case\_Jeu()}}
+{\footnotesize\ttfamily void Jeu\+::\+Acheter\+\_\+\+Case\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{char}]{action,  }\item[{bool \&}]{ok2,  }\item[{int}]{pos\+X\+Origine,  }\item[{int}]{pos\+Y\+Origine }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_ad993fcbd00eb61e649816d68503e9034}{Acheter\+\_\+\+Case\+\_\+\+Jeu(int i, int j,\+Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine)} Verifie que le joueur a assez de ressources pour acquerir la case selectionnee. Cette fonction passe la donnee proprio\+Case de -\/1 a 0 ou l\textquotesingle{}ID de la civilisation concernee. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & i, int j,Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_a6bcd726edb1a51d4ef925c0ae61f8308}\label{classJeu_a6bcd726edb1a51d4ef925c0ae61f8308}} 
+\index{Jeu@{Jeu}!Acheter\+\_\+\+Unite\+\_\+\+Jeu@{Acheter\+\_\+\+Unite\+\_\+\+Jeu}}
+\index{Acheter\+\_\+\+Unite\+\_\+\+Jeu@{Acheter\+\_\+\+Unite\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Acheter\+\_\+\+Unite\+\_\+\+Jeu()}{Acheter\_Unite\_Jeu()}}
+{\footnotesize\ttfamily void Jeu\+::\+Acheter\+\_\+\+Unite\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{char}]{action2,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{I\+D\+\_\+\+Civ }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_a6bcd726edb1a51d4ef925c0ae61f8308}{Acheter\+\_\+\+Unite\+\_\+\+Jeu(char action2, int x,int y,  int I\+D\+\_\+\+Civ)} S\textquotesingle{}occupe de l\textquotesingle{}achat d\textquotesingle{}\hyperlink{classUnite}{Unite} lorsque c\textquotesingle{}est au tour d\textquotesingle{}une ville. Cette fonction verifie que le joueur a assez d\textquotesingle{}argent et si c\textquotesingle{}est le cas, ajoute la nouvelle unite au tableau de la bonne Civilisation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (char} & action2, int x,int y, int I\+D\+\_\+\+Civ) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_a518ba5895ae19614d6bfe582dee95887}\label{classJeu_a518ba5895ae19614d6bfe582dee95887}} 
+\index{Jeu@{Jeu}!Action\+\_\+\+Jeu@{Action\+\_\+\+Jeu}}
+\index{Action\+\_\+\+Jeu@{Action\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Action\+\_\+\+Jeu()}{Action\_Jeu()}}
+{\footnotesize\ttfamily void Jeu\+::\+Action\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{\hyperlink{classWinTXT}{Win\+T\+XT} \&}]{win,  }\item[{\hyperlink{classCivilization}{Civilization} \&}]{Civ }\end{DoxyParamCaption})}
+
+
+
+void Action\+\_\+\+Jeu (\hyperlink{classUnite}{Unite} $\ast$ u, \hyperlink{classWinTXT}{Win\+T\+XT} \& win, \hyperlink{classCivilization}{Civilization} \& Civ) Choisit l\textquotesingle{}action en fonction d\textquotesingle{}un caractere 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (\+Unite} & $\ast$ u, \hyperlink{classWinTXT}{Win\+T\+XT} \& win, \hyperlink{classCivilization}{Civilization} \& Civ) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_a4313108d7e060f6f65aad158bad63d49}\label{classJeu_a4313108d7e060f6f65aad158bad63d49}} 
+\index{Jeu@{Jeu}!Action\+I\+A\+\_\+\+Jeu@{Action\+I\+A\+\_\+\+Jeu}}
+\index{Action\+I\+A\+\_\+\+Jeu@{Action\+I\+A\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Action\+I\+A\+\_\+\+Jeu()}{ActionIA\_Jeu()}}
+{\footnotesize\ttfamily void Jeu\+::\+Action\+I\+A\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{\hyperlink{classWinTXT}{Win\+T\+XT} \&}]{win,  }\item[{\hyperlink{classCivilization}{Civilization} \&}]{Civ,  }\item[{char}]{action\+Param }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_a4313108d7e060f6f65aad158bad63d49}{Action\+I\+A\+\_\+\+Jeu(\+Unite $\ast$ u, Win\+T\+X\+T \& win, Civilization \& Civ, char action\+Param)} Effectue l\textquotesingle{}action automatique decidee par l\textquotesingle{}\hyperlink{classIA}{IA} en fonction des positions ennemies du plateau 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (\+Unite} & $\ast$ u, \hyperlink{classWinTXT}{Win\+T\+XT} \& win, \hyperlink{classCivilization}{Civilization} \& Civ, char action\+Param) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_a834283b127dbda687f66590b3e966e75}\label{classJeu_a834283b127dbda687f66590b3e966e75}} 
+\index{Jeu@{Jeu}!Affich\+Txt\+\_\+\+Jeu@{Affich\+Txt\+\_\+\+Jeu}}
+\index{Affich\+Txt\+\_\+\+Jeu@{Affich\+Txt\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Affich\+Txt\+\_\+\+Jeu()}{AffichTxt\_Jeu()}}
+{\footnotesize\ttfamily void Jeu\+::\+Affich\+Txt\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{\hyperlink{classWinTXT}{Win\+T\+XT} \&}]{win,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{int}]{mode,  }\item[{int}]{position\+OrigineX,  }\item[{int}]{position\+OrigineY }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_a834283b127dbda687f66590b3e966e75}{Affich\+Txt\+\_\+\+Jeu(\+Win\+T\+X\+T \& win, Unite $\ast$ u, int mode, int position\+Origine\+X,int position\+Origine\+Y)} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (\+Win\+T\+XT} & \& win, \hyperlink{classUnite}{Unite} $\ast$ u, int mode, int position\+OrigineX,int position\+OrigineY) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_a626d31ba80f09bc1246795f71104bfd8}\label{classJeu_a626d31ba80f09bc1246795f71104bfd8}} 
+\index{Jeu@{Jeu}!Atomisation\+Automatique\+IA@{Atomisation\+Automatique\+IA}}
+\index{Atomisation\+Automatique\+IA@{Atomisation\+Automatique\+IA}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Atomisation\+Automatique\+I\+A()}{AtomisationAutomatiqueIA()}}
+{\footnotesize\ttfamily void Jeu\+::\+Atomisation\+Automatique\+IA (\begin{DoxyParamCaption}\item[{int}]{civ\+Select,  }\item[{int}]{unite\+Select }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_a626d31ba80f09bc1246795f71104bfd8}{Atomisation\+Automatique\+I\+A(int civ\+Select, int unite\+Select)} Cette fonction est executee uniquement pour le tour des I\+As. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & civ\+Select, int unite\+Select) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_a56fed379f1914ed529f270fcb95fb524}\label{classJeu_a56fed379f1914ed529f270fcb95fb524}} 
+\index{Jeu@{Jeu}!Attaque\+Unite\+Bombardement\+\_\+\+Jeu@{Attaque\+Unite\+Bombardement\+\_\+\+Jeu}}
+\index{Attaque\+Unite\+Bombardement\+\_\+\+Jeu@{Attaque\+Unite\+Bombardement\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Attaque\+Unite\+Bombardement\+\_\+\+Jeu()}{AttaqueUniteBombardement\_Jeu()}}
+{\footnotesize\ttfamily void Jeu\+::\+Attaque\+Unite\+Bombardement\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{char}]{action,  }\item[{bool \&}]{ok2,  }\item[{int}]{pos\+X\+Origine,  }\item[{int}]{pos\+Y\+Origine }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_a56fed379f1914ed529f270fcb95fb524}{Attaque\+Unite\+Bombardement\+\_\+\+Jeu(int i, int j,\+Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine)} Execute l\textquotesingle{}attaque des unites de distance et verifie si cela est possible. Le soldat pointe vers un ennemi et l\textquotesingle{}attaque a distance. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & i, int j,Unite$\ast$ u,char action, bool \& ok2, int pos\+X\+Origine, int pos\+Y\+Origine) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_acbaaffd7d69a178fad6a1e7eadf89157}\label{classJeu_acbaaffd7d69a178fad6a1e7eadf89157}} 
+\index{Jeu@{Jeu}!Attaque\+Unite\+Melee\+\_\+\+Jeu@{Attaque\+Unite\+Melee\+\_\+\+Jeu}}
+\index{Attaque\+Unite\+Melee\+\_\+\+Jeu@{Attaque\+Unite\+Melee\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Attaque\+Unite\+Melee\+\_\+\+Jeu()}{AttaqueUniteMelee\_Jeu()}}
+{\footnotesize\ttfamily void Jeu\+::\+Attaque\+Unite\+Melee\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{char}]{action,  }\item[{bool \&}]{ok }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_acbaaffd7d69a178fad6a1e7eadf89157}{Attaque\+Unite\+Melee\+\_\+\+Jeu(int i, int j,\+Unite$\ast$ u, char action,bool \& ok)} Execute l\textquotesingle{}attaque d\textquotesingle{}une unite de melee (attaque au corps a corps) et verifie si cela est possible 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & i, int j,Unite$\ast$ u, char action,bool \& ok) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_a8be223ce151eff5d9ecb07445c24adcf}\label{classJeu_a8be223ce151eff5d9ecb07445c24adcf}} 
+\index{Jeu@{Jeu}!Bombardement\+Automatique\+IA@{Bombardement\+Automatique\+IA}}
+\index{Bombardement\+Automatique\+IA@{Bombardement\+Automatique\+IA}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Bombardement\+Automatique\+I\+A()}{BombardementAutomatiqueIA()}}
+{\footnotesize\ttfamily void Jeu\+::\+Bombardement\+Automatique\+IA (\begin{DoxyParamCaption}\item[{int}]{civ\+Select,  }\item[{int}]{unite\+Select }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_a8be223ce151eff5d9ecb07445c24adcf}{Bombardement\+Automatique\+I\+A(int civ\+Select, int unite\+Select)} Cette fonction est execute seulement pour le tour des I\+As. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & civ\+Select, int unite\+Select) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_a7a92a89b4091f1208a8082fb3bb99b02}\label{classJeu_a7a92a89b4091f1208a8082fb3bb99b02}} 
+\index{Jeu@{Jeu}!Definir\+Case\+Deja\+Occupe@{Definir\+Case\+Deja\+Occupe}}
+\index{Definir\+Case\+Deja\+Occupe@{Definir\+Case\+Deja\+Occupe}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Definir\+Case\+Deja\+Occupe()}{DefinirCaseDejaOccupe()}}
+{\footnotesize\ttfamily void Jeu\+::\+Definir\+Case\+Deja\+Occupe (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_a7a92a89b4091f1208a8082fb3bb99b02}{Definir\+Case\+Deja\+Occupe(int x, int y)} Change l\textquotesingle{}etat d\textquotesingle{}occupation de la case en debut de tour 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & x, int y) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_ab1116436e14840934d69306d68ea6ac7}\label{classJeu_ab1116436e14840934d69306d68ea6ac7}} 
+\index{Jeu@{Jeu}!Deplacement\+Unite\+\_\+\+Jeu@{Deplacement\+Unite\+\_\+\+Jeu}}
+\index{Deplacement\+Unite\+\_\+\+Jeu@{Deplacement\+Unite\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Deplacement\+Unite\+\_\+\+Jeu()}{DeplacementUnite\_Jeu()}}
+{\footnotesize\ttfamily void Jeu\+::\+Deplacement\+Unite\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{classUnite}{Unite} $\ast$}]{u,  }\item[{char}]{action }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_ab1116436e14840934d69306d68ea6ac7}{Deplacement\+Unite\+\_\+\+Jeu(int i, int j,\+Unite$\ast$ u,char action)} Execute le deplacement d\textquotesingle{}unite de tout type et verifie si cela est possible 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & i, int j,Unite$\ast$ u,char action) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_af8a0e70b542f1100de2b3996a1927cfd}\label{classJeu_af8a0e70b542f1100de2b3996a1927cfd}} 
+\index{Jeu@{Jeu}!Get\+Unite\+Par\+Coord\+\_\+\+Jeu@{Get\+Unite\+Par\+Coord\+\_\+\+Jeu}}
+\index{Get\+Unite\+Par\+Coord\+\_\+\+Jeu@{Get\+Unite\+Par\+Coord\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Get\+Unite\+Par\+Coord\+\_\+\+Jeu()}{GetUniteParCoord\_Jeu()}}
+{\footnotesize\ttfamily \hyperlink{classUnite}{Unite} $\ast$ Jeu\+::\+Get\+Unite\+Par\+Coord\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Unite$\ast$ Get\+Unite\+Par\+Coord\+\_\+\+Jeu (int x, int y) Cherche une unit� en fonction de ses coordonn�es pass�es en param�tre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & x, int y) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_a4bac25b272e8eb6990077aa581b51831}\label{classJeu_a4bac25b272e8eb6990077aa581b51831}} 
+\index{Jeu@{Jeu}!Retablir\+Case\+Nulle@{Retablir\+Case\+Nulle}}
+\index{Retablir\+Case\+Nulle@{Retablir\+Case\+Nulle}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Retablir\+Case\+Nulle()}{RetablirCaseNulle()}}
+{\footnotesize\ttfamily void Jeu\+::\+Retablir\+Case\+Nulle (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_a4bac25b272e8eb6990077aa581b51831}{Retablir\+Case\+Nulle(int x)} Retablit les cases possedees par le joueur x a leur etat d\textquotesingle{}origine s\textquotesingle{}il a perdu. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_a1dec1c2a3a50edee4190bd89993af281}\label{classJeu_a1dec1c2a3a50edee4190bd89993af281}} 
+\index{Jeu@{Jeu}!Retablir\+P\+M\+\_\+\+Jeu@{Retablir\+P\+M\+\_\+\+Jeu}}
+\index{Retablir\+P\+M\+\_\+\+Jeu@{Retablir\+P\+M\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Retablir\+P\+M\+\_\+\+Jeu()}{RetablirPM\_Jeu()}}
+{\footnotesize\ttfamily void Jeu\+::\+Retablir\+P\+M\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \&}]{tab\+Unite }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_a1dec1c2a3a50edee4190bd89993af281}{Retablir\+P\+M\+\_\+\+Jeu(\+Tableau\+Dynamique \& tab\+Unite)} Retablit les Points de Mouvement des Unites en debut de tour 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (\+Tableau\+Dynamique} & \& tab\+Unite) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_af76053e482635f0a0f68980d73e32645}\label{classJeu_af76053e482635f0a0f68980d73e32645}} 
+\index{Jeu@{Jeu}!Verification\+Action\+I\+A\+\_\+\+Jeu@{Verification\+Action\+I\+A\+\_\+\+Jeu}}
+\index{Verification\+Action\+I\+A\+\_\+\+Jeu@{Verification\+Action\+I\+A\+\_\+\+Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Verification\+Action\+I\+A\+\_\+\+Jeu()}{VerificationActionIA\_Jeu()}}
+{\footnotesize\ttfamily void Jeu\+::\+Verification\+Action\+I\+A\+\_\+\+Jeu (\begin{DoxyParamCaption}\item[{char \&}]{reponse,  }\item[{int}]{civ\+Selectionnee,  }\item[{int}]{unite\+Selectionnee }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classJeu_af76053e482635f0a0f68980d73e32645}{Verification\+Action\+I\+A\+\_\+\+Jeu(char \& reponse, int civ\+Selectionnee, int unite\+Selectionnee)} V�rifie les actions de l\textquotesingle{}\hyperlink{classIA}{IA} pour attribuer � chaque action de l\textquotesingle{}\hyperlink{classIA}{IA} la bonne touche 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (char} & \& reponse, int civ\+Selectionnee, int unite\+Selectionnee) \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/txt/Jeu.\+h\item 
+src/txt/Jeu.\+cpp\end{DoxyCompactItemize}

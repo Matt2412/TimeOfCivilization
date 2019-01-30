@@ -1,0 +1,60 @@
+
+CORE_TXT = txt/Case.cpp txt/Civilization.cpp txt/ElementTD.cpp txt/IA.cpp txt/Jeu.cpp txt/Plateau.cpp txt/TableauDynamique.cpp txt/Unite.cpp txt/winTxt.cpp
+CORE_GRAPH = txt/Case.cpp txt/Civilization.cpp txt/ElementTD.cpp txt/IA.cpp txt/Plateau.cpp txt/TableauDynamique.cpp txt/Unite.cpp graphique/Jeu_graphique.cpp
+
+SRCS_TXT = $(CORE_TXT)  ../maintxt.cpp
+FINAL_TARGET_TXT = TOC_txt
+#DEFINE_TXT = -DJEU_TXT
+
+SRCS_SFML = $(CORE_GRAPH) ../mainsfml.cpp
+FINAL_TARGET_SFML = TOC_sfml
+#DEFINE_SFML = -DJEU_SFML
+
+ifeq ($(OS),Windows_NT)
+INCLUDE_DIR_SFML = -Iextern/SFML-2.1/include
+
+LIBS_SFML = -Lextern/SFML-2.1/lib\
+            -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+
+else
+
+INCLUDE_DIR_SFML = /usr/include/SFML/
+LIBS_SFML = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+endif
+
+CC					= g++
+LD 					= g++
+LDFLAGS  			=
+CPPFLAGS 			= -Wall -ggdb   #-O2   # pour optimiser
+OBJ_DIR 			= obj
+SRC_DIR 			= src
+BIN_DIR 			= bin
+INCLUDE_DIR			= -Isrc -Itxt
+
+default: make_dir $(BIN_DIR)/$(FINAL_TARGET_TXT) $(BIN_DIR)/$(FINAL_TARGET_SFML)
+
+make_dir:
+ifeq ($(OS),Windows_NT)
+	if not exist $(OBJ_DIR) mkdir $(OBJ_DIR) $(OBJ_DIR)\txt $(OBJ_DIR)\graphique
+	if not exist $(BIN_DIR) mkdir $(BIN_DIR)
+else
+	test -d $(OBJ_DIR) || mkdir -p $(OBJ_DIR) $(OBJ_DIR)/txt $(OBJ_DIR)/graphique
+	test -d $(BIN_DIR) || mkdir -p $(BIN_DIR)
+endif
+
+$(BIN_DIR)/$(FINAL_TARGET_TXT): $(SRCS_TXT:%.cpp=$(OBJ_DIR)/%.o)
+	$(LD) $+ -o $@ $(LDFLAGS)
+
+$(BIN_DIR)/$(FINAL_TARGET_SFML): $(SRCS_SFML:%.cpp=$(OBJ_DIR)/%.o)
+	$(LD) $+ -o $@ $(LDFLAGS) $(LIBS_SFML)
+
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	$(CC) -c $(CPPFLAGS) $(INCLUDE_DIR_SFML) $(INCLUDE_DIR) $< -o $@
+
+clean:
+ifeq ($(OS),Windows_NT)
+	del /f $(OBJ_DIR)\txt\*.o $(OBJ_DIR)\graphique\*.o maintxt.o mainsfml.o $(BIN_DIR)\$(FINAL_TARGET_TXT).exe $(BIN_DIR)\$(FINAL_TARGET_SFML).exe
+else
+	rm -rf $(OBJ_DIR)/txt/*.o $(OBJ_DIR)/graphique/*.o maintxt.o mainsfml.o $(BIN_DIR)/$(FINAL_TARGET_TXT) $(BIN_DIR)/$(FINAL_TARGET_SFML)
+endif
+

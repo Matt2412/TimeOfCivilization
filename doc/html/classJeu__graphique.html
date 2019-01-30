@@ -1,0 +1,1281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Time of Civilizations: Référence de la classe Jeu_graphique</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Time of Civilizations
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="classJeu__graphique-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Jeu_graphique</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>La classe <a class="el" href="classJeu__graphique.html" title="La classe Jeu_graphique permet l&#39;execution du programme en MODE GRAPHIQUE. En effet, cette classe gere les tours de jeu, ajoute des joueurs au tableau des joueurs. Elle creee un plateau de 800 cases. C&#39;est cette classe qui execute les actions du joueur humain ou IA. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.Le module Jeu s&#39;occupe aussi de l&#39;achat d&#39;unites et de cases. Le bombardement (attaque a distance) est effectue dans cette partie. ">Jeu_graphique</a> permet l'execution du programme en MODE GRAPHIQUE. En effet, cette classe gere les tours de jeu, ajoute des joueurs au tableau des joueurs. Elle creee un plateau de 800 cases. C'est cette classe qui execute les actions du joueur humain ou <a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a>. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.Le module <a class="el" href="classJeu.html" title="La classe Jeu permet l&#39;execution du programme en MODE TEXTE. En effet, cette classe gere les toures d...">Jeu</a> s'occupe aussi de l'achat d'unites et de cases. Le bombardement (attaque a distance) est effectue dans cette partie.  
+ <a href="classJeu__graphique.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Jeu__graphique_8h_source.html">Jeu_graphique.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a9c8671b4f9b7c0884a1fc4d006b1588f"><td class="memItemLeft" align="right" valign="top"><a id="a9c8671b4f9b7c0884a1fc4d006b1588f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Jeu_graphique</b> (int nbJoueur, string nomCiv_Jeu2)</td></tr>
+<tr class="separator:a9c8671b4f9b7c0884a1fc4d006b1588f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259e8ddfadc2d86563c52fde722e9de9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a259e8ddfadc2d86563c52fde722e9de9">Action_JeuGraphique</a> (char action, char action2, <a class="el" href="classUnite.html">Unite</a> *u, <a class="el" href="classCivilization.html">Civilization</a> &amp;Civ, sf::RenderWindow &amp;window, sf::View &amp;view, sf::View &amp;view2, sf::View &amp;minimapView, sf::View &amp;BarreRessource)</td></tr>
+<tr class="memdesc:a259e8ddfadc2d86563c52fde722e9de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">void Action_JeuGraphique (char action, char action2,<a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> * u, <a class="el" href="classCivilization.html" title="La classe Civilisation gere les donnees des joueurs comme par exemple leurs ressources totales...">Civilization</a> &amp; Civ, sf::View &amp; view ,sf::View &amp; view2, sf::View &amp; minimapView, sf::View &amp; BarreRessource) Choisit l'action en fonction du choix de l'action que l'on veut faire pour l'unite selectionnee  <a href="#a259e8ddfadc2d86563c52fde722e9de9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a259e8ddfadc2d86563c52fde722e9de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa032d88ed8052f9a47fe83dd8e100c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#aaa032d88ed8052f9a47fe83dd8e100c2">ActionIA_JeuGraphique</a> (<a class="el" href="classUnite.html">Unite</a> *u, <a class="el" href="classCivilization.html">Civilization</a> &amp;Civ, char actionParam)</td></tr>
+<tr class="memdesc:aaa032d88ed8052f9a47fe83dd8e100c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">void ActionIA_JeuGraphique (<a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> * u, <a class="el" href="classCivilization.html" title="La classe Civilisation gere les donnees des joueurs comme par exemple leurs ressources totales...">Civilization</a> &amp; Civ, char actionParam) Choisit l'action en fonction du choix de l'action que l'<a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a> choisit de faire  <a href="#aaa032d88ed8052f9a47fe83dd8e100c2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaa032d88ed8052f9a47fe83dd8e100c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3d0828a10fafe5d1e667dba8f4ef38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a1e3d0828a10fafe5d1e667dba8f4ef38">Acheter_Unite_JeuGraphique</a> (char action2, int x, int y, int ID_Civ)</td></tr>
+<tr class="memdesc:a1e3d0828a10fafe5d1e667dba8f4ef38"><td class="mdescLeft">&#160;</td><td class="mdescRight">void Acheter_Unite_JeuGraphique (char action2, int x,int y, int ID_Civ) S'occupe de l'achat d'<a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> lorsque c'est au tour d'une ville. Cette fonction verifie que le joueur a assez d'argent et si c'est le cas, ajoute la nouvelle unite au tableau de la bonne Civilisation.  <a href="#a1e3d0828a10fafe5d1e667dba8f4ef38">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1e3d0828a10fafe5d1e667dba8f4ef38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d85885796e5749b14cbcb005209042e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a0d85885796e5749b14cbcb005209042e">AttaqueUniteBombardement_JeuGraphique</a> (int i, int j, <a class="el" href="classUnite.html">Unite</a> *u, char action, bool &amp;ok2, int posXOrigine, int posYOrigine)</td></tr>
+<tr class="memdesc:a0d85885796e5749b14cbcb005209042e"><td class="mdescLeft">&#160;</td><td class="mdescRight">void AttaqueUniteBombardement_JeuGraphique (int i, int j,Unite* u,char action, bool &amp; ok2, int posXOrigine, int posYOrigine) Execute l'attaque des unites de distance et verifie si cela est possible. Le soldat pointe vers un ennemi et l'attaque a distance.  <a href="#a0d85885796e5749b14cbcb005209042e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0d85885796e5749b14cbcb005209042e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9e116a4e3651b22ba244957d98e076"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#aae9e116a4e3651b22ba244957d98e076">AttaqueUniteMelee_JeuGraphique</a> (int i, int j, <a class="el" href="classUnite.html">Unite</a> *u, char action, bool &amp;ok)</td></tr>
+<tr class="memdesc:aae9e116a4e3651b22ba244957d98e076"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#aae9e116a4e3651b22ba244957d98e076" title="void AttaqueUniteMelee_JeuGraphique(int i, int j,Unite* u, char action,bool &amp; ok) Execute l&#39;attaque d&#39;une...">AttaqueUniteMelee_JeuGraphique(int i, int j,Unite* u, char action,bool &amp; ok)</a> Execute l'attaque d'une unite de melee (attaque au corps a corps) et verifie si cela est possible  <a href="#aae9e116a4e3651b22ba244957d98e076">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aae9e116a4e3651b22ba244957d98e076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503fedd073b20734ca16b0950f8b6f7f"><td class="memItemLeft" align="right" valign="top"><a id="a503fedd073b20734ca16b0950f8b6f7f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a503fedd073b20734ca16b0950f8b6f7f">AugmentationAge_JeuGraphique</a> ()</td></tr>
+<tr class="memdesc:a503fedd073b20734ca16b0950f8b6f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#a503fedd073b20734ca16b0950f8b6f7f" title="void AugmentationAge_JeuGraphique() Augmente l&#39;age de la Civilisation si le joueur a atteint le nivea...">AugmentationAge_JeuGraphique()</a> Augmente l'age de la Civilisation si le joueur a atteint le niveau de science requis pour passer a l'ere superieure <br /></td></tr>
+<tr class="separator:a503fedd073b20734ca16b0950f8b6f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6686db5a36c47122f36d3fab0255e1b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a6686db5a36c47122f36d3fab0255e1b4">Acheter_Case_JeuGraphique</a> (int i, int j, <a class="el" href="classUnite.html">Unite</a> *u, char action, bool &amp;ok2, int posXOrigine, int posYOrigine)</td></tr>
+<tr class="memdesc:a6686db5a36c47122f36d3fab0255e1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#a6686db5a36c47122f36d3fab0255e1b4" title="void Acheter_Case_JeuGraphique(int i, int j,Unite* u,char action, bool &amp; ok2, int posXOrigine, int posYOrigine) Verifie que le joueur a assez de ressources pour acquerir la case selectionnee. Cette fonction passe la donnee proprioCase de -1 a 0 ou l&#39;ID de la civilisation concernee. ">Acheter_Case_JeuGraphique(int i, int j,Unite* u,char action, bool &amp; ok2, int posXOrigine, int posYOrigine)</a> Verifie que le joueur a assez de ressources pour acquerir la case selectionnee. Cette fonction passe la donnee proprioCase de -1 a 0 ou l'ID de la civilisation concernee.  <a href="#a6686db5a36c47122f36d3fab0255e1b4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6686db5a36c47122f36d3fab0255e1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e52d90cbfecc5574d57cf9edd2e6dbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a3e52d90cbfecc5574d57cf9edd2e6dbe">AchatCaseAutomatiqueIA_JeuGraphique</a> (int civSelect, int uniteSelect)</td></tr>
+<tr class="memdesc:a3e52d90cbfecc5574d57cf9edd2e6dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">void AchatCaseAutomatiqueIA_JeuGraphique (int civSelect, int uniteSelect) Cette fonction est executee uniquement pour le tour des IAs.  <a href="#a3e52d90cbfecc5574d57cf9edd2e6dbe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3e52d90cbfecc5574d57cf9edd2e6dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ade29c26e98e7bb22ed47577daaba2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#af4ade29c26e98e7bb22ed47577daaba2">AtomisationAutomatiqueIA_JeuGraphique</a> (int civSelect, int uniteSelect)</td></tr>
+<tr class="memdesc:af4ade29c26e98e7bb22ed47577daaba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#af4ade29c26e98e7bb22ed47577daaba2" title="void AtomisationAutomatiqueIA_JeuGraphique(int civSelect, int uniteSelect) Cette fonction est execute...">AtomisationAutomatiqueIA_JeuGraphique(int civSelect, int uniteSelect)</a> Cette fonction est executee uniquement pour le tour des IAs.  <a href="#af4ade29c26e98e7bb22ed47577daaba2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af4ade29c26e98e7bb22ed47577daaba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada61d087659270184bc8a1ceac9c78f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#ada61d087659270184bc8a1ceac9c78f6">BombardementAutomatiqueIA_JeuGraphique</a> (int civSelect, int uniteSelect)</td></tr>
+<tr class="memdesc:ada61d087659270184bc8a1ceac9c78f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#ada61d087659270184bc8a1ceac9c78f6" title="void BombardementAutomatiqueIA_JeuGraphique(int civSelect, int uniteSelect) Cette fonction est execut...">BombardementAutomatiqueIA_JeuGraphique(int civSelect, int uniteSelect)</a> Cette fonction est execute seulement pour le tour des IAs.  <a href="#ada61d087659270184bc8a1ceac9c78f6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ada61d087659270184bc8a1ceac9c78f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c9560b3ba6d2fc95961de85a4b91d2"><td class="memItemLeft" align="right" valign="top"><a id="a39c9560b3ba6d2fc95961de85a4b91d2"></a>
+<a class="el" href="classCivilization.html">Civilization</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getTabCiv_JeuGraphique</b> ()</td></tr>
+<tr class="separator:a39c9560b3ba6d2fc95961de85a4b91d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57233f761d45a577584fa3dfe1603b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#ae57233f761d45a577584fa3dfe1603b3">Construction_JeuGraphique</a> (int nbJoueur, string nomCiv_Jeu2)</td></tr>
+<tr class="memdesc:ae57233f761d45a577584fa3dfe1603b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#ae57233f761d45a577584fa3dfe1603b3" title="void Construction_JeuGraphique(int nbJoueur, string nomCiv_Jeu2) Cette fonction est execute lorsque l...">Construction_JeuGraphique(int nbJoueur, string nomCiv_Jeu2)</a> Cette fonction est execute lorsque l'on choisit son mode de jeu afin de creer une partie en accord avec le choix du joueur (nb de joueurs etc...)  <a href="#ae57233f761d45a577584fa3dfe1603b3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae57233f761d45a577584fa3dfe1603b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e0d87cea4c4d9af2d2acfb44bc2fde"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#ae7e0d87cea4c4d9af2d2acfb44bc2fde">ConvertisseurIntEnString_JeuGraphique</a> (const int &amp;i)</td></tr>
+<tr class="memdesc:ae7e0d87cea4c4d9af2d2acfb44bc2fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">string <a class="el" href="classJeu__graphique.html#ae7e0d87cea4c4d9af2d2acfb44bc2fde" title="string ConvertisseurIntEnString_JeuGraphique(const int &amp; i) Convertit l&#39;entier passe en parametre pour re...">ConvertisseurIntEnString_JeuGraphique(const int &amp; i)</a> Convertit l'entier passe en parametre pour renvoyer une chaine de caractere representant l'entier  <a href="#ae7e0d87cea4c4d9af2d2acfb44bc2fde">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae7e0d87cea4c4d9af2d2acfb44bc2fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f72c853d14fc0dc781876c114868fec"><td class="memItemLeft" align="right" valign="top"><a id="a2f72c853d14fc0dc781876c114868fec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a2f72c853d14fc0dc781876c114868fec">DistribuerRessource_JeuGraphique</a> ()</td></tr>
+<tr class="memdesc:a2f72c853d14fc0dc781876c114868fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#a2f72c853d14fc0dc781876c114868fec" title="void DistribuerRessource_JeuGraphique() Distribue les ressources(Or,Science, Production, Nourriture) en debut de tour ">DistribuerRessource_JeuGraphique()</a> Distribue les ressources(Or,Science, Production, Nourriture) en debut de tour <br /></td></tr>
+<tr class="separator:a2f72c853d14fc0dc781876c114868fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd20c063f44edc31f4b1fcd9a2b67241"><td class="memItemLeft" align="right" valign="top"><a id="acd20c063f44edc31f4b1fcd9a2b67241"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#acd20c063f44edc31f4b1fcd9a2b67241">DefinirProprioUnite_JeuGraphique</a> ()</td></tr>
+<tr class="memdesc:acd20c063f44edc31f4b1fcd9a2b67241"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#acd20c063f44edc31f4b1fcd9a2b67241" title="void DefinirProprioUnite_JeuGraphique() Affecte un proprietaire a chaque unite du jeu en debut de tou...">DefinirProprioUnite_JeuGraphique()</a> Affecte un proprietaire a chaque unite du jeu en debut de tour <br /></td></tr>
+<tr class="separator:acd20c063f44edc31f4b1fcd9a2b67241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab803aa612b0c9fd3b8364eff8835f0c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#ab803aa612b0c9fd3b8364eff8835f0c1">DefinirCaseDejaOccupe_JeuGraphique</a> (int x, int y)</td></tr>
+<tr class="memdesc:ab803aa612b0c9fd3b8364eff8835f0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#ab803aa612b0c9fd3b8364eff8835f0c1" title="void DefinirCaseDejaOccupe_JeuGraphique(int x, int y) Change l&#39;etat d&#39;occupation de la case en debut ...">DefinirCaseDejaOccupe_JeuGraphique(int x, int y)</a> Change l'etat d'occupation de la case en debut de tour  <a href="#ab803aa612b0c9fd3b8364eff8835f0c1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab803aa612b0c9fd3b8364eff8835f0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5faaece89347dc9c0a6ba9ec8377b53a"><td class="memItemLeft" align="right" valign="top"><a id="a5faaece89347dc9c0a6ba9ec8377b53a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a5faaece89347dc9c0a6ba9ec8377b53a">DefinirTouteCaseDejaOccupe_JeuGraphique</a> ()</td></tr>
+<tr class="memdesc:a5faaece89347dc9c0a6ba9ec8377b53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#a5faaece89347dc9c0a6ba9ec8377b53a" title="void DefinirTouteCaseDejaOccupe_JeuGraphique() Aplique la fonction DefinirCaseDejaOccupe a toutes les...">DefinirTouteCaseDejaOccupe_JeuGraphique()</a> Aplique la fonction DefinirCaseDejaOccupe a toutes les cases du plateau. Si il n'y a personne sur la case alors elle reste innocupee <br /></td></tr>
+<tr class="separator:a5faaece89347dc9c0a6ba9ec8377b53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde0d8de2f0990f3ab3f2defe2c09c27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#acde0d8de2f0990f3ab3f2defe2c09c27">DeplacementUnite_JeuGraphique</a> (int i, int j, <a class="el" href="classUnite.html">Unite</a> *u, char action)</td></tr>
+<tr class="memdesc:acde0d8de2f0990f3ab3f2defe2c09c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#acde0d8de2f0990f3ab3f2defe2c09c27" title="void DeplacementUnite_JeuGraphique(int i, int j,Unite* u,char action) Execute le deplacement d&#39;unite ...">DeplacementUnite_JeuGraphique(int i, int j,Unite* u,char action)</a> Execute le deplacement d'unite de tout type et verifie si cela est possible  <a href="#acde0d8de2f0990f3ab3f2defe2c09c27">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acde0d8de2f0990f3ab3f2defe2c09c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e411f6d6875e871939e99f35638486"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a70e411f6d6875e871939e99f35638486">GestionTourGraph_JeuGraphique</a> (sf::RenderWindow &amp;window)</td></tr>
+<tr class="memdesc:a70e411f6d6875e871939e99f35638486"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#a70e411f6d6875e871939e99f35638486" title="void GestionTourGraph_JeuGraphique(sf::RenderWindow &amp; window) Execute les actions du joueur en foncti...">GestionTourGraph_JeuGraphique(sf::RenderWindow &amp; window)</a> Execute les actions du joueur en fonction de ses choix(Choix humain ou choix automatique IA)  <a href="#a70e411f6d6875e871939e99f35638486">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a70e411f6d6875e871939e99f35638486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9f4feaa383627bafe2ac2d66aae2e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#aec9f4feaa383627bafe2ac2d66aae2e9">RetablirCaseNulle_JeuGraphique</a> (int x)</td></tr>
+<tr class="memdesc:aec9f4feaa383627bafe2ac2d66aae2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#aec9f4feaa383627bafe2ac2d66aae2e9" title="void RetablirCaseNulle_JeuGraphique(int x) Retablit les cases possedees par le joueur x a leur etat d...">RetablirCaseNulle_JeuGraphique(int x)</a> Retablit les cases possedees par le joueur x a leur etat d'origine s'il a perdu.  <a href="#aec9f4feaa383627bafe2ac2d66aae2e9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aec9f4feaa383627bafe2ac2d66aae2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780cecdb8248b4e5612895b026a61a5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a780cecdb8248b4e5612895b026a61a5a">RetablirPM_JeuGraphique</a> (<a class="el" href="classTableauDynamique.html">TableauDynamique</a> &amp;tabUnite)</td></tr>
+<tr class="memdesc:a780cecdb8248b4e5612895b026a61a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#a780cecdb8248b4e5612895b026a61a5a" title="void RetablirPM_JeuGraphique(TableauDynamique &amp; tabUnite) Retablit les Points de Mouvement des Unites...">RetablirPM_JeuGraphique(TableauDynamique &amp; tabUnite)</a> Retablit les Points de Mouvement des Unites en debut de tour  <a href="#a780cecdb8248b4e5612895b026a61a5a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a780cecdb8248b4e5612895b026a61a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae511b5ba17776963d2e40008e46c1ebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnite.html">Unite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#ae511b5ba17776963d2e40008e46c1ebc">GetUniteParCoord_JeuGraphique</a> (int x, int y)</td></tr>
+<tr class="memdesc:ae511b5ba17776963d2e40008e46c1ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unite* <a class="el" href="classJeu__graphique.html#ae511b5ba17776963d2e40008e46c1ebc" title="Unite* GetUniteParCoord_JeuGraphique(int x, int y) Cherche une unite en fonction de ses coordonnees p...">GetUniteParCoord_JeuGraphique(int x, int y)</a> Cherche une unite en fonction de ses coordonnees passes en parametre.  <a href="#ae511b5ba17776963d2e40008e46c1ebc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae511b5ba17776963d2e40008e46c1ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac2d26d1b68a94c04a8231e893ed47f"><td class="memItemLeft" align="right" valign="top"><a id="a9ac2d26d1b68a94c04a8231e893ed47f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a9ac2d26d1b68a94c04a8231e893ed47f">VerificationUnitesMortes_JeuGraphique</a> ()</td></tr>
+<tr class="memdesc:a9ac2d26d1b68a94c04a8231e893ed47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">void VerificationUnitesMortes_Jeu_JeuGraphique() Verifie en debut de tour les unites mortes lors d'un combat et les supprime du tableau. <br /></td></tr>
+<tr class="separator:a9ac2d26d1b68a94c04a8231e893ed47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ea38ecd12b46fee29ba7967a1b1a55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#ac5ea38ecd12b46fee29ba7967a1b1a55">VerificationActionIA_JeuGraphique</a> (char &amp;reponse, int civSelectionnee, int uniteSelectionnee)</td></tr>
+<tr class="memdesc:ac5ea38ecd12b46fee29ba7967a1b1a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#ac5ea38ecd12b46fee29ba7967a1b1a55" title="void VerificationActionIA_JeuGraphique(char &amp; reponse, int civSelectionnee, int uniteSelectionnee) Verifi...">VerificationActionIA_JeuGraphique(char &amp; reponse, int civSelectionnee, int uniteSelectionnee)</a> Verifie les actions de l'<a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a> pour attribuer a chaque action de l'<a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a> la bonne touche  <a href="#ac5ea38ecd12b46fee29ba7967a1b1a55">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac5ea38ecd12b46fee29ba7967a1b1a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42894aac7cd7b37efe13ded6f47586de"><td class="memItemLeft" align="right" valign="top"><a id="a42894aac7cd7b37efe13ded6f47586de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a42894aac7cd7b37efe13ded6f47586de">Accueil_JeuGraphique</a> ()</td></tr>
+<tr class="memdesc:a42894aac7cd7b37efe13ded6f47586de"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#a42894aac7cd7b37efe13ded6f47586de" title="void Accueil_JeuGraphique() Creee et lance une fenetre windows. ">Accueil_JeuGraphique()</a> Creee et lance une fenetre windows. <br /></td></tr>
+<tr class="separator:a42894aac7cd7b37efe13ded6f47586de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988f0ef9417b30872257d7b1396b6fc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a988f0ef9417b30872257d7b1396b6fc0">AffichGraph_JeuGraphique</a> (sf::RenderWindow &amp;window, <a class="el" href="classUnite.html">Unite</a> *u, sf::View view, sf::View view2, sf::View &amp;BarreRessource, sf::View &amp;minimapView, int BougeCamera, int mode)</td></tr>
+<tr class="memdesc:a988f0ef9417b30872257d7b1396b6fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">void AffichGraph_JeuGraphique(sf::RenderWindow &amp; window,<a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> * u, sf::View view, sf::View view2 ,sf::View &amp; BarreRessource, sf::View &amp; minimapView ,int BougeCamera, int mode) Permet l'affichage graphique des textures, sprites et polices charges depuis la fonction ChargerPoliceTexture()  <a href="#a988f0ef9417b30872257d7b1396b6fc0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a988f0ef9417b30872257d7b1396b6fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0957a1d27b8ded1fb4ac3fddca49d71c"><td class="memItemLeft" align="right" valign="top"><a id="a0957a1d27b8ded1fb4ac3fddca49d71c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a0957a1d27b8ded1fb4ac3fddca49d71c">ChargerPoliceTexture_JeuGraphique</a> ()</td></tr>
+<tr class="memdesc:a0957a1d27b8ded1fb4ac3fddca49d71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#a0957a1d27b8ded1fb4ac3fddca49d71c" title="void ChargerPoliceTexture_JeuGraphique() Permet le chargement des textures, sprites et polices de car...">ChargerPoliceTexture_JeuGraphique()</a> Permet le chargement des textures, sprites et polices de caractere <br /></td></tr>
+<tr class="separator:a0957a1d27b8ded1fb4ac3fddca49d71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbcc5e26b8ac9f79716367883bfdb556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#abbcc5e26b8ac9f79716367883bfdb556">DeplacerCamera_JeuGraphique</a> (sf::View &amp;view, sf::View &amp;view2, sf::View &amp;minimapView, sf::View &amp;BarreRessource, sf::RenderWindow &amp;window, <a class="el" href="classUnite.html">Unite</a> *u)</td></tr>
+<tr class="memdesc:abbcc5e26b8ac9f79716367883bfdb556"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#abbcc5e26b8ac9f79716367883bfdb556" title="void DeplacerCamera_JeuGraphique(sf::View &amp; view, sf::View &amp; view2, sf::View &amp; minimapView,sf::View &amp; BarreRessource, sf::RenderWindow &amp; window, Unite * u) Gere les actions du joueur humain en associant chaque touche a une action ">DeplacerCamera_JeuGraphique(sf::View &amp; view, sf::View &amp; view2, sf::View &amp; minimapView,sf::View &amp; BarreRessource, sf::RenderWindow &amp; window, Unite * u)</a> Gere les actions du joueur humain en associant chaque touche a une action  <a href="#abbcc5e26b8ac9f79716367883bfdb556">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abbcc5e26b8ac9f79716367883bfdb556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0810ad56f4394dc8ddb77779d0b625"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a7c0810ad56f4394dc8ddb77779d0b625">Fin_JeuGraphique</a> (sf::RenderWindow &amp;window, sf::View &amp;view)</td></tr>
+<tr class="memdesc:a7c0810ad56f4394dc8ddb77779d0b625"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#a7c0810ad56f4394dc8ddb77779d0b625" title="void Fin_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view) Affiche l&#39;cran de Defaite ...">Fin_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view)</a> Affiche l'cran de Defaite  <a href="#a7c0810ad56f4394dc8ddb77779d0b625">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7c0810ad56f4394dc8ddb77779d0b625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e27e53ca84c502138ee4603c1a97a2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a8e27e53ca84c502138ee4603c1a97a2b">FinV_JeuGraphique</a> (sf::RenderWindow &amp;window, sf::View &amp;view)</td></tr>
+<tr class="memdesc:a8e27e53ca84c502138ee4603c1a97a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">void <a class="el" href="classJeu__graphique.html#a8e27e53ca84c502138ee4603c1a97a2b" title="void FinV_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view) Affiche l&#39;ecran de Victoire ...">FinV_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view)</a> Affiche l'ecran de Victoire  <a href="#a8e27e53ca84c502138ee4603c1a97a2b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8e27e53ca84c502138ee4603c1a97a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b8c542916e2912daec8c8ab8c413ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a83b8c542916e2912daec8c8ab8c413ae">MenuPrincipal_JeuGraphique</a> (sf::RenderWindow &amp;window)</td></tr>
+<tr class="memdesc:a83b8c542916e2912daec8c8ab8c413ae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classJeu__graphique.html#a83b8c542916e2912daec8c8ab8c413ae" title="MenuPrincipal_JeuGraphique(sf::RenderWindow &amp; window) Affiche le Menu principal. ">MenuPrincipal_JeuGraphique(sf::RenderWindow &amp; window)</a> Affiche le Menu principal.  <a href="#a83b8c542916e2912daec8c8ab8c413ae">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a83b8c542916e2912daec8c8ab8c413ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc7be0611ffbc0589459ba6203e6efe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#a2bc7be0611ffbc0589459ba6203e6efe">PartiePerso_JeuGraphique</a> (sf::RenderWindow &amp;window)</td></tr>
+<tr class="memdesc:a2bc7be0611ffbc0589459ba6203e6efe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classJeu__graphique.html#a2bc7be0611ffbc0589459ba6203e6efe" title="PartiePerso_JeuGraphique(sf::RenderWindow &amp; window) Affiche le Menu de choix lors d&#39;une partie personnali...">PartiePerso_JeuGraphique(sf::RenderWindow &amp; window)</a> Affiche le Menu de choix lors d'une partie personnalisee.  <a href="#a2bc7be0611ffbc0589459ba6203e6efe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2bc7be0611ffbc0589459ba6203e6efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26ebcc73b3dbe4c73de32266116e8ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#aa26ebcc73b3dbe4c73de32266116e8ff">Gagnant_JeuGraphique</a> (sf::RenderWindow &amp;window, sf::View &amp;view)</td></tr>
+<tr class="memdesc:aa26ebcc73b3dbe4c73de32266116e8ff"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classJeu__graphique.html#aa26ebcc73b3dbe4c73de32266116e8ff" title="Gagnant_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view) Fonction qui determine l&#39;ecran de fin (victo...">Gagnant_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view)</a> Fonction qui determine l'ecran de fin (victoire ou defaite)  <a href="#aa26ebcc73b3dbe4c73de32266116e8ff">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa26ebcc73b3dbe4c73de32266116e8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9707aea80c14dee891b4249c602c9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJeu__graphique.html#abc9707aea80c14dee891b4249c602c9c">TestRegression_JeuGraphique</a> ()</td></tr>
+<tr class="memdesc:abc9707aea80c14dee891b4249c602c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test de regression du module <a class="el" href="classJeu__graphique.html" title="La classe Jeu_graphique permet l&#39;execution du programme en MODE GRAPHIQUE. En effet, cette classe gere les tours de jeu, ajoute des joueurs au tableau des joueurs. Elle creee un plateau de 800 cases. C&#39;est cette classe qui execute les actions du joueur humain ou IA. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.Le module Jeu s&#39;occupe aussi de l&#39;achat d&#39;unites et de cases. Le bombardement (attaque a distance) est effectue dans cette partie. ">Jeu_graphique</a>, teste toutes les fonctions membres et affiche les resultats.  <a href="#abc9707aea80c14dee891b4249c602c9c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abc9707aea80c14dee891b4249c602c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>La classe <a class="el" href="classJeu__graphique.html" title="La classe Jeu_graphique permet l&#39;execution du programme en MODE GRAPHIQUE. En effet, cette classe gere les tours de jeu, ajoute des joueurs au tableau des joueurs. Elle creee un plateau de 800 cases. C&#39;est cette classe qui execute les actions du joueur humain ou IA. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.Le module Jeu s&#39;occupe aussi de l&#39;achat d&#39;unites et de cases. Le bombardement (attaque a distance) est effectue dans cette partie. ">Jeu_graphique</a> permet l'execution du programme en MODE GRAPHIQUE. En effet, cette classe gere les tours de jeu, ajoute des joueurs au tableau des joueurs. Elle creee un plateau de 800 cases. C'est cette classe qui execute les actions du joueur humain ou <a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a>. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.Le module <a class="el" href="classJeu.html" title="La classe Jeu permet l&#39;execution du programme en MODE TEXTE. En effet, cette classe gere les toures d...">Jeu</a> s'occupe aussi de l'achat d'unites et de cases. Le bombardement (attaque a distance) est effectue dans cette partie. </p>
+<dl class="section author"><dt>Auteur</dt><dd>BILLAUD Pierre / LEVEQUE Vincent / CHERRIER Matthieu </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a3e52d90cbfecc5574d57cf9edd2e6dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e52d90cbfecc5574d57cf9edd2e6dbe">&#9670;&nbsp;</a></span>AchatCaseAutomatiqueIA_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::AchatCaseAutomatiqueIA_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>civSelect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>uniteSelect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void AchatCaseAutomatiqueIA_JeuGraphique (int civSelect, int uniteSelect) Cette fonction est executee uniquement pour le tour des IAs. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>civSelect, int uniteSelect) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6686db5a36c47122f36d3fab0255e1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6686db5a36c47122f36d3fab0255e1b4">&#9670;&nbsp;</a></span>Acheter_Case_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::Acheter_Case_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classUnite.html">Unite</a> *&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>ok2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>posXOrigine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>posYOrigine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#a6686db5a36c47122f36d3fab0255e1b4" title="void Acheter_Case_JeuGraphique(int i, int j,Unite* u,char action, bool &amp; ok2, int posXOrigine, int posYOrigine) Verifie que le joueur a assez de ressources pour acquerir la case selectionnee. Cette fonction passe la donnee proprioCase de -1 a 0 ou l&#39;ID de la civilisation concernee. ">Acheter_Case_JeuGraphique(int i, int j,Unite* u,char action, bool &amp; ok2, int posXOrigine, int posYOrigine)</a> Verifie que le joueur a assez de ressources pour acquerir la case selectionnee. Cette fonction passe la donnee proprioCase de -1 a 0 ou l'ID de la civilisation concernee. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>i, int j,Unite* u,char action, bool &amp; ok2, int posXOrigine, int posYOrigine) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e3d0828a10fafe5d1e667dba8f4ef38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3d0828a10fafe5d1e667dba8f4ef38">&#9670;&nbsp;</a></span>Acheter_Unite_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::Acheter_Unite_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>action2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ID_Civ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void Acheter_Unite_JeuGraphique (char action2, int x,int y, int ID_Civ) S'occupe de l'achat d'<a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> lorsque c'est au tour d'une ville. Cette fonction verifie que le joueur a assez d'argent et si c'est le cas, ajoute la nouvelle unite au tableau de la bonne Civilisation. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(char</td><td>action2, int x,int y, int ID_Civ) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a259e8ddfadc2d86563c52fde722e9de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a259e8ddfadc2d86563c52fde722e9de9">&#9670;&nbsp;</a></span>Action_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Jeu_graphique::Action_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>action2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classUnite.html">Unite</a> *&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCivilization.html">Civilization</a> &amp;&#160;</td>
+          <td class="paramname"><em>Civ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>view2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>minimapView</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>BarreRessource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void Action_JeuGraphique (char action, char action2,<a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> * u, <a class="el" href="classCivilization.html" title="La classe Civilisation gere les donnees des joueurs comme par exemple leurs ressources totales...">Civilization</a> &amp; Civ, sf::View &amp; view ,sf::View &amp; view2, sf::View &amp; minimapView, sf::View &amp; BarreRessource) Choisit l'action en fonction du choix de l'action que l'on veut faire pour l'unite selectionnee </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(char</td><td>action, char action2,<a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> * u, <a class="el" href="classCivilization.html" title="La classe Civilisation gere les donnees des joueurs comme par exemple leurs ressources totales...">Civilization</a> &amp; Civ, sf::View &amp; view ,sf::View &amp; view2, sf::View &amp; minimapView, sf::View &amp; BarreRessource) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa032d88ed8052f9a47fe83dd8e100c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa032d88ed8052f9a47fe83dd8e100c2">&#9670;&nbsp;</a></span>ActionIA_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::ActionIA_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classUnite.html">Unite</a> *&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCivilization.html">Civilization</a> &amp;&#160;</td>
+          <td class="paramname"><em>Civ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>actionParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void ActionIA_JeuGraphique (<a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> * u, <a class="el" href="classCivilization.html" title="La classe Civilisation gere les donnees des joueurs comme par exemple leurs ressources totales...">Civilization</a> &amp; Civ, char actionParam) Choisit l'action en fonction du choix de l'action que l'<a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a> choisit de faire </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(Unite</td><td>* u, <a class="el" href="classCivilization.html" title="La classe Civilisation gere les donnees des joueurs comme par exemple leurs ressources totales...">Civilization</a> &amp; Civ, char actionParam) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a988f0ef9417b30872257d7b1396b6fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a988f0ef9417b30872257d7b1396b6fc0">&#9670;&nbsp;</a></span>AffichGraph_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::AffichGraph_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classUnite.html">Unite</a> *&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View&#160;</td>
+          <td class="paramname"><em>view2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>BarreRessource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>minimapView</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>BougeCamera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void AffichGraph_JeuGraphique(sf::RenderWindow &amp; window,<a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> * u, sf::View view, sf::View view2 ,sf::View &amp; BarreRessource, sf::View &amp; minimapView ,int BougeCamera, int mode) Permet l'affichage graphique des textures, sprites et polices charges depuis la fonction ChargerPoliceTexture() </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(sf::RenderWindow</td><td>&amp; window,<a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> * u, sf::View view, sf::View view2 ,sf::View &amp; BarreRessource, sf::View &amp; minimapView ,int BougeCamera, int mode) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af4ade29c26e98e7bb22ed47577daaba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ade29c26e98e7bb22ed47577daaba2">&#9670;&nbsp;</a></span>AtomisationAutomatiqueIA_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::AtomisationAutomatiqueIA_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>civSelect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>uniteSelect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#af4ade29c26e98e7bb22ed47577daaba2" title="void AtomisationAutomatiqueIA_JeuGraphique(int civSelect, int uniteSelect) Cette fonction est execute...">AtomisationAutomatiqueIA_JeuGraphique(int civSelect, int uniteSelect)</a> Cette fonction est executee uniquement pour le tour des IAs. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>civSelect, int uniteSelect) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0d85885796e5749b14cbcb005209042e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d85885796e5749b14cbcb005209042e">&#9670;&nbsp;</a></span>AttaqueUniteBombardement_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::AttaqueUniteBombardement_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classUnite.html">Unite</a> *&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>ok2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>posXOrigine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>posYOrigine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void AttaqueUniteBombardement_JeuGraphique (int i, int j,Unite* u,char action, bool &amp; ok2, int posXOrigine, int posYOrigine) Execute l'attaque des unites de distance et verifie si cela est possible. Le soldat pointe vers un ennemi et l'attaque a distance. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>i, int j,Unite* u,char action, bool &amp; ok2, int posXOrigine, int posYOrigine) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae9e116a4e3651b22ba244957d98e076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9e116a4e3651b22ba244957d98e076">&#9670;&nbsp;</a></span>AttaqueUniteMelee_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::AttaqueUniteMelee_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classUnite.html">Unite</a> *&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>ok</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#aae9e116a4e3651b22ba244957d98e076" title="void AttaqueUniteMelee_JeuGraphique(int i, int j,Unite* u, char action,bool &amp; ok) Execute l&#39;attaque d&#39;une...">AttaqueUniteMelee_JeuGraphique(int i, int j,Unite* u, char action,bool &amp; ok)</a> Execute l'attaque d'une unite de melee (attaque au corps a corps) et verifie si cela est possible </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>i, int j,Unite* u, char action,bool &amp; ok) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ada61d087659270184bc8a1ceac9c78f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada61d087659270184bc8a1ceac9c78f6">&#9670;&nbsp;</a></span>BombardementAutomatiqueIA_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::BombardementAutomatiqueIA_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>civSelect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>uniteSelect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#ada61d087659270184bc8a1ceac9c78f6" title="void BombardementAutomatiqueIA_JeuGraphique(int civSelect, int uniteSelect) Cette fonction est execut...">BombardementAutomatiqueIA_JeuGraphique(int civSelect, int uniteSelect)</a> Cette fonction est execute seulement pour le tour des IAs. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>civSelect, int uniteSelect) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae57233f761d45a577584fa3dfe1603b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57233f761d45a577584fa3dfe1603b3">&#9670;&nbsp;</a></span>Construction_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::Construction_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbJoueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nomCiv_Jeu2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#ae57233f761d45a577584fa3dfe1603b3" title="void Construction_JeuGraphique(int nbJoueur, string nomCiv_Jeu2) Cette fonction est execute lorsque l...">Construction_JeuGraphique(int nbJoueur, string nomCiv_Jeu2)</a> Cette fonction est execute lorsque l'on choisit son mode de jeu afin de creer une partie en accord avec le choix du joueur (nb de joueurs etc...) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>nbJoueur, string nomCiv_Jeu2) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae7e0d87cea4c4d9af2d2acfb44bc2fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e0d87cea4c4d9af2d2acfb44bc2fde">&#9670;&nbsp;</a></span>ConvertisseurIntEnString_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Jeu_graphique::ConvertisseurIntEnString_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>string <a class="el" href="classJeu__graphique.html#ae7e0d87cea4c4d9af2d2acfb44bc2fde" title="string ConvertisseurIntEnString_JeuGraphique(const int &amp; i) Convertit l&#39;entier passe en parametre pour re...">ConvertisseurIntEnString_JeuGraphique(const int &amp; i)</a> Convertit l'entier passe en parametre pour renvoyer une chaine de caractere representant l'entier </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(const</td><td>int &amp; i) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab803aa612b0c9fd3b8364eff8835f0c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab803aa612b0c9fd3b8364eff8835f0c1">&#9670;&nbsp;</a></span>DefinirCaseDejaOccupe_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::DefinirCaseDejaOccupe_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#ab803aa612b0c9fd3b8364eff8835f0c1" title="void DefinirCaseDejaOccupe_JeuGraphique(int x, int y) Change l&#39;etat d&#39;occupation de la case en debut ...">DefinirCaseDejaOccupe_JeuGraphique(int x, int y)</a> Change l'etat d'occupation de la case en debut de tour </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>x, int y) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acde0d8de2f0990f3ab3f2defe2c09c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde0d8de2f0990f3ab3f2defe2c09c27">&#9670;&nbsp;</a></span>DeplacementUnite_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::DeplacementUnite_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classUnite.html">Unite</a> *&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#acde0d8de2f0990f3ab3f2defe2c09c27" title="void DeplacementUnite_JeuGraphique(int i, int j,Unite* u,char action) Execute le deplacement d&#39;unite ...">DeplacementUnite_JeuGraphique(int i, int j,Unite* u,char action)</a> Execute le deplacement d'unite de tout type et verifie si cela est possible </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>i, int j,Unite* u,char action) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abbcc5e26b8ac9f79716367883bfdb556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbcc5e26b8ac9f79716367883bfdb556">&#9670;&nbsp;</a></span>DeplacerCamera_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::DeplacerCamera_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>view2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>minimapView</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>BarreRessource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classUnite.html">Unite</a> *&#160;</td>
+          <td class="paramname"><em>u</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#abbcc5e26b8ac9f79716367883bfdb556" title="void DeplacerCamera_JeuGraphique(sf::View &amp; view, sf::View &amp; view2, sf::View &amp; minimapView,sf::View &amp; BarreRessource, sf::RenderWindow &amp; window, Unite * u) Gere les actions du joueur humain en associant chaque touche a une action ">DeplacerCamera_JeuGraphique(sf::View &amp; view, sf::View &amp; view2, sf::View &amp; minimapView,sf::View &amp; BarreRessource, sf::RenderWindow &amp; window, Unite * u)</a> Gere les actions du joueur humain en associant chaque touche a une action </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(sf::View</td><td>&amp; view, sf::View &amp; view2, sf::View &amp; minimapView,sf::View &amp; BarreRessource, sf::RenderWindow &amp; window, <a class="el" href="classUnite.html" title="La classe Unite gere toutes les caracteristiques d&#39;une unite, comme par exemple les Points de Vie...">Unite</a> * u) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7c0810ad56f4394dc8ddb77779d0b625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0810ad56f4394dc8ddb77779d0b625">&#9670;&nbsp;</a></span>Fin_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::Fin_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#a7c0810ad56f4394dc8ddb77779d0b625" title="void Fin_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view) Affiche l&#39;cran de Defaite ...">Fin_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view)</a> Affiche l'cran de Defaite </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(sf::RenderWindow</td><td>&amp; window, sf::View &amp; view) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e27e53ca84c502138ee4603c1a97a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e27e53ca84c502138ee4603c1a97a2b">&#9670;&nbsp;</a></span>FinV_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::FinV_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#a8e27e53ca84c502138ee4603c1a97a2b" title="void FinV_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view) Affiche l&#39;ecran de Victoire ...">FinV_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view)</a> Affiche l'ecran de Victoire </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(sf::RenderWindow</td><td>&amp; window, sf::View &amp; view) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa26ebcc73b3dbe4c73de32266116e8ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa26ebcc73b3dbe4c73de32266116e8ff">&#9670;&nbsp;</a></span>Gagnant_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::Gagnant_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::View &amp;&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classJeu__graphique.html#aa26ebcc73b3dbe4c73de32266116e8ff" title="Gagnant_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view) Fonction qui determine l&#39;ecran de fin (victo...">Gagnant_JeuGraphique(sf::RenderWindow &amp; window, sf::View &amp; view)</a> Fonction qui determine l'ecran de fin (victoire ou defaite) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(sf::RenderWindow</td><td>&amp; window, sf::View &amp; view) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a70e411f6d6875e871939e99f35638486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e411f6d6875e871939e99f35638486">&#9670;&nbsp;</a></span>GestionTourGraph_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::GestionTourGraph_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#a70e411f6d6875e871939e99f35638486" title="void GestionTourGraph_JeuGraphique(sf::RenderWindow &amp; window) Execute les actions du joueur en foncti...">GestionTourGraph_JeuGraphique(sf::RenderWindow &amp; window)</a> Execute les actions du joueur en fonction de ses choix(Choix humain ou choix automatique IA) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(sf::RenderWindow</td><td>&amp; window) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae511b5ba17776963d2e40008e46c1ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae511b5ba17776963d2e40008e46c1ebc">&#9670;&nbsp;</a></span>GetUniteParCoord_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classUnite.html">Unite</a> * Jeu_graphique::GetUniteParCoord_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unite* <a class="el" href="classJeu__graphique.html#ae511b5ba17776963d2e40008e46c1ebc" title="Unite* GetUniteParCoord_JeuGraphique(int x, int y) Cherche une unite en fonction de ses coordonnees p...">GetUniteParCoord_JeuGraphique(int x, int y)</a> Cherche une unite en fonction de ses coordonnees passes en parametre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>x, int y) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a83b8c542916e2912daec8c8ab8c413ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b8c542916e2912daec8c8ab8c413ae">&#9670;&nbsp;</a></span>MenuPrincipal_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::MenuPrincipal_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classJeu__graphique.html#a83b8c542916e2912daec8c8ab8c413ae" title="MenuPrincipal_JeuGraphique(sf::RenderWindow &amp; window) Affiche le Menu principal. ">MenuPrincipal_JeuGraphique(sf::RenderWindow &amp; window)</a> Affiche le Menu principal. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(sf::RenderWindow</td><td>&amp; window) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2bc7be0611ffbc0589459ba6203e6efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bc7be0611ffbc0589459ba6203e6efe">&#9670;&nbsp;</a></span>PartiePerso_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::PartiePerso_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classJeu__graphique.html#a2bc7be0611ffbc0589459ba6203e6efe" title="PartiePerso_JeuGraphique(sf::RenderWindow &amp; window) Affiche le Menu de choix lors d&#39;une partie personnali...">PartiePerso_JeuGraphique(sf::RenderWindow &amp; window)</a> Affiche le Menu de choix lors d'une partie personnalisee. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(sf::RenderWindow</td><td>&amp; window) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aec9f4feaa383627bafe2ac2d66aae2e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec9f4feaa383627bafe2ac2d66aae2e9">&#9670;&nbsp;</a></span>RetablirCaseNulle_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::RetablirCaseNulle_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#aec9f4feaa383627bafe2ac2d66aae2e9" title="void RetablirCaseNulle_JeuGraphique(int x) Retablit les cases possedees par le joueur x a leur etat d...">RetablirCaseNulle_JeuGraphique(int x)</a> Retablit les cases possedees par le joueur x a leur etat d'origine s'il a perdu. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>x) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a780cecdb8248b4e5612895b026a61a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780cecdb8248b4e5612895b026a61a5a">&#9670;&nbsp;</a></span>RetablirPM_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::RetablirPM_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTableauDynamique.html">TableauDynamique</a> &amp;&#160;</td>
+          <td class="paramname"><em>tabUnite</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#a780cecdb8248b4e5612895b026a61a5a" title="void RetablirPM_JeuGraphique(TableauDynamique &amp; tabUnite) Retablit les Points de Mouvement des Unites...">RetablirPM_JeuGraphique(TableauDynamique &amp; tabUnite)</a> Retablit les Points de Mouvement des Unites en debut de tour </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(TableauDynamique</td><td>&amp; tabUnite) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc9707aea80c14dee891b4249c602c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc9707aea80c14dee891b4249c602c9c">&#9670;&nbsp;</a></span>TestRegression_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::TestRegression_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test de regression du module <a class="el" href="classJeu__graphique.html" title="La classe Jeu_graphique permet l&#39;execution du programme en MODE GRAPHIQUE. En effet, cette classe gere les tours de jeu, ajoute des joueurs au tableau des joueurs. Elle creee un plateau de 800 cases. C&#39;est cette classe qui execute les actions du joueur humain ou IA. Les ressources des participants sont augmentees a chaque tour dans la classe Jeu.Le module Jeu s&#39;occupe aussi de l&#39;achat d&#39;unites et de cases. Le bombardement (attaque a distance) est effectue dans cette partie. ">Jeu_graphique</a>, teste toutes les fonctions membres et affiche les resultats. </p>
+<p>void <a class="el" href="classJeu__graphique.html#abc9707aea80c14dee891b4249c602c9c" title="Test de regression du module Jeu_graphique, teste toutes les fonctions membres et affiche les resulta...">TestRegression_JeuGraphique()</a> </p>
+
+</div>
+</div>
+<a id="ac5ea38ecd12b46fee29ba7967a1b1a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ea38ecd12b46fee29ba7967a1b1a55">&#9670;&nbsp;</a></span>VerificationActionIA_JeuGraphique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jeu_graphique::VerificationActionIA_JeuGraphique </td>
+          <td>(</td>
+          <td class="paramtype">char &amp;&#160;</td>
+          <td class="paramname"><em>reponse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>civSelectionnee</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>uniteSelectionnee</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>void <a class="el" href="classJeu__graphique.html#ac5ea38ecd12b46fee29ba7967a1b1a55" title="void VerificationActionIA_JeuGraphique(char &amp; reponse, int civSelectionnee, int uniteSelectionnee) Verifi...">VerificationActionIA_JeuGraphique(char &amp; reponse, int civSelectionnee, int uniteSelectionnee)</a> Verifie les actions de l'<a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a> pour attribuer a chaque action de l'<a class="el" href="classIA.html" title="La classe IA simule la reaction d&#39;un joueur humain, en incarnant une civilisation a part entiere...">IA</a> la bonne touche </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(char</td><td>&amp; reponse, int civSelectionnee, int uniteSelectionnee) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>src/graphique/<a class="el" href="Jeu__graphique_8h_source.html">Jeu_graphique.h</a></li>
+<li>src/graphique/Jeu_graphique.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

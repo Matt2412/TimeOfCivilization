@@ -1,0 +1,214 @@
+\hypertarget{classPlateau}{}\section{Référence de la classe Plateau}
+\label{classPlateau}\index{Plateau@{Plateau}}
+
+
+La classe \hyperlink{classPlateau}{Plateau} s\textquotesingle{}occupe de la carte, c\textquotesingle{}est a dire de l\textquotesingle{}ensemble des cases du plateau. La taille horizontale et verticale du plateau est fixe respectivement a 40 et a 20 pour un nombre total de cases de 800. Cette classe s\textquotesingle{}occupe de determiner le type de chaque case.  
+
+
+
+
+{\ttfamily \#include $<$Plateau.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlateau_a07026170529dd928238ee45de0a797d7}{Plateau} ()
+\item 
+\hyperlink{classPlateau_a4f15309648ec9f987012565f80190b2b}{Plateau} (int taille\+Horizontale\+\_\+\+Plateau2, int taille\+Verticale\+\_\+\+Plateau2)
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut de la classe\+: initialise la taille du plateau a 40$\ast$20. \end{DoxyCompactList}\item 
+\hyperlink{classCase}{Case} \& \hyperlink{classPlateau_a85da7a234b6e619794b72980250e59dc}{Get\+Case\+De\+Tab\+Case\+\_\+\+Plateau} (int k)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCase}{Case}\& \hyperlink{classPlateau_a85da7a234b6e619794b72980250e59dc}{Get\+Case\+De\+Tab\+Case\+\_\+\+Plateau(int k)} Accesseur \+:recupere une case du plateau en fonction de son indice dans le tableau. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlateau_a3566ca7f6d1e41ef1762c4171959fa49}\label{classPlateau_a3566ca7f6d1e41ef1762c4171959fa49}} 
+int \hyperlink{classPlateau_a3566ca7f6d1e41ef1762c4171959fa49}{gettaille\+Horizontale} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classPlateau_a3566ca7f6d1e41ef1762c4171959fa49}{gettaille\+Horizontale()} Accesseur \+:recupere le parametre taille\+Horizontale \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlateau_a74daa0460aa966a5bdb2150d223e3421}\label{classPlateau_a74daa0460aa966a5bdb2150d223e3421}} 
+int \hyperlink{classPlateau_a74daa0460aa966a5bdb2150d223e3421}{gettaille\+Verticale} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classPlateau_a74daa0460aa966a5bdb2150d223e3421}{gettaille\+Verticale()} Accesseur \+:recupere le parametre taille\+Verticale \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlateau_aaa97e7e38b3233a2a66d787a57893ea1}\label{classPlateau_aaa97e7e38b3233a2a66d787a57893ea1}} 
+int \hyperlink{classPlateau_aaa97e7e38b3233a2a66d787a57893ea1}{get\+Nb\+Case} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classPlateau_aaa97e7e38b3233a2a66d787a57893ea1}{get\+Nb\+Case()} Accesseur \+:recupere le parametre Nb\+Case \end{DoxyCompactList}\item 
+void \hyperlink{classPlateau_a6be3818334c871d9adc18dd716e2b21e}{settaille\+Horizontale} (const int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classPlateau_a6be3818334c871d9adc18dd716e2b21e}{settaille\+Horizontale(const int x)} Mutateur \+: modifie le parametre taille\+Horizontale \end{DoxyCompactList}\item 
+void \hyperlink{classPlateau_a1a3e541307dfe02361517a26a442b74b}{settaille\+Verticale} (const int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classPlateau_a1a3e541307dfe02361517a26a442b74b}{settaille\+Verticale(const int x)} Mutateur \+: modifie le parametre taille\+Verticale \end{DoxyCompactList}\item 
+void \hyperlink{classPlateau_a6182b4ee7784b182d00e86fb0de9dfe9}{set\+Nb\+Case} (const int x)
+\begin{DoxyCompactList}\small\item\em void set\+Nb\+Case (const int x) Mutateur \+: modifie le parametre Nb\+Case \end{DoxyCompactList}\item 
+int \hyperlink{classPlateau_ac96fb6f6cd0e74e43d2342ed2344b09e}{Type\+Ieme\+Case\+\_\+\+Plateau} (const int indice)
+\begin{DoxyCompactList}\small\item\em renvoie le type de la case d\textquotesingle{}indice \char`\"{}indice\char`\"{} \end{DoxyCompactList}\item 
+int \hyperlink{classPlateau_a104d21bb84fcf7d170052118946bf78c}{Xieme\+Case\+\_\+\+Plateau} (const int indice)
+\begin{DoxyCompactList}\small\item\em int Xieme\+Case\+\_\+\+Plateau (const int indice) \end{DoxyCompactList}\item 
+int \hyperlink{classPlateau_ac99c2bfea8d60469bac93f7b10863475}{Yieme\+Case\+\_\+\+Plateau} (const int indice)
+\begin{DoxyCompactList}\small\item\em int Yieme\+Case\+\_\+\+Plateau (const int indice); \end{DoxyCompactList}\item 
+\hyperlink{classCase}{Case} \& \hyperlink{classPlateau_af775a4c61923f8e0aa1f6431eca2be70}{Get\+Case\+I\+D\+Par\+Coordonnees\+\_\+\+Plateau} (const int x, const int y)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCase}{Case}\& \hyperlink{classPlateau_af775a4c61923f8e0aa1f6431eca2be70}{Get\+Case\+I\+D\+Par\+Coordonnees\+\_\+\+Plateau(int x, int y)} Accesseur \+:recupere une case du plateau en fonction de ses coordonnees(x,y). \end{DoxyCompactList}\item 
+void \hyperlink{classPlateau_a80e520c24aeee0863fb9838cfc9364e7}{Test\+Regression\+\_\+\+Plateau} ()
+\begin{DoxyCompactList}\small\item\em Test de regression du module \hyperlink{classPlateau}{Plateau}, teste toutes les fonctions membres et affiche les resultats. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}\label{classPlateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}} 
+\hyperlink{classPlateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}{$\sim$\+Plateau} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPlateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}{$\sim$\+Plateau()} Destructeur de la classe\+: desallocation de la memoire du tableau de cases \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+La classe \hyperlink{classPlateau}{Plateau} s\textquotesingle{}occupe de la carte, c\textquotesingle{}est a dire de l\textquotesingle{}ensemble des cases du plateau. La taille horizontale et verticale du plateau est fixe respectivement a 40 et a 20 pour un nombre total de cases de 800. Cette classe s\textquotesingle{}occupe de determiner le type de chaque case. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classPlateau_a07026170529dd928238ee45de0a797d7}\label{classPlateau_a07026170529dd928238ee45de0a797d7}} 
+\index{Plateau@{Plateau}!Plateau@{Plateau}}
+\index{Plateau@{Plateau}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{Plateau()}{Plateau()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Plateau\+::\+Plateau (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classPlateau_a07026170529dd928238ee45de0a797d7}{Plateau()} Constructeur par defaut de la classe \hyperlink{classPlateau}{Plateau}. \mbox{\Hypertarget{classPlateau_a4f15309648ec9f987012565f80190b2b}\label{classPlateau_a4f15309648ec9f987012565f80190b2b}} 
+\index{Plateau@{Plateau}!Plateau@{Plateau}}
+\index{Plateau@{Plateau}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{Plateau()}{Plateau()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Plateau\+::\+Plateau (\begin{DoxyParamCaption}\item[{int}]{taille\+Horizontale\+\_\+\+Plateau2,  }\item[{int}]{taille\+Verticale\+\_\+\+Plateau2 }\end{DoxyParamCaption})}
+
+
+
+Constructeur par defaut de la classe\+: initialise la taille du plateau a 40$\ast$20. 
+
+\hyperlink{classPlateau_a4f15309648ec9f987012565f80190b2b}{Plateau(int taille\+Horizontale\+\_\+\+Plateau2,int taille\+Verticale\+\_\+\+Plateau2)} 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & taille\+Horizontale\+\_\+\+Plateau2,int taille\+Verticale\+\_\+\+Plateau2) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classPlateau_a85da7a234b6e619794b72980250e59dc}\label{classPlateau_a85da7a234b6e619794b72980250e59dc}} 
+\index{Plateau@{Plateau}!Get\+Case\+De\+Tab\+Case\+\_\+\+Plateau@{Get\+Case\+De\+Tab\+Case\+\_\+\+Plateau}}
+\index{Get\+Case\+De\+Tab\+Case\+\_\+\+Plateau@{Get\+Case\+De\+Tab\+Case\+\_\+\+Plateau}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{Get\+Case\+De\+Tab\+Case\+\_\+\+Plateau()}{GetCaseDeTabCase\_Plateau()}}
+{\footnotesize\ttfamily \hyperlink{classCase}{Case} \& Plateau\+::\+Get\+Case\+De\+Tab\+Case\+\_\+\+Plateau (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classCase}{Case}\& \hyperlink{classPlateau_a85da7a234b6e619794b72980250e59dc}{Get\+Case\+De\+Tab\+Case\+\_\+\+Plateau(int k)} Accesseur \+:recupere une case du plateau en fonction de son indice dans le tableau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & k) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlateau_af775a4c61923f8e0aa1f6431eca2be70}\label{classPlateau_af775a4c61923f8e0aa1f6431eca2be70}} 
+\index{Plateau@{Plateau}!Get\+Case\+I\+D\+Par\+Coordonnees\+\_\+\+Plateau@{Get\+Case\+I\+D\+Par\+Coordonnees\+\_\+\+Plateau}}
+\index{Get\+Case\+I\+D\+Par\+Coordonnees\+\_\+\+Plateau@{Get\+Case\+I\+D\+Par\+Coordonnees\+\_\+\+Plateau}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{Get\+Case\+I\+D\+Par\+Coordonnees\+\_\+\+Plateau()}{GetCaseIDParCoordonnees\_Plateau()}}
+{\footnotesize\ttfamily \hyperlink{classCase}{Case} \& Plateau\+::\+Get\+Case\+I\+D\+Par\+Coordonnees\+\_\+\+Plateau (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classCase}{Case}\& \hyperlink{classPlateau_af775a4c61923f8e0aa1f6431eca2be70}{Get\+Case\+I\+D\+Par\+Coordonnees\+\_\+\+Plateau(int x, int y)} Accesseur \+:recupere une case du plateau en fonction de ses coordonnees(x,y). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (int} & x, int y) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlateau_a6182b4ee7784b182d00e86fb0de9dfe9}\label{classPlateau_a6182b4ee7784b182d00e86fb0de9dfe9}} 
+\index{Plateau@{Plateau}!set\+Nb\+Case@{set\+Nb\+Case}}
+\index{set\+Nb\+Case@{set\+Nb\+Case}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{set\+Nb\+Case()}{setNbCase()}}
+{\footnotesize\ttfamily void Plateau\+::set\+Nb\+Case (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void set\+Nb\+Case (const int x) Mutateur \+: modifie le parametre Nb\+Case 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlateau_a6be3818334c871d9adc18dd716e2b21e}\label{classPlateau_a6be3818334c871d9adc18dd716e2b21e}} 
+\index{Plateau@{Plateau}!settaille\+Horizontale@{settaille\+Horizontale}}
+\index{settaille\+Horizontale@{settaille\+Horizontale}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{settaille\+Horizontale()}{settailleHorizontale()}}
+{\footnotesize\ttfamily void Plateau\+::settaille\+Horizontale (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classPlateau_a6be3818334c871d9adc18dd716e2b21e}{settaille\+Horizontale(const int x)} Mutateur \+: modifie le parametre taille\+Horizontale 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlateau_a1a3e541307dfe02361517a26a442b74b}\label{classPlateau_a1a3e541307dfe02361517a26a442b74b}} 
+\index{Plateau@{Plateau}!settaille\+Verticale@{settaille\+Verticale}}
+\index{settaille\+Verticale@{settaille\+Verticale}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{settaille\+Verticale()}{settailleVerticale()}}
+{\footnotesize\ttfamily void Plateau\+::settaille\+Verticale (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classPlateau_a1a3e541307dfe02361517a26a442b74b}{settaille\+Verticale(const int x)} Mutateur \+: modifie le parametre taille\+Verticale 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlateau_a80e520c24aeee0863fb9838cfc9364e7}\label{classPlateau_a80e520c24aeee0863fb9838cfc9364e7}} 
+\index{Plateau@{Plateau}!Test\+Regression\+\_\+\+Plateau@{Test\+Regression\+\_\+\+Plateau}}
+\index{Test\+Regression\+\_\+\+Plateau@{Test\+Regression\+\_\+\+Plateau}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{Test\+Regression\+\_\+\+Plateau()}{TestRegression\_Plateau()}}
+{\footnotesize\ttfamily void Plateau\+::\+Test\+Regression\+\_\+\+Plateau (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test de regression du module \hyperlink{classPlateau}{Plateau}, teste toutes les fonctions membres et affiche les resultats. 
+
+\hyperlink{classPlateau_a80e520c24aeee0863fb9838cfc9364e7}{Test\+Regression\+\_\+\+Plateau()} \mbox{\Hypertarget{classPlateau_ac96fb6f6cd0e74e43d2342ed2344b09e}\label{classPlateau_ac96fb6f6cd0e74e43d2342ed2344b09e}} 
+\index{Plateau@{Plateau}!Type\+Ieme\+Case\+\_\+\+Plateau@{Type\+Ieme\+Case\+\_\+\+Plateau}}
+\index{Type\+Ieme\+Case\+\_\+\+Plateau@{Type\+Ieme\+Case\+\_\+\+Plateau}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{Type\+Ieme\+Case\+\_\+\+Plateau()}{TypeIemeCase\_Plateau()}}
+{\footnotesize\ttfamily int Plateau\+::\+Type\+Ieme\+Case\+\_\+\+Plateau (\begin{DoxyParamCaption}\item[{const int}]{indice }\end{DoxyParamCaption})}
+
+
+
+renvoie le type de la case d\textquotesingle{}indice \char`\"{}indice\char`\"{} 
+
+int \hyperlink{classPlateau_ac96fb6f6cd0e74e43d2342ed2344b09e}{Type\+Ieme\+Case\+\_\+\+Plateau(int indice)} 
+\begin{DoxyParams}{Paramètres}
+{\em (int} & indice) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlateau_a104d21bb84fcf7d170052118946bf78c}\label{classPlateau_a104d21bb84fcf7d170052118946bf78c}} 
+\index{Plateau@{Plateau}!Xieme\+Case\+\_\+\+Plateau@{Xieme\+Case\+\_\+\+Plateau}}
+\index{Xieme\+Case\+\_\+\+Plateau@{Xieme\+Case\+\_\+\+Plateau}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{Xieme\+Case\+\_\+\+Plateau()}{XiemeCase\_Plateau()}}
+{\footnotesize\ttfamily int Plateau\+::\+Xieme\+Case\+\_\+\+Plateau (\begin{DoxyParamCaption}\item[{const int}]{indice }\end{DoxyParamCaption})}
+
+
+
+int Xieme\+Case\+\_\+\+Plateau (const int indice) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int indice) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlateau_ac99c2bfea8d60469bac93f7b10863475}\label{classPlateau_ac99c2bfea8d60469bac93f7b10863475}} 
+\index{Plateau@{Plateau}!Yieme\+Case\+\_\+\+Plateau@{Yieme\+Case\+\_\+\+Plateau}}
+\index{Yieme\+Case\+\_\+\+Plateau@{Yieme\+Case\+\_\+\+Plateau}!Plateau@{Plateau}}
+\subsubsection{\texorpdfstring{Yieme\+Case\+\_\+\+Plateau()}{YiemeCase\_Plateau()}}
+{\footnotesize\ttfamily int Plateau\+::\+Yieme\+Case\+\_\+\+Plateau (\begin{DoxyParamCaption}\item[{const int}]{indice }\end{DoxyParamCaption})}
+
+
+
+int Yieme\+Case\+\_\+\+Plateau (const int indice); 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int indice) \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/txt/Plateau.\+h\item 
+src/txt/Plateau.\+cpp\end{DoxyCompactItemize}

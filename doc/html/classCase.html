@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Time of Civilizations: Référence de la classe Case</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Time of Civilizations
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="classCase-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Case</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>La classe <a class="el" href="classCase.html" title="La classe Case contient toutes les ressources associees a chaque case du plateau comme la nourriture ...">Case</a> contient toutes les ressources associees a chaque case du plateau comme la nourriture ou la science. On definit aussi le type (Ocean/Terre). Elle est reference par ses coordonnees dans le plateau. Chaque case a un proprietaire(-1 pour personne, 0 pour le joueur humain, 1 et plus pour les IAs. A chaque tour, les cases produisent des ressources associees a leur type: Ocean -&gt; science et nourriture, Terre -&gt; production et or. On fixe un prix d'achat de 10 ors pour chaque case.  
+ <a href="classCase.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Case_8h_source.html">Case.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a20c632789e67b8257dfe9acfe1aa0143"><td class="memItemLeft" align="right" valign="top"><a id="a20c632789e67b8257dfe9acfe1aa0143"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#a20c632789e67b8257dfe9acfe1aa0143">getX</a> () const</td></tr>
+<tr class="memdesc:a20c632789e67b8257dfe9acfe1aa0143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toutes les fonctions get... et set... sont respectivement des accesseurs et des mutateurs pour chaque parametre de la classe. Ils sont passes en mode const. <br /></td></tr>
+<tr class="separator:a20c632789e67b8257dfe9acfe1aa0143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad703df23845fd490865372c5acc53c56"><td class="memItemLeft" align="right" valign="top"><a id="ad703df23845fd490865372c5acc53c56"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getY</b> () const</td></tr>
+<tr class="separator:ad703df23845fd490865372c5acc53c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af949ff97328842dd7ca389352c9ff3ac"><td class="memItemLeft" align="right" valign="top"><a id="af949ff97328842dd7ca389352c9ff3ac"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getCaseID</b> () const</td></tr>
+<tr class="separator:af949ff97328842dd7ca389352c9ff3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463d7d00daf14038d7ca7e3199d9f561"><td class="memItemLeft" align="right" valign="top"><a id="a463d7d00daf14038d7ca7e3199d9f561"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeCase</b> () const</td></tr>
+<tr class="separator:a463d7d00daf14038d7ca7e3199d9f561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51933ab03ceeb9e1c1fb4d9997066cde"><td class="memItemLeft" align="right" valign="top"><a id="a51933ab03ceeb9e1c1fb4d9997066cde"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getProprioCase</b> () const</td></tr>
+<tr class="separator:a51933ab03ceeb9e1c1fb4d9997066cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f52f357d9e0315632b7b2a0f8f703c9"><td class="memItemLeft" align="right" valign="top"><a id="a8f52f357d9e0315632b7b2a0f8f703c9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getOrParCase</b> () const</td></tr>
+<tr class="separator:a8f52f357d9e0315632b7b2a0f8f703c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad620d008a333fc3941ca7ebc0f3d7a7a"><td class="memItemLeft" align="right" valign="top"><a id="ad620d008a333fc3941ca7ebc0f3d7a7a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getNourritureParCase</b> () const</td></tr>
+<tr class="separator:ad620d008a333fc3941ca7ebc0f3d7a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a23d6ee1ed37c903f45ea2100ede0a1"><td class="memItemLeft" align="right" valign="top"><a id="a0a23d6ee1ed37c903f45ea2100ede0a1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getScienceParCase</b> () const</td></tr>
+<tr class="separator:a0a23d6ee1ed37c903f45ea2100ede0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3094c8a8d3a0f4aba3cce4d28b0e836c"><td class="memItemLeft" align="right" valign="top"><a id="a3094c8a8d3a0f4aba3cce4d28b0e836c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getProductionParCase</b> () const</td></tr>
+<tr class="separator:a3094c8a8d3a0f4aba3cce4d28b0e836c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768db9382386062a0fee1abe9460a23e"><td class="memItemLeft" align="right" valign="top"><a id="a768db9382386062a0fee1abe9460a23e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getPrixParCase</b> () const</td></tr>
+<tr class="separator:a768db9382386062a0fee1abe9460a23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511c62c0804caaf24e073f62ef4bbec8"><td class="memItemLeft" align="right" valign="top"><a id="a511c62c0804caaf24e073f62ef4bbec8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getDejaOccupe</b> () const</td></tr>
+<tr class="separator:a511c62c0804caaf24e073f62ef4bbec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03efe9fa9eb9575c4d4dfe9383a9c96"><td class="memItemLeft" align="right" valign="top"><a id="ab03efe9fa9eb9575c4d4dfe9383a9c96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setX</b> (const int k)</td></tr>
+<tr class="separator:ab03efe9fa9eb9575c4d4dfe9383a9c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e5b02ddba96af55e185a67062d07de"><td class="memItemLeft" align="right" valign="top"><a id="a15e5b02ddba96af55e185a67062d07de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setY</b> (const int k)</td></tr>
+<tr class="separator:a15e5b02ddba96af55e185a67062d07de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661fa037f3f11044d61d50a1a29fd279"><td class="memItemLeft" align="right" valign="top"><a id="a661fa037f3f11044d61d50a1a29fd279"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCaseID</b> (const int k)</td></tr>
+<tr class="separator:a661fa037f3f11044d61d50a1a29fd279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4a41f486da89e5eac27d7e10268349"><td class="memItemLeft" align="right" valign="top"><a id="a1b4a41f486da89e5eac27d7e10268349"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTypeCase</b> (const int k)</td></tr>
+<tr class="separator:a1b4a41f486da89e5eac27d7e10268349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac642cb17b8be1142e53481a191409c"><td class="memItemLeft" align="right" valign="top"><a id="adac642cb17b8be1142e53481a191409c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setProprioCase</b> (const int k)</td></tr>
+<tr class="separator:adac642cb17b8be1142e53481a191409c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3c728ae37cff0bed6c4ff87f72672b"><td class="memItemLeft" align="right" valign="top"><a id="aab3c728ae37cff0bed6c4ff87f72672b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setOrParCase</b> (const int k)</td></tr>
+<tr class="separator:aab3c728ae37cff0bed6c4ff87f72672b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3a6022f0abf7bc72194956823acec7"><td class="memItemLeft" align="right" valign="top"><a id="a3a3a6022f0abf7bc72194956823acec7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNourritureParCase</b> (const int k)</td></tr>
+<tr class="separator:a3a3a6022f0abf7bc72194956823acec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5733cf54080ef3e82a0869c845d988"><td class="memItemLeft" align="right" valign="top"><a id="a3f5733cf54080ef3e82a0869c845d988"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScienceParCase</b> (const int k)</td></tr>
+<tr class="separator:a3f5733cf54080ef3e82a0869c845d988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade964e2c2192de784efeb051147beef4"><td class="memItemLeft" align="right" valign="top"><a id="ade964e2c2192de784efeb051147beef4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setProductionParCase</b> (const int k)</td></tr>
+<tr class="separator:ade964e2c2192de784efeb051147beef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239fb3a0e430e3cae7bb10dbb8432a61"><td class="memItemLeft" align="right" valign="top"><a id="a239fb3a0e430e3cae7bb10dbb8432a61"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDejaOccupe</b> (const int k)</td></tr>
+<tr class="separator:a239fb3a0e430e3cae7bb10dbb8432a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca943dd6259fb44eeea2addd610a2f9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#aca943dd6259fb44eeea2addd610a2f9d">TestRegression_Case</a> ()</td></tr>
+<tr class="memdesc:aca943dd6259fb44eeea2addd610a2f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test de regression du module <a class="el" href="classCase.html" title="La classe Case contient toutes les ressources associees a chaque case du plateau comme la nourriture ...">Case</a>, teste toutes les fonctions membres et affiche les resultats.  <a href="#aca943dd6259fb44eeea2addd610a2f9d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aca943dd6259fb44eeea2addd610a2f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>La classe <a class="el" href="classCase.html" title="La classe Case contient toutes les ressources associees a chaque case du plateau comme la nourriture ...">Case</a> contient toutes les ressources associees a chaque case du plateau comme la nourriture ou la science. On definit aussi le type (Ocean/Terre). Elle est reference par ses coordonnees dans le plateau. Chaque case a un proprietaire(-1 pour personne, 0 pour le joueur humain, 1 et plus pour les IAs. A chaque tour, les cases produisent des ressources associees a leur type: Ocean -&gt; science et nourriture, Terre -&gt; production et or. On fixe un prix d'achat de 10 ors pour chaque case. </p>
+</div><h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="aca943dd6259fb44eeea2addd610a2f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca943dd6259fb44eeea2addd610a2f9d">&#9670;&nbsp;</a></span>TestRegression_Case()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Case::TestRegression_Case </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test de regression du module <a class="el" href="classCase.html" title="La classe Case contient toutes les ressources associees a chaque case du plateau comme la nourriture ...">Case</a>, teste toutes les fonctions membres et affiche les resultats. </p>
+<p>void <a class="el" href="classCase.html#aca943dd6259fb44eeea2addd610a2f9d" title="Test de regression du module Case, teste toutes les fonctions membres et affiche les resultats...">TestRegression_Case()</a> </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>src/txt/<a class="el" href="Case_8h_source.html">Case.h</a></li>
+<li>src/txt/Case.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

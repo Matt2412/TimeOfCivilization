@@ -1,0 +1,101 @@
+\hypertarget{classCase}{}\section{Référence de la classe Case}
+\label{classCase}\index{Case@{Case}}
+
+
+La classe \hyperlink{classCase}{Case} contient toutes les ressources associees a chaque case du plateau comme la nourriture ou la science. On definit aussi le type (Ocean/\+Terre). Elle est reference par ses coordonnees dans le plateau. Chaque case a un proprietaire(-\/1 pour personne, 0 pour le joueur humain, 1 et plus pour les I\+As. A chaque tour, les cases produisent des ressources associees a leur type\+: Ocean -\/$>$ science et nourriture, Terre -\/$>$ production et or. On fixe un prix d\textquotesingle{}achat de 10 ors pour chaque case.  
+
+
+
+
+{\ttfamily \#include $<$Case.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCase_a20c632789e67b8257dfe9acfe1aa0143}\label{classCase_a20c632789e67b8257dfe9acfe1aa0143}} 
+int \hyperlink{classCase_a20c632789e67b8257dfe9acfe1aa0143}{getX} () const
+\begin{DoxyCompactList}\small\item\em Toutes les fonctions get... et set... sont respectivement des accesseurs et des mutateurs pour chaque parametre de la classe. Ils sont passes en mode const. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCase_ad703df23845fd490865372c5acc53c56}\label{classCase_ad703df23845fd490865372c5acc53c56}} 
+int {\bfseries getY} () const
+\item 
+\mbox{\Hypertarget{classCase_af949ff97328842dd7ca389352c9ff3ac}\label{classCase_af949ff97328842dd7ca389352c9ff3ac}} 
+int {\bfseries get\+Case\+ID} () const
+\item 
+\mbox{\Hypertarget{classCase_a463d7d00daf14038d7ca7e3199d9f561}\label{classCase_a463d7d00daf14038d7ca7e3199d9f561}} 
+int {\bfseries get\+Type\+Case} () const
+\item 
+\mbox{\Hypertarget{classCase_a51933ab03ceeb9e1c1fb4d9997066cde}\label{classCase_a51933ab03ceeb9e1c1fb4d9997066cde}} 
+int {\bfseries get\+Proprio\+Case} () const
+\item 
+\mbox{\Hypertarget{classCase_a8f52f357d9e0315632b7b2a0f8f703c9}\label{classCase_a8f52f357d9e0315632b7b2a0f8f703c9}} 
+int {\bfseries get\+Or\+Par\+Case} () const
+\item 
+\mbox{\Hypertarget{classCase_ad620d008a333fc3941ca7ebc0f3d7a7a}\label{classCase_ad620d008a333fc3941ca7ebc0f3d7a7a}} 
+int {\bfseries get\+Nourriture\+Par\+Case} () const
+\item 
+\mbox{\Hypertarget{classCase_a0a23d6ee1ed37c903f45ea2100ede0a1}\label{classCase_a0a23d6ee1ed37c903f45ea2100ede0a1}} 
+int {\bfseries get\+Science\+Par\+Case} () const
+\item 
+\mbox{\Hypertarget{classCase_a3094c8a8d3a0f4aba3cce4d28b0e836c}\label{classCase_a3094c8a8d3a0f4aba3cce4d28b0e836c}} 
+int {\bfseries get\+Production\+Par\+Case} () const
+\item 
+\mbox{\Hypertarget{classCase_a768db9382386062a0fee1abe9460a23e}\label{classCase_a768db9382386062a0fee1abe9460a23e}} 
+int {\bfseries get\+Prix\+Par\+Case} () const
+\item 
+\mbox{\Hypertarget{classCase_a511c62c0804caaf24e073f62ef4bbec8}\label{classCase_a511c62c0804caaf24e073f62ef4bbec8}} 
+int {\bfseries get\+Deja\+Occupe} () const
+\item 
+\mbox{\Hypertarget{classCase_ab03efe9fa9eb9575c4d4dfe9383a9c96}\label{classCase_ab03efe9fa9eb9575c4d4dfe9383a9c96}} 
+void {\bfseries setX} (const int k)
+\item 
+\mbox{\Hypertarget{classCase_a15e5b02ddba96af55e185a67062d07de}\label{classCase_a15e5b02ddba96af55e185a67062d07de}} 
+void {\bfseries setY} (const int k)
+\item 
+\mbox{\Hypertarget{classCase_a661fa037f3f11044d61d50a1a29fd279}\label{classCase_a661fa037f3f11044d61d50a1a29fd279}} 
+void {\bfseries set\+Case\+ID} (const int k)
+\item 
+\mbox{\Hypertarget{classCase_a1b4a41f486da89e5eac27d7e10268349}\label{classCase_a1b4a41f486da89e5eac27d7e10268349}} 
+void {\bfseries set\+Type\+Case} (const int k)
+\item 
+\mbox{\Hypertarget{classCase_adac642cb17b8be1142e53481a191409c}\label{classCase_adac642cb17b8be1142e53481a191409c}} 
+void {\bfseries set\+Proprio\+Case} (const int k)
+\item 
+\mbox{\Hypertarget{classCase_aab3c728ae37cff0bed6c4ff87f72672b}\label{classCase_aab3c728ae37cff0bed6c4ff87f72672b}} 
+void {\bfseries set\+Or\+Par\+Case} (const int k)
+\item 
+\mbox{\Hypertarget{classCase_a3a3a6022f0abf7bc72194956823acec7}\label{classCase_a3a3a6022f0abf7bc72194956823acec7}} 
+void {\bfseries set\+Nourriture\+Par\+Case} (const int k)
+\item 
+\mbox{\Hypertarget{classCase_a3f5733cf54080ef3e82a0869c845d988}\label{classCase_a3f5733cf54080ef3e82a0869c845d988}} 
+void {\bfseries set\+Science\+Par\+Case} (const int k)
+\item 
+\mbox{\Hypertarget{classCase_ade964e2c2192de784efeb051147beef4}\label{classCase_ade964e2c2192de784efeb051147beef4}} 
+void {\bfseries set\+Production\+Par\+Case} (const int k)
+\item 
+\mbox{\Hypertarget{classCase_a239fb3a0e430e3cae7bb10dbb8432a61}\label{classCase_a239fb3a0e430e3cae7bb10dbb8432a61}} 
+void {\bfseries set\+Deja\+Occupe} (const int k)
+\item 
+void \hyperlink{classCase_aca943dd6259fb44eeea2addd610a2f9d}{Test\+Regression\+\_\+\+Case} ()
+\begin{DoxyCompactList}\small\item\em Test de regression du module \hyperlink{classCase}{Case}, teste toutes les fonctions membres et affiche les resultats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+La classe \hyperlink{classCase}{Case} contient toutes les ressources associees a chaque case du plateau comme la nourriture ou la science. On definit aussi le type (Ocean/\+Terre). Elle est reference par ses coordonnees dans le plateau. Chaque case a un proprietaire(-\/1 pour personne, 0 pour le joueur humain, 1 et plus pour les I\+As. A chaque tour, les cases produisent des ressources associees a leur type\+: Ocean -\/$>$ science et nourriture, Terre -\/$>$ production et or. On fixe un prix d\textquotesingle{}achat de 10 ors pour chaque case. 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classCase_aca943dd6259fb44eeea2addd610a2f9d}\label{classCase_aca943dd6259fb44eeea2addd610a2f9d}} 
+\index{Case@{Case}!Test\+Regression\+\_\+\+Case@{Test\+Regression\+\_\+\+Case}}
+\index{Test\+Regression\+\_\+\+Case@{Test\+Regression\+\_\+\+Case}!Case@{Case}}
+\subsubsection{\texorpdfstring{Test\+Regression\+\_\+\+Case()}{TestRegression\_Case()}}
+{\footnotesize\ttfamily void Case\+::\+Test\+Regression\+\_\+\+Case (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test de regression du module \hyperlink{classCase}{Case}, teste toutes les fonctions membres et affiche les resultats. 
+
+void \hyperlink{classCase_aca943dd6259fb44eeea2addd610a2f9d}{Test\+Regression\+\_\+\+Case()} 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/txt/Case.\+h\item 
+src/txt/Case.\+cpp\end{DoxyCompactItemize}

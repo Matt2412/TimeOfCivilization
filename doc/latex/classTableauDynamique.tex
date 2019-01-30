@@ -1,0 +1,140 @@
+\hypertarget{classTableauDynamique}{}\section{Référence de la classe Tableau\+Dynamique}
+\label{classTableauDynamique}\index{Tableau\+Dynamique@{Tableau\+Dynamique}}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTableauDynamique_a9b1371952458a1b1b528dda5eff3cab4}{Tableau\+Dynamique} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut de tableau dynamique. \end{DoxyCompactList}\item 
+\hyperlink{classTableauDynamique_a0aa7eed220cb6a78eb6ea661df42867b}{$\sim$\+Tableau\+Dynamique} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de tableau dynamique. \end{DoxyCompactList}\item 
+void \hyperlink{classTableauDynamique_a4acb54651eb6b46fcdb63ec1ea37b53a}{Vider} ()
+\begin{DoxyCompactList}\small\item\em Vide le tableau et libere la memoire allouee dynamiquement. \end{DoxyCompactList}\item 
+void \hyperlink{classTableauDynamique_a5ebbd8c6181121f2ca2d19986a5bd646}{Ajouter\+Element} (\hyperlink{classUnite}{Element\+TD} e)
+\begin{DoxyCompactList}\small\item\em Ajoute l\textquotesingle{}element e dans le premier emplacement inutilise du tableau, double la capacite si necessaire. \end{DoxyCompactList}\item 
+void \hyperlink{classTableauDynamique_ae1cd223289dc0ab3c8a388c7da7b5ca5}{Afficher} () const
+\begin{DoxyCompactList}\small\item\em Affiche les elements du tableau. \end{DoxyCompactList}\item 
+void \hyperlink{classTableauDynamique_a382e579005b5175e858fd2b2390b1fa1}{Supprimer\+Element} (unsigned int indice)
+\begin{DoxyCompactList}\small\item\em Supprime l\textquotesingle{}element indique par l\textquotesingle{}indice, et decremente la taille utilisee du tableau de 1. \end{DoxyCompactList}\item 
+\hyperlink{classUnite}{Element\+TD} \hyperlink{classTableauDynamique_aaa3ea9b37c373c8d592ea2a7ac9d60ab}{valeur\+Ieme\+Element\+\_\+\+Unite} (unsigned int indice) const
+\begin{DoxyCompactList}\small\item\em Getter qui renvoie le i-\/eme element du tableau dynamique. \end{DoxyCompactList}\item 
+void \hyperlink{classTableauDynamique_a3875d8153fe023d3283709b9091d7a36}{Test\+Regression\+\_\+\+Tableau\+Dynamique} ()
+\begin{DoxyCompactList}\small\item\em Test de regression du module \hyperlink{classTableauDynamique}{Tableau\+Dynamique}, teste toutes les fonctions membres et affiche les resultats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTableauDynamique_a7ddd455f3dc2f3d94093177025945936}\label{classTableauDynamique_a7ddd455f3dc2f3d94093177025945936}} 
+unsigned int {\bfseries capacite}
+\item 
+\mbox{\Hypertarget{classTableauDynamique_ae55063c3127e7ee9390e572fb0ed3a58}\label{classTableauDynamique_ae55063c3127e7ee9390e572fb0ed3a58}} 
+unsigned int {\bfseries taille\+\_\+utilisee}
+\item 
+\mbox{\Hypertarget{classTableauDynamique_a5d63738b63b1aaabf4e1ab8a7d705032}\label{classTableauDynamique_a5d63738b63b1aaabf4e1ab8a7d705032}} 
+\hyperlink{classUnite}{Element\+TD} $\ast$ {\bfseries ad}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classTableauDynamique_a9b1371952458a1b1b528dda5eff3cab4}\label{classTableauDynamique_a9b1371952458a1b1b528dda5eff3cab4}} 
+\index{Tableau\+Dynamique@{Tableau\+Dynamique}!Tableau\+Dynamique@{Tableau\+Dynamique}}
+\index{Tableau\+Dynamique@{Tableau\+Dynamique}!Tableau\+Dynamique@{Tableau\+Dynamique}}
+\subsubsection{\texorpdfstring{Tableau\+Dynamique()}{TableauDynamique()}}
+{\footnotesize\ttfamily Tableau\+Dynamique\+::\+Tableau\+Dynamique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par defaut de tableau dynamique. 
+
+\hyperlink{classTableauDynamique}{Tableau\+Dynamique} () \mbox{\Hypertarget{classTableauDynamique_a0aa7eed220cb6a78eb6ea661df42867b}\label{classTableauDynamique_a0aa7eed220cb6a78eb6ea661df42867b}} 
+\index{Tableau\+Dynamique@{Tableau\+Dynamique}!````~Tableau\+Dynamique@{$\sim$\+Tableau\+Dynamique}}
+\index{````~Tableau\+Dynamique@{$\sim$\+Tableau\+Dynamique}!Tableau\+Dynamique@{Tableau\+Dynamique}}
+\subsubsection{\texorpdfstring{$\sim$\+Tableau\+Dynamique()}{~TableauDynamique()}}
+{\footnotesize\ttfamily Tableau\+Dynamique\+::$\sim$\+Tableau\+Dynamique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de tableau dynamique. 
+
+$\sim$\+Tableau\+Dynamique () 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classTableauDynamique_ae1cd223289dc0ab3c8a388c7da7b5ca5}\label{classTableauDynamique_ae1cd223289dc0ab3c8a388c7da7b5ca5}} 
+\index{Tableau\+Dynamique@{Tableau\+Dynamique}!Afficher@{Afficher}}
+\index{Afficher@{Afficher}!Tableau\+Dynamique@{Tableau\+Dynamique}}
+\subsubsection{\texorpdfstring{Afficher()}{Afficher()}}
+{\footnotesize\ttfamily void Tableau\+Dynamique\+::\+Afficher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Affiche les elements du tableau. 
+
+void \hyperlink{classTableauDynamique_ae1cd223289dc0ab3c8a388c7da7b5ca5}{Afficher()const} \mbox{\Hypertarget{classTableauDynamique_a5ebbd8c6181121f2ca2d19986a5bd646}\label{classTableauDynamique_a5ebbd8c6181121f2ca2d19986a5bd646}} 
+\index{Tableau\+Dynamique@{Tableau\+Dynamique}!Ajouter\+Element@{Ajouter\+Element}}
+\index{Ajouter\+Element@{Ajouter\+Element}!Tableau\+Dynamique@{Tableau\+Dynamique}}
+\subsubsection{\texorpdfstring{Ajouter\+Element()}{AjouterElement()}}
+{\footnotesize\ttfamily void Tableau\+Dynamique\+::\+Ajouter\+Element (\begin{DoxyParamCaption}\item[{\hyperlink{classUnite}{Element\+TD}}]{e }\end{DoxyParamCaption})}
+
+
+
+Ajoute l\textquotesingle{}element e dans le premier emplacement inutilise du tableau, double la capacite si necessaire. 
+
+void Ajouter\+Element (Element\+TD e) 
+\begin{DoxyParams}{Paramètres}
+{\em (\+Element\+TD} & e) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTableauDynamique_a382e579005b5175e858fd2b2390b1fa1}\label{classTableauDynamique_a382e579005b5175e858fd2b2390b1fa1}} 
+\index{Tableau\+Dynamique@{Tableau\+Dynamique}!Supprimer\+Element@{Supprimer\+Element}}
+\index{Supprimer\+Element@{Supprimer\+Element}!Tableau\+Dynamique@{Tableau\+Dynamique}}
+\subsubsection{\texorpdfstring{Supprimer\+Element()}{SupprimerElement()}}
+{\footnotesize\ttfamily void Tableau\+Dynamique\+::\+Supprimer\+Element (\begin{DoxyParamCaption}\item[{unsigned int}]{indice }\end{DoxyParamCaption})}
+
+
+
+Supprime l\textquotesingle{}element indique par l\textquotesingle{}indice, et decremente la taille utilisee du tableau de 1. 
+
+void Supprimer\+Element (unsigned int indice) 
+\begin{DoxyParams}{Paramètres}
+{\em (unsigned} & int indice) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTableauDynamique_a3875d8153fe023d3283709b9091d7a36}\label{classTableauDynamique_a3875d8153fe023d3283709b9091d7a36}} 
+\index{Tableau\+Dynamique@{Tableau\+Dynamique}!Test\+Regression\+\_\+\+Tableau\+Dynamique@{Test\+Regression\+\_\+\+Tableau\+Dynamique}}
+\index{Test\+Regression\+\_\+\+Tableau\+Dynamique@{Test\+Regression\+\_\+\+Tableau\+Dynamique}!Tableau\+Dynamique@{Tableau\+Dynamique}}
+\subsubsection{\texorpdfstring{Test\+Regression\+\_\+\+Tableau\+Dynamique()}{TestRegression\_TableauDynamique()}}
+{\footnotesize\ttfamily void Tableau\+Dynamique\+::\+Test\+Regression\+\_\+\+Tableau\+Dynamique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test de regression du module \hyperlink{classTableauDynamique}{Tableau\+Dynamique}, teste toutes les fonctions membres et affiche les resultats. 
+
+void \hyperlink{classTableauDynamique_a3875d8153fe023d3283709b9091d7a36}{Test\+Regression\+\_\+\+Tableau\+Dynamique()} \mbox{\Hypertarget{classTableauDynamique_aaa3ea9b37c373c8d592ea2a7ac9d60ab}\label{classTableauDynamique_aaa3ea9b37c373c8d592ea2a7ac9d60ab}} 
+\index{Tableau\+Dynamique@{Tableau\+Dynamique}!valeur\+Ieme\+Element\+\_\+\+Unite@{valeur\+Ieme\+Element\+\_\+\+Unite}}
+\index{valeur\+Ieme\+Element\+\_\+\+Unite@{valeur\+Ieme\+Element\+\_\+\+Unite}!Tableau\+Dynamique@{Tableau\+Dynamique}}
+\subsubsection{\texorpdfstring{valeur\+Ieme\+Element\+\_\+\+Unite()}{valeurIemeElement\_Unite()}}
+{\footnotesize\ttfamily \hyperlink{classUnite}{Element\+TD} Tableau\+Dynamique\+::valeur\+Ieme\+Element\+\_\+\+Unite (\begin{DoxyParamCaption}\item[{unsigned int}]{indice }\end{DoxyParamCaption}) const}
+
+
+
+Getter qui renvoie le i-\/eme element du tableau dynamique. 
+
+Element\+TD \hyperlink{classTableauDynamique_aaa3ea9b37c373c8d592ea2a7ac9d60ab}{valeur\+Ieme\+Element\+\_\+\+Unite(unsigned int indice) const} 
+\begin{DoxyParams}{Paramètres}
+{\em (unsigned} & int indice) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTableauDynamique_a4acb54651eb6b46fcdb63ec1ea37b53a}\label{classTableauDynamique_a4acb54651eb6b46fcdb63ec1ea37b53a}} 
+\index{Tableau\+Dynamique@{Tableau\+Dynamique}!Vider@{Vider}}
+\index{Vider@{Vider}!Tableau\+Dynamique@{Tableau\+Dynamique}}
+\subsubsection{\texorpdfstring{Vider()}{Vider()}}
+{\footnotesize\ttfamily void Tableau\+Dynamique\+::\+Vider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Vide le tableau et libere la memoire allouee dynamiquement. 
+
+void Vider () 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/txt/Tableau\+Dynamique.\+h\item 
+src/txt/Tableau\+Dynamique.\+cpp\end{DoxyCompactItemize}

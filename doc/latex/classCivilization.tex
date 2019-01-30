@@ -1,0 +1,254 @@
+\hypertarget{classCivilization}{}\section{Référence de la classe Civilization}
+\label{classCivilization}\index{Civilization@{Civilization}}
+
+
+La classe Civilisation gere les donnees des joueurs comme par exemple leurs ressources totales, c\textquotesingle{}est a dire la somme des ressources de toutes leurs cases possedees. Chaque civilisation evolue dans un age, c\textquotesingle{}est a dire une epoque(\+Antiquite, Renaissance, epoque moderne). La liste des unites(soldats ou ville) est stocke dans un tableau dynamique pour pouvoir supprimer ou ajouter autant d\textquotesingle{}unites que necessaire.  
+
+
+
+
+{\ttfamily \#include $<$Civilization.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCivilization_a6ccf481509a3cffa36d65066e94ce591}{Civilization} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut de \hyperlink{classCivilization}{Civilization}. \end{DoxyCompactList}\item 
+\hyperlink{classUnite}{Unite} $\ast$ \hyperlink{classCivilization_ac6137f34882af1c6a80f327abb735a9d}{get\+Unite\+De\+Tab\+Unite} (int k) const
+\begin{DoxyCompactList}\small\item\em Renvoie une unite du tableau dynamique de la civilisation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_a3e62e476b9578f126485bdf9974c0884}\label{classCivilization_a3e62e476b9578f126485bdf9974c0884}} 
+bool \hyperlink{classCivilization_a3e62e476b9578f126485bdf9974c0884}{get\+En\+Vie} () const
+\begin{DoxyCompactList}\small\item\em bool \hyperlink{classCivilization_a3e62e476b9578f126485bdf9974c0884}{get\+En\+Vie()} Accesseur \+:recupere le parametre En\+Vie \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_a04b5b7a1404522a406af0081bf267b36}\label{classCivilization_a04b5b7a1404522a406af0081bf267b36}} 
+string \hyperlink{classCivilization_a04b5b7a1404522a406af0081bf267b36}{get\+Nom\+Civilization} () const
+\begin{DoxyCompactList}\small\item\em string \hyperlink{classCivilization_a04b5b7a1404522a406af0081bf267b36}{get\+Nom\+Civilization()} Accesseur \+:recupere le nom de la Civilisation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_a013746fb24afbb5e2a512d5399535fde}\label{classCivilization_a013746fb24afbb5e2a512d5399535fde}} 
+int \hyperlink{classCivilization_a013746fb24afbb5e2a512d5399535fde}{get\+Civilization\+ID} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classCivilization_a013746fb24afbb5e2a512d5399535fde}{get\+Civilization\+I\+D()} Accesseur \+:recupere l\textquotesingle{}ID de la Civilisation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_a44429d0dccf8402ba44722f3356adf69}\label{classCivilization_a44429d0dccf8402ba44722f3356adf69}} 
+int \hyperlink{classCivilization_a44429d0dccf8402ba44722f3356adf69}{get\+Nourriture\+Civilization} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classCivilization_a44429d0dccf8402ba44722f3356adf69}{get\+Nourriture\+Civilization()} Accesseur \+:recupere la ressource Nourriture de la Civilisation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_a47e5711fba0fee7bbfe4dbcd44e90a3a}\label{classCivilization_a47e5711fba0fee7bbfe4dbcd44e90a3a}} 
+int \hyperlink{classCivilization_a47e5711fba0fee7bbfe4dbcd44e90a3a}{getscience\+\_\+\+Civilization} () const
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCivilization_a47e5711fba0fee7bbfe4dbcd44e90a3a}{getscience\+\_\+\+Civilization()} Accesseur \+:recupere la ressource Science de la Civilisation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_ab77f5b0c57d357f6a3a5f46c07fb5227}\label{classCivilization_ab77f5b0c57d357f6a3a5f46c07fb5227}} 
+int \hyperlink{classCivilization_ab77f5b0c57d357f6a3a5f46c07fb5227}{get\+Or\+Civilization} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classCivilization_ab77f5b0c57d357f6a3a5f46c07fb5227}{get\+Or\+Civilization()} Accesseur \+:recupere la ressource Or de la Civilisation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_aa2bdfe7efe60d09d15840bd1b84dcbfc}\label{classCivilization_aa2bdfe7efe60d09d15840bd1b84dcbfc}} 
+int \hyperlink{classCivilization_aa2bdfe7efe60d09d15840bd1b84dcbfc}{get\+Production\+Civilization} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classCivilization_aa2bdfe7efe60d09d15840bd1b84dcbfc}{get\+Production\+Civilization()} Accesseur \+:recupere la ressource Production de la Civilisation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_a5a42c5a9ad59ef241386017d854580f2}\label{classCivilization_a5a42c5a9ad59ef241386017d854580f2}} 
+int \hyperlink{classCivilization_a5a42c5a9ad59ef241386017d854580f2}{getage\+\_\+\+Civilization} () const
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classCivilization_a5a42c5a9ad59ef241386017d854580f2}{getage\+\_\+\+Civilization()} Accesseur \+:recupere l\textquotesingle{}age de la Civilisation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_a64caedd4bd02411a20a2c8d13d4d2c5f}\label{classCivilization_a64caedd4bd02411a20a2c8d13d4d2c5f}} 
+\hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& \hyperlink{classCivilization_a64caedd4bd02411a20a2c8d13d4d2c5f}{get\+Tab\+Unite} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classTableauDynamique}{Tableau\+Dynamique} \& \hyperlink{classCivilization_a64caedd4bd02411a20a2c8d13d4d2c5f}{get\+Tab\+Unite()} Accesseur \+:recupere l\textquotesingle{}adresse du tableau dynamique d\textquotesingle{}unites. \end{DoxyCompactList}\item 
+void \hyperlink{classCivilization_af2c9f46e6805ebc251faedd3ed9b0a67}{set\+En\+Vie} (const bool x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classCivilization_af2c9f46e6805ebc251faedd3ed9b0a67}{set\+En\+Vie(const bool x)} Mutateur \+: modifie le parametre En\+Vie \end{DoxyCompactList}\item 
+void \hyperlink{classCivilization_aef702377e34515bacb5dbd9d8c23fe0d}{set\+Nom\+Civilization} (const string x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classCivilization_aef702377e34515bacb5dbd9d8c23fe0d}{set\+Nom\+Civilization(const string x)} Mutateur \+: modifie le nom de la Civilisation \end{DoxyCompactList}\item 
+void \hyperlink{classCivilization_a6c34cb00d1ac868f79b32253269c45c2}{set\+Civilization\+ID} (const int x)
+\begin{DoxyCompactList}\small\item\em void set\+Civilization\+ID (const int x) Mutateur \+: modifie l\textquotesingle{}ID de la Civilisation \end{DoxyCompactList}\item 
+void \hyperlink{classCivilization_a7bd8696bb406ae0680ed73e7d61e77f4}{set\+Nourriture\+Civilization} (const int x)
+\begin{DoxyCompactList}\small\item\em void set\+Nourriture\+Civilization (const int x) Mutateur \+: modifie la ressource Nourriture de la Civilisation \end{DoxyCompactList}\item 
+void \hyperlink{classCivilization_adf780b8c03afe8d376036011bcd02bd5}{set\+Or\+Civilization} (const int x)
+\begin{DoxyCompactList}\small\item\em void set\+Or\+Civilization (const int x) Mutateur \+: modifie la ressource Or de la Civilisation \end{DoxyCompactList}\item 
+void \hyperlink{classCivilization_abd34da68943c8a85d407be450973f7bc}{set\+Production\+Civilization} (const int x)
+\begin{DoxyCompactList}\small\item\em void set\+Production\+Civilization (const int x) Mutateur \+: modifie la ressource Production de la Civilisation \end{DoxyCompactList}\item 
+void \hyperlink{classCivilization_a805606dfde1503f46c1d0e64ba5dfadd}{setscience\+Civilization} (const int x)
+\begin{DoxyCompactList}\small\item\em void \hyperlink{classCivilization_a805606dfde1503f46c1d0e64ba5dfadd}{setscience\+Civilization(const int x)} Mutateur \+: modifie la ressource Science de la Civilisation \end{DoxyCompactList}\item 
+void \hyperlink{classCivilization_af20e8ddde310be208f3147c22e42e922}{setage\+\_\+\+Civilization} (const int x)
+\begin{DoxyCompactList}\small\item\em void setage\+\_\+\+Civilization (const int x) Mutateur \+: modifie l\textquotesingle{}age de la Civilisation \end{DoxyCompactList}\item 
+void \hyperlink{classCivilization_af9de1571dce2ac23030cdb3e5d75cfa5}{set\+Tableau\+Unite} (const \hyperlink{classTableauDynamique}{Tableau\+Dynamique} x)
+\begin{DoxyCompactList}\small\item\em void set\+Tableau\+Unite (const int x) Mutateur \+: Permet de modifier les �l�ments du Tableau d\textquotesingle{}unites. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_a080021b2d6fd686ab1a8758d1f0a6494}\label{classCivilization_a080021b2d6fd686ab1a8758d1f0a6494}} 
+int \hyperlink{classCivilization_a080021b2d6fd686ab1a8758d1f0a6494}{Definir\+Ville\+Depart\+X\+\_\+\+Civilization} ()
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classCivilization_a080021b2d6fd686ab1a8758d1f0a6494}{Definir\+Ville\+Depart\+X\+\_\+\+Civilization()} Renvoie une position aleatoire en x pour la ville de depart \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_a623708118741e889b6e3fab7c3f07fa6}\label{classCivilization_a623708118741e889b6e3fab7c3f07fa6}} 
+int \hyperlink{classCivilization_a623708118741e889b6e3fab7c3f07fa6}{Definir\+Ville\+Depart\+Y\+\_\+\+Civilization} ()
+\begin{DoxyCompactList}\small\item\em int \hyperlink{classCivilization_a080021b2d6fd686ab1a8758d1f0a6494}{Definir\+Ville\+Depart\+X\+\_\+\+Civilization()} Renvoie une position aleatoire en x pour la ville de depart \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCivilization_a020b060be9e06031501f8ed0752ec5fe}\label{classCivilization_a020b060be9e06031501f8ed0752ec5fe}} 
+\hyperlink{classCivilization_a020b060be9e06031501f8ed0752ec5fe}{$\sim$\+Civilization} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCivilization_a020b060be9e06031501f8ed0752ec5fe}{$\sim$\+Civilization()} Destructeur de la classe\+: desallocation de la memoire du tableau dynamique d\textquotesingle{}unite \end{DoxyCompactList}\item 
+void \hyperlink{classCivilization_a7b82025059e725f774c73f5af50ef090}{Test\+Regression\+\_\+\+Civilization} ()
+\begin{DoxyCompactList}\small\item\em Test de regression du module \hyperlink{classCivilization}{Civilization}, teste toutes les fonctions membres et affiche les resultats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+La classe Civilisation gere les donnees des joueurs comme par exemple leurs ressources totales, c\textquotesingle{}est a dire la somme des ressources de toutes leurs cases possedees. Chaque civilisation evolue dans un age, c\textquotesingle{}est a dire une epoque(\+Antiquite, Renaissance, epoque moderne). La liste des unites(soldats ou ville) est stocke dans un tableau dynamique pour pouvoir supprimer ou ajouter autant d\textquotesingle{}unites que necessaire. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classCivilization_a6ccf481509a3cffa36d65066e94ce591}\label{classCivilization_a6ccf481509a3cffa36d65066e94ce591}} 
+\index{Civilization@{Civilization}!Civilization@{Civilization}}
+\index{Civilization@{Civilization}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{Civilization()}{Civilization()}}
+{\footnotesize\ttfamily Civilization\+::\+Civilization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par defaut de \hyperlink{classCivilization}{Civilization}. 
+
+\hyperlink{classCivilization_a6ccf481509a3cffa36d65066e94ce591}{Civilization()} 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classCivilization_ac6137f34882af1c6a80f327abb735a9d}\label{classCivilization_ac6137f34882af1c6a80f327abb735a9d}} 
+\index{Civilization@{Civilization}!get\+Unite\+De\+Tab\+Unite@{get\+Unite\+De\+Tab\+Unite}}
+\index{get\+Unite\+De\+Tab\+Unite@{get\+Unite\+De\+Tab\+Unite}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{get\+Unite\+De\+Tab\+Unite()}{getUniteDeTabUnite()}}
+{\footnotesize\ttfamily \hyperlink{classUnite}{Unite} $\ast$ Civilization\+::get\+Unite\+De\+Tab\+Unite (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie une unite du tableau dynamique de la civilisation. 
+
+Unite$\ast$ \hyperlink{classCivilization_ac6137f34882af1c6a80f327abb735a9d}{get\+Unite\+De\+Tab\+Unite(int k)const} \mbox{\Hypertarget{classCivilization_af20e8ddde310be208f3147c22e42e922}\label{classCivilization_af20e8ddde310be208f3147c22e42e922}} 
+\index{Civilization@{Civilization}!setage\+\_\+\+Civilization@{setage\+\_\+\+Civilization}}
+\index{setage\+\_\+\+Civilization@{setage\+\_\+\+Civilization}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{setage\+\_\+\+Civilization()}{setage\_Civilization()}}
+{\footnotesize\ttfamily void Civilization\+::setage\+\_\+\+Civilization (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void setage\+\_\+\+Civilization (const int x) Mutateur \+: modifie l\textquotesingle{}age de la Civilisation 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCivilization_a6c34cb00d1ac868f79b32253269c45c2}\label{classCivilization_a6c34cb00d1ac868f79b32253269c45c2}} 
+\index{Civilization@{Civilization}!set\+Civilization\+ID@{set\+Civilization\+ID}}
+\index{set\+Civilization\+ID@{set\+Civilization\+ID}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{set\+Civilization\+I\+D()}{setCivilizationID()}}
+{\footnotesize\ttfamily void Civilization\+::set\+Civilization\+ID (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void set\+Civilization\+ID (const int x) Mutateur \+: modifie l\textquotesingle{}ID de la Civilisation 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCivilization_af2c9f46e6805ebc251faedd3ed9b0a67}\label{classCivilization_af2c9f46e6805ebc251faedd3ed9b0a67}} 
+\index{Civilization@{Civilization}!set\+En\+Vie@{set\+En\+Vie}}
+\index{set\+En\+Vie@{set\+En\+Vie}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{set\+En\+Vie()}{setEnVie()}}
+{\footnotesize\ttfamily void Civilization\+::set\+En\+Vie (\begin{DoxyParamCaption}\item[{const bool}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classCivilization_af2c9f46e6805ebc251faedd3ed9b0a67}{set\+En\+Vie(const bool x)} Mutateur \+: modifie le parametre En\+Vie 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (bool} & x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCivilization_aef702377e34515bacb5dbd9d8c23fe0d}\label{classCivilization_aef702377e34515bacb5dbd9d8c23fe0d}} 
+\index{Civilization@{Civilization}!set\+Nom\+Civilization@{set\+Nom\+Civilization}}
+\index{set\+Nom\+Civilization@{set\+Nom\+Civilization}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{set\+Nom\+Civilization()}{setNomCivilization()}}
+{\footnotesize\ttfamily void Civilization\+::set\+Nom\+Civilization (\begin{DoxyParamCaption}\item[{const string}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classCivilization_aef702377e34515bacb5dbd9d8c23fe0d}{set\+Nom\+Civilization(const string x)} Mutateur \+: modifie le nom de la Civilisation 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & string x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCivilization_a7bd8696bb406ae0680ed73e7d61e77f4}\label{classCivilization_a7bd8696bb406ae0680ed73e7d61e77f4}} 
+\index{Civilization@{Civilization}!set\+Nourriture\+Civilization@{set\+Nourriture\+Civilization}}
+\index{set\+Nourriture\+Civilization@{set\+Nourriture\+Civilization}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{set\+Nourriture\+Civilization()}{setNourritureCivilization()}}
+{\footnotesize\ttfamily void Civilization\+::set\+Nourriture\+Civilization (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void set\+Nourriture\+Civilization (const int x) Mutateur \+: modifie la ressource Nourriture de la Civilisation 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCivilization_adf780b8c03afe8d376036011bcd02bd5}\label{classCivilization_adf780b8c03afe8d376036011bcd02bd5}} 
+\index{Civilization@{Civilization}!set\+Or\+Civilization@{set\+Or\+Civilization}}
+\index{set\+Or\+Civilization@{set\+Or\+Civilization}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{set\+Or\+Civilization()}{setOrCivilization()}}
+{\footnotesize\ttfamily void Civilization\+::set\+Or\+Civilization (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void set\+Or\+Civilization (const int x) Mutateur \+: modifie la ressource Or de la Civilisation 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCivilization_abd34da68943c8a85d407be450973f7bc}\label{classCivilization_abd34da68943c8a85d407be450973f7bc}} 
+\index{Civilization@{Civilization}!set\+Production\+Civilization@{set\+Production\+Civilization}}
+\index{set\+Production\+Civilization@{set\+Production\+Civilization}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{set\+Production\+Civilization()}{setProductionCivilization()}}
+{\footnotesize\ttfamily void Civilization\+::set\+Production\+Civilization (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void set\+Production\+Civilization (const int x) Mutateur \+: modifie la ressource Production de la Civilisation 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCivilization_a805606dfde1503f46c1d0e64ba5dfadd}\label{classCivilization_a805606dfde1503f46c1d0e64ba5dfadd}} 
+\index{Civilization@{Civilization}!setscience\+Civilization@{setscience\+Civilization}}
+\index{setscience\+Civilization@{setscience\+Civilization}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{setscience\+Civilization()}{setscienceCivilization()}}
+{\footnotesize\ttfamily void Civilization\+::setscience\+Civilization (\begin{DoxyParamCaption}\item[{const int}]{x }\end{DoxyParamCaption})}
+
+
+
+void \hyperlink{classCivilization_a805606dfde1503f46c1d0e64ba5dfadd}{setscience\+Civilization(const int x)} Mutateur \+: modifie la ressource Science de la Civilisation 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & int x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCivilization_af9de1571dce2ac23030cdb3e5d75cfa5}\label{classCivilization_af9de1571dce2ac23030cdb3e5d75cfa5}} 
+\index{Civilization@{Civilization}!set\+Tableau\+Unite@{set\+Tableau\+Unite}}
+\index{set\+Tableau\+Unite@{set\+Tableau\+Unite}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{set\+Tableau\+Unite()}{setTableauUnite()}}
+{\footnotesize\ttfamily void Civilization\+::set\+Tableau\+Unite (\begin{DoxyParamCaption}\item[{const \hyperlink{classTableauDynamique}{Tableau\+Dynamique}}]{x }\end{DoxyParamCaption})}
+
+
+
+void set\+Tableau\+Unite (const int x) Mutateur \+: Permet de modifier les �l�ments du Tableau d\textquotesingle{}unites. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em (const} & \hyperlink{classTableauDynamique}{Tableau\+Dynamique} x) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCivilization_a7b82025059e725f774c73f5af50ef090}\label{classCivilization_a7b82025059e725f774c73f5af50ef090}} 
+\index{Civilization@{Civilization}!Test\+Regression\+\_\+\+Civilization@{Test\+Regression\+\_\+\+Civilization}}
+\index{Test\+Regression\+\_\+\+Civilization@{Test\+Regression\+\_\+\+Civilization}!Civilization@{Civilization}}
+\subsubsection{\texorpdfstring{Test\+Regression\+\_\+\+Civilization()}{TestRegression\_Civilization()}}
+{\footnotesize\ttfamily void Civilization\+::\+Test\+Regression\+\_\+\+Civilization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test de regression du module \hyperlink{classCivilization}{Civilization}, teste toutes les fonctions membres et affiche les resultats. 
+
+void \hyperlink{classCivilization_a7b82025059e725f774c73f5af50ef090}{Test\+Regression\+\_\+\+Civilization()} 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/txt/Civilization.\+h\item 
+src/txt/Civilization.\+cpp\end{DoxyCompactItemize}
